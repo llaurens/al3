@@ -7,6 +7,7 @@
 /node_modules/
 
 # Files
+/prepros.cfg
 /.htaccess
 /temp.js
 .DS_Store
