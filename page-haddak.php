@@ -1,10 +1,16 @@
 <?php
 /*
- Template Name: haddak
- *
- * This template is similar to a blog, except from the
- * fact that it only shows groups. So it's more like a
- * schedule.
+Template Name: haddak
+*
+* @package al3
+* @subpackage Page Templates
+* @link http://haddak.de
+*
+* Real special stuff here and therefore highely experimental:
+* This page plays around with the new WP REST API and crawls data
+* http://haddak.de in order to create a nice shelf of the recent
+* issues of the haddak.
+*
 */
 __( 'haddak', 'al3' );
 ?>

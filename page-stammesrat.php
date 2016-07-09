@@ -1,10 +1,12 @@
 <?php
 /*
- Template Name: Stammesratv2
- *
- * This template is similar to a blog, except from the
- * fact that it only shows groups. So it's more like a
- * schedule.
+Template Name: Stammesratv2
+*
+* @package al3
+* @subpackage Page Templates
+*
+* Currently working on this one. Maybe push it into a new branch.
+*
 */
 __( 'Stammesratv2', 'al3' );
 ?>

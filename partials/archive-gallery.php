@@ -1,4 +1,13 @@
- <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> >
+<?php
+/*
+* Archive Gallery Entry
+*
+* @package al3
+* @subpackage Core
+*/
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> >
 
     <header class="article-header">
 

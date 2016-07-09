@@ -1,4 +1,14 @@
- <article id="post-<?php the_ID(); ?>" <?php post_class( 'card cf' ); ?> >
+<?php
+/*
+* Archive Entry Post
+*
+* @package al3
+* @subpackage Core
+*/
+?>
+
+
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'card cf' ); ?> >
 
     <header class="article-header">
 

@@ -1,3 +1,12 @@
+<?php
+/*
+* Single Group
+*
+* @package al3
+* @subpackage Groups
+*/
+?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> >
 
     <header class="article-header">

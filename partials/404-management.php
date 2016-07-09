@@ -1,3 +1,12 @@
+<?php
+/*
+* Error 404 Management
+*
+* @package al3
+* @subpackage Management
+*/
+?>
+
 <article id="post-not-found" class="not-found hentry cf">
 
     <header class="article-header">

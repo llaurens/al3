@@ -1,3 +1,12 @@
+<?php
+/*
+* Management Archive Page
+*
+* @package al3
+* @subpackage Management
+*/
+?>
+
 <?php get_header(); ?>
 
     <div id="content" class="main-content">

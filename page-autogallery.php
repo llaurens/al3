@@ -1,10 +1,13 @@
 <?php
 /*
- Template Name: Auto Gallery
- *
- * This template is similar to a blog, except from the
- * fact that it only shows groups. So it's more like a
- * schedule.
+Template Name: Auto Gallery
+*
+* @package al3
+* @subpackage Page Templates
+* @link http://codecanyon.net/item/wp-auto-photo-albums-multi-level-image-grid/5781151?WT.ac=category_item&WT.z_author=David_Blanco
+*
+* This template is basically a page, which support the popular
+* Auto Albums Plugin for WordPress via Shortcode.
 */
 __( 'Auto Gallery', 'al3' );
 ?>

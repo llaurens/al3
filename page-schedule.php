@@ -1,10 +1,14 @@
 <?php
 /*
- Template Name: Schedule
- *
- * This template is similar to a blog, except from the
- * fact that it only shows groups. So it's more like a
- * schedule.
+Template Name: Schedule
+*
+* @package al3
+* @subpackage Page Templates
+*
+* This page crawls the data of the groups, who meet
+* on a regular basis and displays them as kind of a
+* schedule.
+*
 */
 __( 'Schedule', 'al3' );
 ?>

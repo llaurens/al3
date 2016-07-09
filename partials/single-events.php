@@ -1,3 +1,12 @@
+<?php
+/*
+* Single Event
+*
+* @package al3
+* @subpackage Events
+*/
+?>
+
 <?php ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?>  itemscope itemtype="http://schema.org/SocialEvent">

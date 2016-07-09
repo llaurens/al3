@@ -1,10 +1,12 @@
 <?php
 /*
- Template Name: Chronicle
- *
- * This template is similar to a blog, except from the
- * fact that it only shows events. So it's more like a
- * schedule.
+Template Name: Chronicle
+*
+* @package al3
+* @subpackage Page Templates
+*
+* Love this page template. It queues all past events and groups them
+* by the year they occured.
 */
 __( 'Chronicle', 'al3' );
 ?>

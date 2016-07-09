@@ -1,3 +1,12 @@
+<?php
+/*
+* Schedule Snippet
+*
+* @package al3
+* @subpackage Groups
+*/
+?>
+
 <article id="post-<?php the_ID(); ?>" class="<?php al3_groups_columns($groups->post_count); ?>">
 
     <div class="article-header">

@@ -1,3 +1,13 @@
+<?php
+/*
+* Home Blog Entry
+*
+* @package al3
+* @subpackage Core
+*/
+?>
+
+
 <h2 class="archive-title block-title card cf">
 
     <?php

@@ -1,3 +1,12 @@
+<?php
+/*
+* Home Gallery Snippet
+*
+* @package al3
+* @subpackage Events
+*/
+?>
+
 <h2 class="archive-title block-title card cf">
 
     <?php

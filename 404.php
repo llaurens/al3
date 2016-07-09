@@ -1,3 +1,12 @@
+<?php
+/*
+* Default Error 404
+*
+* @package al3
+* @subpackage Core
+*/
+?>
+
 <?php get_header(); ?>
 
 <div id="content" class="main-content">

@@ -1,10 +1,13 @@
 <?php
 /*
- Template Name: Home
- *
- * This template is similar to a blog, except from the
- * fact that it only shows groups. So it's more like a
- * schedule.
+Template Name: Home
+*
+* @package al3
+* @subpackage Page Templates
+*
+* Boring. Simply a copy of the index.php.
+* Cries for a workaround.
+*
 */
 __( 'Home', 'al3' );
 ?>

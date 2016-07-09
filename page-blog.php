@@ -1,10 +1,13 @@
 <?php
 /*
- Template Name: Blog
- *
- * This template is similar to a blog, except from the
- * fact that it only shows groups. So it's more like a
- * schedule.
+Template Name: Blog
+*
+* @package al3
+* @subpackage Page Templates
+*
+* This page is a modification of a default blog, which would normally appear as
+* front page. Since the front page in al3 is a wild mess, you can use the page template
+* as a replacement.
 */
 __( 'Blog', 'al3' );
 ?>

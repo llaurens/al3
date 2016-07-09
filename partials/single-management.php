@@ -1,4 +1,13 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?>  ">
+<?php
+/*
+* Single Member of Management
+*
+* @package al3
+* @subpackage Management
+*/
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> >
 
     <header class="article-header">
         <h1 class="page-title"><?php the_title(); ?><?php if( get_field('management_name') ): echo ' &#40' . get_field('management_name') . '&#41'; endif; ?></h1>

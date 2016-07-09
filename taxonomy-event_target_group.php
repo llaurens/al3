@@ -1,3 +1,12 @@
+<?php
+/*
+ * Archive page for Target Groups
+ *
+ * @package al3
+ * @subpackage Events
+ */
+?>
+
 <?php get_header(); ?>
 
 <div id="content" class="main-content">

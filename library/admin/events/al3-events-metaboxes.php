@@ -1,6 +1,16 @@
 <?php
+/*
+* Event Metaboxes
+*
+* @package al3
+* @subpackage Events
+*/
 
-/************* EVENT METABOXES *************/
+?>
+
+<?php
+
+/************ EVENT METABOXES *************/
 
 /*
 This are the function to display metaboxes for events

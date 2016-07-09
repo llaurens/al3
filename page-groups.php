@@ -1,10 +1,13 @@
 <?php
 /*
- Template Name: Groups
- *
- * This template is similar to a blog, except from the
- * fact that it only shows groups. So it's more like a
- * schedule.
+Template Name: Groups
+*
+* @package al3
+* @subpackage Page Templates
+*
+* A dynamic page, which lists, beside the normal content,
+* all groups.
+*
 */
 __( 'Groups', 'al3' );
 ?>

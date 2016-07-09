@@ -1,8 +1,13 @@
 <?php
 /*
-The comments page for al3
+* Comment Form
+*
+* @package al3
+* @subpackage Core
 */
+?>
 
+<?php
 // don't load it if you can't comment
 if ( post_password_required() ) {
   return;

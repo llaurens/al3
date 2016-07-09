@@ -1,3 +1,12 @@
+<?php
+/*
+* Groups Archive Page
+*
+* @package al3
+* @subpackage Groups
+*/
+?>
+
 <?php get_header(); ?>
 
     <div id="content" class="main-content">

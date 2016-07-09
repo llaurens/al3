@@ -1,10 +1,13 @@
 <?php
 /*
- Template Name: Events
- *
- * This template is similar to a blog, except from the
- * fact that it only shows events. So it's more like a
- * schedule.
+Template Name: Events
+*
+* @package al3
+* @subpackage Page Templates
+*
+* Again a page template which is more like a better
+* archive page. This one lists all coming events.
+*
 */
 __( 'Events', 'al3' );
 ?>

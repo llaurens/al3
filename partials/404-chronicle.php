@@ -1,3 +1,12 @@
+<?php
+/*
+* Error 404 Chronicle Entry
+*
+* @package al3
+* @subpackage Events
+*/
+?>
+
 <article id="post-not-found" class="not-found hentry cf">
 
     <header class="article-header">

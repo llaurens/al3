@@ -1,10 +1,13 @@
 <?php
 /*
- Template Name: Management
- *
- * This template is similar to a blog, except from the
- * fact that it only shows groups. So it's more like a
- * schedule.
+Template Name: Management
+*
+* @package al3
+* @subpackage Page Templates
+*
+* A page for the celebs: All Members of
+* the administration will appear here.
+*
 */
 __( 'Management', 'al3' );
 ?>

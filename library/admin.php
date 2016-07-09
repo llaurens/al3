@@ -1,5 +1,14 @@
 <?php
 /*
+* Admin Functions
+*
+* @package al3
+* @subpackage Admin
+*/
+?>
+
+<?php
+/*
 This file handles the admin area and functions.
 You can use this file to make changes to the
 dashboard. Updates to this page are coming soon.
@@ -24,7 +33,7 @@ Digging into WP - http://digwp.com/2010/10/customize-wordpress-dashboard/
 
 */
 
-/************* PLUGINS *********************/
+/************ PLUGINS *********************/
 
 /*
 Via TGM Plugin Activation we can include any plugin
@@ -37,24 +46,24 @@ about recent versions etc.
 require_once( 'admin/plugin-management/al3-plugins.php' );
 
 
-/************* EVENTS PLUGIN *********************/
+/************ EVENTS PLUGIN *********************/
 
 // INCLUDE EVENTS PLUGIN
 require_once( 'admin/events/al3-events.php' );
 
 
-/************* GROUPS PLUGIN *********************/
+/************ GROUPS PLUGIN *********************/
 
 // INCLUDE GROUPS PLUGIN
 require_once( 'admin/groups/al3-groups.php' );
 
 
-/************* MANAGEMENT PLUGIN *********************/
+/************ MANAGEMENT PLUGIN *********************/
 
 // INCLUDE MANAGEMENT PLUGIN
 require_once( 'admin/management/al3-management.php' );
 
-/***************** METABOXES *********************/
+/**************** METABOXES *********************/
 
 // ACF
 
@@ -65,14 +74,14 @@ function remove_acf_menu() {
 	}
 add_action( 'admin_menu', 'remove_acf_menu', 999);
 
-/************* API POWER *********************/
+/************ API POWER *********************/
 
 // INCLUDE API FUNCTIONS
 require_once( 'api.php' );
 
-/***************** METABOXES *********************/
+/**************** METABOXES *********************/
 
-/************* DASHBOARD WIDGETS *****************/
+/************ DASHBOARD WIDGETS *****************/
 
 // disable default dashboard widgets
 function disable_default_dashboard_widgets() {
@@ -152,7 +161,7 @@ add_action( 'wp_dashboard_setup', 'disable_default_dashboard_widgets' );
 add_action( 'wp_dashboard_setup', 'al3_custom_dashboard_widgets' );
 
 
-/************* CUSTOM LOGIN PAGE *****************/
+/************ CUSTOM LOGIN PAGE *****************/
 
 // calling your own login css so you can style it
 
@@ -174,7 +183,7 @@ add_filter( 'login_headerurl', 'al3_login_url' );
 add_filter( 'login_headertitle', 'al3_login_title' );
 
 
-/************* CUSTOMIZE ADMIN *******************/
+/************ CUSTOMIZE ADMIN *******************/
 
 /*
 I don't really recommend editing the admin too much
@@ -192,7 +201,7 @@ function al3_custom_admin_footer() {
 add_filter( 'admin_footer_text', 'al3_custom_admin_footer' );
 
 
-/************* CUSTOMIZER ADMIN *******************/
+/************ CUSTOMIZER ADMIN *******************/
 
 /*
 This adds a few more options to the default options

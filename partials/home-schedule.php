@@ -1,3 +1,12 @@
+<?php
+/*
+* Home Schedule
+*
+* @package al3
+* @subpackage Groups
+*/
+?>
+
 <h2 class="archive-title block-title card cf">
 
     <?php

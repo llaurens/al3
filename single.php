@@ -1,3 +1,12 @@
+<?php
+/*
+ * Default Single Post
+ *
+ * @package al3
+ * @subpackage Core
+ */
+?>
+
 <?php get_header(); ?>
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

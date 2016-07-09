@@ -1,3 +1,13 @@
+<?php
+/*
+* Archive Entry Events
+*
+* @package al3
+* @subpackage Events
+
+*/
+?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('card cf'); ?>  itemscope itemtype="http://schema.org/SocialEvent">
 
     <header class="article-header">

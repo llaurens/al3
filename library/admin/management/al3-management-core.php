@@ -1,6 +1,14 @@
 <?php
-/* AL3 Events Plugin
-This page walks you through creating
+/*
+* Management Core
+*
+* @package al3
+* @subpackage Management
+*/
+?>
+
+<?php
+/* This page walks you through creating
 a custom post type and taxonomies. You
 can edit this one or copy the following code
 to create another one.

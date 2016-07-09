@@ -1,3 +1,12 @@
+<?php
+/*
+* Error 404 Groups
+*
+* @package al3
+* @subpackage Groups
+*/
+?>
+
 <article id="post-not-found" class="not-found hentry cf">
 
     <header class="article-header">

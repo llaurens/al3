@@ -1,3 +1,12 @@
+<?php
+/*
+ * Search Results Page
+ *
+ * @package al3
+ * @subpackage Core
+ */
+?>
+
 <?php get_header(); ?>
 
 <div id="content" class="main-content">

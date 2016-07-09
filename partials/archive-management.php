@@ -1,3 +1,12 @@
+<?php
+/*
+* Archive Management Member
+*
+* @package al3
+* @subpackage Management
+*/
+?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'card cf' ); ?> >
 
     <header class="article-header">

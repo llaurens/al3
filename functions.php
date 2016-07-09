@@ -1,8 +1,14 @@
 <?php
 /*
-Author: Laurens Lamberty
-URL: http://al3.de/
+* Functions
+*
+* @package al3
+* @subpackage Core
+*/
+?>
 
+<?php
+/*
 This is where you can drop your custom functions or
 just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
@@ -19,7 +25,7 @@ require_once( 'library/al3.php' );
 require_once( 'library/admin.php' );
 
 
-/*********************
+/********************
 LAUNCH al3
 Let's get everything up and running.
 *********************/
@@ -61,13 +67,13 @@ function al3_ahoy() {
 add_action( 'after_setup_theme', 'al3_ahoy' );
 
 
-/************* OEMBED SIZE OPTIONS *************/
+/************ OEMBED SIZE OPTIONS *************/
 
 if ( ! isset( $content_width ) ) {
 	$content_width = 640;
 }
 
-/************* THUMBNAIL SIZE OPTIONS *************/
+/************ THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
 add_image_size( 'al3-item', 600, 300, true );
@@ -167,7 +173,7 @@ function add_featured_image_body_class( $classes ) {
 add_filter( 'body_class', 'add_featured_image_body_class' );
 
 
-/************* POST HELPER FUNCTIONS *********************/
+/************ POST HELPER FUNCTIONS *********************/
 
 // A basic helper function, that checks whether a user has posted anything
 
@@ -209,11 +215,11 @@ function al3_custom_title() {
     }
 }
 
-/************* COMMENT LAYOUT *********************/
+/************ COMMENT LAYOUT *********************/
 
 // Check for a gravatar (thanks to  justinph / validate_gravatar.php)
 
-/**
+/*
  * Utility function to check if a gravatar exists for a given email or id
  * @param int|string|object $id_or_email A user ID,  email address, or comment object
  * @return bool if the gravatar exists or not

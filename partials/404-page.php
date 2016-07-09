@@ -1,3 +1,12 @@
+<?php
+/*
+* Error 404 Page
+*
+* @package al3
+* @subpackage Core
+*/
+?>
+
 <article id="post-not-found" class="not-found hentry cf">
 
     <header class="article-header">

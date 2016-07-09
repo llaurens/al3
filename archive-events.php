@@ -1,3 +1,12 @@
+<?php
+/*
+* Events Archive Page
+*
+* @package al3
+* @subpackage Events
+*/
+?>
+
 <?php get_header(); ?>
 
     <div id="content" class="main-content">

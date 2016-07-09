@@ -1,4 +1,13 @@
 <?php
+/*
+* Core File
+*
+* @package al3
+* @subpackage Core
+*/
+?>
+
+<?php
 /* Welcome to al3 :)
 This is the core al3 file where most of the
 main functions & features reside. If you have
@@ -21,7 +30,7 @@ URL: http://themble.com/al3/
 
 */
 
-/*********************
+/********************
 WP_HEAD GOODNESS
 The default wordpress head is
 a mess. Let's clean it up by
@@ -117,7 +126,7 @@ function al3_gallery_style($css) {
 }
 
 
-/*********************
+/********************
 SCRIPTS & ENQUEUEING
 *********************/
 
@@ -224,7 +233,7 @@ function al3_scripts_and_styles() {
 	}
 }
 
-/*********************
+/********************
 THEME SUPPORT
 *********************/
 
@@ -258,7 +267,7 @@ function al3_theme_support() {
 	);
 } /* end al3 theme support */
 
-/*********************
+/********************
 PAGE NAVI
 *********************/
 
@@ -283,7 +292,7 @@ function al3_page_navi() {
   echo '</nav>';
 } /* end page navi */
 
-/*********************
+/********************
 RANDOM CLEANUP ITEMS
 *********************/
 

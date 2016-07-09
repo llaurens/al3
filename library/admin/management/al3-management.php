@@ -1,15 +1,15 @@
 <?php
-/**
-* Plugin Name: al3 Management
-* Plugin URI: http://lamberty.me/
-* Description: A custom post type plugin to show of a management. Only matching with an al3-theme.
-* Version: 1.2.1
-* Author: Laurens Lamberty
-* Author URI: http://lamberty.me/
-* License: Apache License 2.0
+/*
+* Management Loader
+*
+* @package al3
+* @subpackage Management
 */
+?>
 
-/************* MANAGEMENT  *************/
+<?php
+
+/************ MANAGEMENT  *************/
 
 /*
 The events module is basically a custom post

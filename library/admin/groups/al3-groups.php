@@ -1,15 +1,15 @@
 <?php
-/**
-* Plugin Name: al3 Groups
-* Plugin URI: http://lamberty.me/
-* Description: A custom post type plugin to create groups. Only matching with an al3-theme.
-* Version: 1.1.1
-* Author: Laurens Lamberty
-* Author URI: http://lamberty.me/
-* License: Apache License 2.0
+/*
+* Groups Loader
+*
+* @package al3
+* @subpackage Groups
 */
+?>
 
-/************* GROUPS *************/
+<?php
+
+/************ GROUPS *************/
 
 /*
 The events module is basically a custom post

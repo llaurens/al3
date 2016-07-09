@@ -1,10 +1,16 @@
 <?php
 /*
- Template Name: Gallery
- *
- * This template is similar to a blog, except from the
- * fact that it only shows events. So it's more like a
- * schedule.
+Template Name: Gallery
+*
+* @package al3
+* @subpackage Page Templates
+*
+* This one is nice, too. Similar to the
+* page-chronicle.php, it runs through all past
+* events and list them. But since this is the
+* gallery template, it only shows the events
+* which have pictures assigned to them.
+*
 */
 __( 'Gallery', 'al3' );
 ?>

@@ -1,10 +1,13 @@
 <?php
 /*
- Template Name: Login
- *
- * This template is similar to a blog, except from the
- * fact that it only shows groups. So it's more like a
- * schedule.
+Template Name: Login
+*
+* @package al3
+* @subpackage Page Templates
+*
+* This page displays a log-in form besides a few lines
+* of content.
+*
 */
 __( 'Login', 'al3' );
 ?>

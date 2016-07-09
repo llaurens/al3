@@ -1,3 +1,12 @@
+<?php
+/*
+* Error 404 Single
+*
+* @package al3
+* @subpackage Core
+*/
+?>
+
 <article id="post-not-found" class="not-found hentry cf">
 
     <header class="article-header">
@@ -5,7 +14,7 @@
     </header>
 
     <div class="entry-content">
-        <p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'al3' ); ?>        </p>
+        <p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'al3' ); ?></p>
     </div>
 
     <footer class="article-footer">

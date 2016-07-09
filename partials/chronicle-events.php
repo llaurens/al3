@@ -1,4 +1,13 @@
 <?php
+/*
+* Chronicle Entry
+*
+* @package al3
+* @subpackage Events
+*/
+?>
+
+<?php
 
 $meta_start_date = get_field( 'event_start_date' );
 $meta_end_date = get_field( 'event_end_date' );

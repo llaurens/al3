@@ -16,7 +16,7 @@ require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'al3_register_required_plugins' );
 
-/**
+/*
  * Register the required plugins for this theme.
  *
  * In this example, we register two plugins - one included with the TGMPA library
@@ -31,7 +31,7 @@ add_action( 'tgmpa_register', 'al3_register_required_plugins' );
 
 function al3_register_required_plugins() {
 
-    /**
+    /*
      * Array of plugin arrays. Required keys are name and slug.
      * If the source is NOT from the .org repo, then source is also required.
      */
@@ -63,7 +63,7 @@ function al3_register_required_plugins() {
 
     );
 
-    /**
+    /*
      * Array of configuration settings. Amend each line as needed.
      * If you want the default strings to be available under your own theme domain,
      * leave the strings uncommented.

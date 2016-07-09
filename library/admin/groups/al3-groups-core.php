@@ -1,6 +1,14 @@
 <?php
-/* Scout Events Plugin
-This page walks you through creating
+/*
+* Groups Core
+*
+* @package al3
+* @subpackage Groups
+*/
+?>
+
+<?php
+/* This page walks you through creating
 a custom post type and taxonomies. You
 can edit this one or copy the following code
 to create another one.

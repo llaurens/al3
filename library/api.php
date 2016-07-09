@@ -1,5 +1,15 @@
 <?php
 /*
+* WP REST API Functions
+*
+* @package al3
+* @subpackage Core
+*/
+?>
+
+
+<?php
+/*
 This snippet takes care of all functions needed to
 run the WP API in this very theme.
 

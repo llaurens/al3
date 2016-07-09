@@ -1,15 +1,15 @@
 <?php
-/**
-* Plugin Name: al3 Events
-* Plugin URI: http://lamberty.me/
-* Description: A custom post type plugin to create events. Only matching with an al3-theme.
-* Version: 1.2.1
-* Author: Laurens Lamberty
-* Author URI: http://lamberty.me/
-* License: Apache License 2.0
+/*
+* Events Loader
+*
+* @package al3
+* @subpackage Events
 */
+?>
 
-/************* EVENTS *************/
+<?php
+
+/************ EVENTS *************/
 
 /*
 The events module is basically a custom post
