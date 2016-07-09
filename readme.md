@@ -1,38 +1,14 @@
 # al3
-A Lightweight Wordpress Development Theme
+The theme behind http://stammalexanderlion.de/.
 
-al3 is designed to make the life of developers easier. It's built
-using HTML5 & has a strong semantic foundation.
-It's constantly growing so be sure to check back often if you are a
-frequent user. I'm always open to contribution. :)
+## What the heck?
+al3 is a WordPress theme and, most noticeable, the driving force behind http://stammalexanderlion.de/. It is, therefore, a very specific and not quite universal to use theme, but if you like , fork it and make it your own.
 
-Designed by Eddie Machado
-http://themble.com/al3
+## Why?
+al3 roughly started in 2014, when http://stammalexanderlion.de/ was in need of a new website. I started editing a few previous theme files, before I realized that a total relaunch might be the better option. So I reworked the shit out of the website and wrote al3.
 
-License: WTFPL
-License URI: http://sam.zoy.org/wtfpl/
-Are You Serious? Yes.
-
-#### Special Thanks to:
-Paul Irish & the HTML5 Boilerplate
-Yoast for some WP functions & optimization ideas
-Andrew Rogers for code optimization
-David Dellanave for speed & code optimization
-and several other developers. :)
-
-#### Submit Bugs & or Fixes:
-https://github.com/eddiemachado/al3/issues
-
-To view Release & Update Notes, read the log.txt file inside
-the library folder.
-
-For more news and to see why my parents constantly ask me what I'm
-doing with my life, follow me on twitter: @eddiemachado
-
-## Helpful Tools & Links
-
-Yeoman generator to quickly install al3 Wordpress starter theme into your Wordpress theme folder
-by 0dp
-https://github.com/0dp/generator-wp-al3
-
-
+## Credits  & Thanks
+* The theme al3 is actually based on Bones (https://github.com/eddiemachado/bones) by Eddie Machado. I dare you to take a look at his work. I pretty much reworked the entire theme, but deep inside, al3 still runs on *Bones*.
+* Of Course: http://wordpress.org/.
+* Big Props to http://tympanus.net/codrops/ and http://codyhouse.co/ for their countless inspirational ideas.
+* http://css-tricks.com/. You saved my ass.
