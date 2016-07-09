@@ -8,10 +8,10 @@
 
 # Files
 /.htaccess
-/prepos.cfg
 /temp.js
 .DS_Store
 
 # Wildcards
 *.BACKUP
 *.map
+*.cfg
