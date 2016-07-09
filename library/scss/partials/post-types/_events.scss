@@ -1,0 +1,75 @@
+/******************************************************************
+Module Name:    Events Post Types Styling
+Author:         Laurens Lamberty
+
+These styles tweak some custom post types or custom pages. Add some
+if you need to, but keep it small.
+
+******************************************************************/
+
+/*********************
+EVENTS
+*********************/
+
+.target-group-buttons {
+    background: $white;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+
+    h3 {
+        padding-right: 1.5em;
+        @include MQ(L) { float: left; }
+    }
+
+    p {
+        @include MQ(L) { float: right; }
+    }
+
+    .blue-btn {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+}
+
+// General Styles
+.type-events {
+
+    .entry-title {
+    }
+
+    .footer-meta {
+        float: left;
+
+        // Adding a few slashes
+        &:after {
+            content:'\002F\002F';
+            padding: 1em;
+        }
+
+        // But not after the last type
+        &:last-child {
+            &:after {
+                content: '';
+            }
+        }
+
+    }
+}
+
+// Styles for a single event
+.single-events {
+
+    .meta-wrapper {
+        margin: 1em 0;
+
+        h4 {
+            margin: 0;
+            padding: 0.225em 0.45em;
+
+            .dashicons {
+                margin-right: 5px;
+            }
+        }
+    }
+}

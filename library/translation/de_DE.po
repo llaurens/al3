@@ -1,0 +1,2608 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: al3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-25 16:34+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Laurens Lamberty <laurens@lamberty.me>\n"
+"Language-Team: Laurens Lamberty <laurens@lamberty.me>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;esc_attr_x\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:13
+msgid "Epic 404 - Article Not Found"
+msgstr "Ein wildes 404 - Der Artikel wurde nicht gefunden"
+
+#: 404.php:19
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr ""
+"Verrückt. Dein gesuchter Artikel, deine verlinkte Seite oder was auch immer "
+"wurde nicht gefunden. Vielleicht willst du einfach mal danach suchen?"
+
+#: 404.php:27 footer.php:39 search.php:15
+msgid "Search …"
+msgstr "Suchen …"
+
+#: 404.php:27 footer.php:39 search.php:15
+msgid "Search for:"
+msgstr "Suchen nach:"
+
+#: 404.php:37 partials/404-page.php:12
+#, php-format
+msgid ""
+"If you want us to fix this error, simply write a short message to <a href="
+"\"mailto:%s\" title=\"Write us!\">%s</a>!"
+msgstr ""
+"Wenn du willst, dass wir diesen Fehler beheben, dann reicht eine kurze "
+"Nachricht an <a href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>. Danke!"
+
+#: archive-events.php:19 page-events.php:62 taxonomy-event_target_group.php:28
+msgid "Show only events for:"
+msgstr "Zeige nur Aktionen für:"
+
+#: archive-events.php:22 page-events.php:65 taxonomy-event_target_group.php:23
+#, php-format
+msgid "Show all events for %s"
+msgstr "Zeige nur Aktionen für %s."
+
+#: archive-groups.php:61 page-groups.php:103 partials/home-groups.php:61
+#: partials/home-schedule.php:59 partials/schedule-groups.php:14
+#, php-format
+msgid "For %s."
+msgstr "Für %s"
+
+#: archive-management.php:39
+msgid "Head of Management"
+msgstr "Stammesführung"
+
+#: archive-management.php:82
+#: library/admin/management/al3-management-core.php:33
+#: library/admin/management/al3-management-metaboxes.php:18
+#: page-management.php:9
+msgid "Management"
+msgstr "Stammesrat"
+
+#: archive.php:11
+msgid "Articles from the category"
+msgstr "Artikel aus der Kategorie"
+
+#: archive.php:17
+msgid "Posts Tagged:"
+msgstr "Einträge mit dem Schlagwort:"
+
+#: archive.php:26
+msgid "Posts By:"
+msgstr "Beiträge von"
+
+#: archive.php:31
+msgid "Daily Archives:"
+msgstr "Tages-Archiv:"
+
+#: archive.php:36
+msgid "Monthly Archives:"
+msgstr "Monats-Archiv:"
+
+#: archive.php:41
+msgid "Yearly Archives:"
+msgstr "Jahres-Archiv:"
+
+#: archive.php:46 taxonomy-event_target_group.php:10
+msgid "Events for"
+msgstr "Aktionen für"
+
+#: archive.php:51
+msgid "Articles by"
+msgstr "Artikel von"
+
+#: archive.php:73
+msgid "Oops, No Post Found!"
+msgstr "Holla, kein Artikel gefunden!"
+
+#: archive.php:76
+msgid "Wow. We did not find a single post matching your criteria. Jackpot!"
+msgstr "Wow. Nicht ein einziger Artikel passt zu deinen Kriterien. Jackpot!"
+
+#: archive.php:79
+msgid ""
+"In case you wonder about this problem, simply drop us a note via "
+"redaktion@al3.de. This would be surely helpful. Thanks in advance!"
+msgstr ""
+"Falls du dich hierüber außergewöhnlich wundern solltest, dann schreib uns "
+"doch einfach eine E-Mail: <a href=\"mailto:redaktion@al3.de\" title="
+"\"Schreib uns!\">redaktion@al3.de</a>. Das wäre eine große Hilfe. Besten "
+"Dank im Voraus!"
+
+#: comments.php:17 partials/archive-article.php:28
+#: partials/archive-gallery.php:47 partials/single-article.php:87
+msgid "<span>No</span> Comments"
+msgstr "<span>Keine</span> Kommentare"
+
+#: comments.php:17 partials/archive-article.php:28
+#: partials/archive-gallery.php:47 partials/single-article.php:87
+msgid "<span>One</span> Comment"
+msgstr "<span>Ein</span> Kommentar"
+
+#: comments.php:17 partials/archive-article.php:28
+#: partials/archive-gallery.php:47 partials/single-article.php:87
+msgid "<span>%</span> Comments"
+msgstr "<span>%</span> Kommentare"
+
+#: comments.php:27
+msgid "Reply"
+msgstr "Antworten"
+
+#: comments.php:38
+msgid "&larr; Previous Comments"
+msgstr "&larr; Vorige Kommentare"
+
+#: comments.php:39
+msgid "More Comments &rarr;"
+msgstr "Weitere Kommentare &rarr;"
+
+#: comments.php:44
+msgid "Comments are closed."
+msgstr "Kommentare sind nicht möglich."
+
+#: comments.php:52
+msgid "Talk with us!"
+msgstr "Mitreden!"
+
+#: comments.php:53
+#, php-format
+msgid "What is your opinion to %s?"
+msgstr "Was sagst du zu %s?"
+
+#: comments.php:54
+msgid "Cancel Reply"
+msgstr "Nicht mehr auf den Kommentar antworten"
+
+#: comments.php:55
+msgid "Post Comment"
+msgstr "Kommentar absenden"
+
+#: comments.php:57
+msgid "I love this article, because..."
+msgstr "Der Artikel ist großartig, weil..."
+
+#: comments.php:59
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+"Du musst <a href=\"%s\">angemeldet</a>  sein, um ein Kommentar zu schreiben."
+
+#: comments.php:61
+#, php-format
+msgid ""
+"You are logged in as the faboulous <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s"
+"\" title=\"Log out of this account\">You are not %2$s or you want to leave "
+"us?</a>"
+msgstr ""
+"Auf dieser Website kennt man dich unter dem Namen <a href=\"%1$s\">%2$s</a>. "
+"<a href=\"%3$s\" title=\"Ausloggen?t\">Du bist gar nicht %2$s oder du willst "
+"schon gehen?</a>"
+
+#: comments.php:63
+msgid ""
+"Yay! You have decided to leave a comment. That is fantastic! Please keep in "
+"mind that comments are moderated and our website is not a place to insult "
+"people. So, please do not use a spammy keyword or a domain as your name, do "
+"not mess around, or else it will be deleted. Let us have a personal and "
+"meaningful conversation instead. Thanks for dropping by!"
+msgstr ""
+"Stark! Du willst einen Kommentar schreiben! Bitte denk dran, dass wir "
+"Kommentare moderieren und unsere Website kein Ort ist, um irgendwelche Leute "
+"öffentlich zu beleidigen. Auch Spam filtern wir direkt raus. Also, lass "
+"witzige Tablettennamen und URLs aus deinem Benutzernamen und respektiere die "
+"anderen Kommentatoren und trage stattdessen zu einer tiefsinnigen Diskussion "
+"bei. Besten Dank für's Vorbeischauen!"
+
+#: comments.php:69
+msgid "What is your name?"
+msgstr "Wie heißt du eigentlich?"
+
+#: comments.php:71
+msgid "How is your mail?"
+msgstr "Wie ist deine E-Mail-Adresse?"
+
+#: footer.php:7 library/al3.php:255
+msgid "Lateral Menu"
+msgstr "Seitliches Menü"
+
+#: footer.php:50 library/al3.php:256
+msgid "Footer Links"
+msgstr "Footer-Links"
+
+#: functions.php:108
+msgid "Large Item (600px)"
+msgstr "Großes Bild (600px)"
+
+#: functions.php:109
+msgid "Mobile Phone"
+msgstr "Handy"
+
+#: functions.php:110
+msgid "Small Devices"
+msgstr "Kleingeräte"
+
+#: functions.php:111
+msgid "Tablets"
+msgstr "Tablets"
+
+#: functions.php:112
+msgid "Desktops"
+msgstr "Desktops"
+
+#: functions.php:113
+msgid "Retina Displays"
+msgstr "Retina-Displays"
+
+#: functions.php:206
+msgid "Photos:"
+msgstr "Fotos:"
+
+#: functions.php:295
+#, php-format
+msgid "<cite class=\"fn\">%1$s</cite> %2$s"
+msgstr "<cite class=\"fn\">%1$s</cite> %2$s"
+
+#: functions.php:295
+msgid "(Edit)"
+msgstr "(Bearbeiten)"
+
+#: functions.php:296
+msgid "F jS, Y"
+msgstr "j. F Y"
+
+#: functions.php:301
+msgid "Your comment is awaiting moderation."
+msgstr "Ihr Kommentar wird noch moderiert."
+
+#: header.php:116
+msgid "The Main Menu"
+msgstr "Das Hauptmenü"
+
+#: header.php:130
+msgid "Menu"
+msgstr "Menü"
+
+#: library/admin.php:119
+msgid "http://www.dpbm.de/feed/"
+msgstr "http://www.dpbm.de/feed/"
+
+#: library/admin.php:128
+msgid "The RSS Feed is either empty or unavailable."
+msgstr "Der Feed ist entweder leer oder unerreichbar."
+
+#: library/admin.php:132
+msgid "j F Y @ g:i a"
+msgstr "j. F Y @ G:i"
+
+#: library/admin.php:141
+msgid "Recently on DPBM"
+msgstr "Zuletzt auf DPBM.de"
+
+#: library/admin.php:188
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://lamberty.me\" "
+"target=\"_blank\">Laurens Lamberty</a></span>. Built using <a href=\"http://"
+"themble.com/bones\" target=\"_blank\">Bones</a>."
+msgstr ""
+"<span id=\"footer-thankyou\">Entwickelt von <a href=\"http://lamberty.me\" "
+"target=\"_blank\">Laurens Lamberty</a></span> mit <a href=\"http://themble."
+"com/bones\" target=\"_blank\">Bones</a>."
+
+#: library/admin.php:207
+msgid "Links Settings"
+msgstr "Link-Einstellungen"
+
+#: library/admin.php:215
+msgid "Link to Blog Page"
+msgstr "Link zur Blog-Seite"
+
+#: library/admin.php:225
+msgid "Link to Event Page"
+msgstr "Link zu den nächsten Aktionen"
+
+#: library/admin.php:235
+msgid "Link to Groups Page"
+msgstr "Link zur Gruppen-Seite"
+
+#: library/admin.php:245
+msgid "Link to Schedule Page"
+msgstr "Link zum Wochenplan"
+
+#: library/admin.php:255
+msgid "Link to Gallery Page"
+msgstr "Link zur Galerie-Seite"
+
+#: library/admin/events/al3-events-core.php:33
+#: library/admin/events/al3-events-core.php:35
+#: library/admin/events/al3-events-core.php:36 page-events.php:9
+msgid "Events"
+msgstr "Termine"
+
+#: library/admin/events/al3-events-core.php:34
+#: library/admin/events/al3-events-core.php:66
+#: library/admin/events/al3-events-core.php:208
+msgid "Event"
+msgstr "Termin"
+
+#: library/admin/events/al3-events-core.php:37
+msgid "Events Archiv"
+msgstr "Archiv für Termine"
+
+#: library/admin/events/al3-events-core.php:38
+msgid "Parent Event:"
+msgstr "Übergeordneter Termin:"
+
+#: library/admin/events/al3-events-core.php:39
+msgid "All Events"
+msgstr "Alle Termine"
+
+#: library/admin/events/al3-events-core.php:40
+msgid "Add New Event"
+msgstr "Termin hinzufügen"
+
+#: library/admin/events/al3-events-core.php:41
+#: library/admin/groups/al3-groups-core.php:36
+#: library/admin/management/al3-management-core.php:36
+msgid "Add New"
+msgstr "Hinzufügen"
+
+#: library/admin/events/al3-events-core.php:42
+msgid "New Event"
+msgstr "Neuer Termin"
+
+#: library/admin/events/al3-events-core.php:43
+msgid "Edit Event"
+msgstr "Termin bearbeiten"
+
+#: library/admin/events/al3-events-core.php:44
+msgid "Update Event"
+msgstr "Termin aktualisieren"
+
+#: library/admin/events/al3-events-core.php:45
+msgid "View Event"
+msgstr "Termin anschauen"
+
+#: library/admin/events/al3-events-core.php:46
+msgid "Search Event"
+msgstr "Termine durchsuchen"
+
+#: library/admin/events/al3-events-core.php:47
+msgid "Not found"
+msgstr "Nichts gefunden"
+
+#: library/admin/events/al3-events-core.php:48
+msgid "Not found in Trash"
+msgstr "Nichts im Papierkorb gefunden"
+
+#: library/admin/events/al3-events-core.php:49
+msgid "Featured Image"
+msgstr "Beitragsbild"
+
+#: library/admin/events/al3-events-core.php:50
+msgid "Set featured image"
+msgstr "Beitragsbild festlegen"
+
+#: library/admin/events/al3-events-core.php:51
+msgid "Remove featured image"
+msgstr "Beitragsbild entfernen"
+
+#: library/admin/events/al3-events-core.php:52
+msgid "Use as featured image"
+msgstr "Als Beitragsbild verwenden"
+
+#: library/admin/events/al3-events-core.php:53
+msgid "Insert into item"
+msgstr "Zum Artikel hinzufügen"
+
+#: library/admin/events/al3-events-core.php:54
+msgid "Uploaded to this item"
+msgstr "Hochgeladen zu diesem Eintrag"
+
+#: library/admin/events/al3-events-core.php:55
+msgid "Events list"
+msgstr "Terminliste"
+
+#: library/admin/events/al3-events-core.php:56
+msgid "Events list navigation"
+msgstr "Terminlistennavigation"
+
+#: library/admin/events/al3-events-core.php:57
+msgid "Filter Event list"
+msgstr "Terminliste filtern"
+
+#: library/admin/events/al3-events-core.php:60
+#: library/admin/events/al3-events-core.php:80
+msgid "events"
+msgstr "termine"
+
+#: library/admin/events/al3-events-core.php:67
+msgid "This is were you can add or edit events."
+msgstr "Hier kannst du Termine und/oder Aktionen hinzufügen und bearbeiten."
+
+#: library/admin/events/al3-events-core.php:105
+#: library/admin/events/al3-events-core.php:107
+msgid "Event Target Groups"
+msgstr "Zielgruppen"
+
+#: library/admin/events/al3-events-core.php:106
+msgid "Event Target Group"
+msgstr "Zielgruppe"
+
+#: library/admin/events/al3-events-core.php:108
+msgid "All Event Target Groups"
+msgstr "Alle Zielgruppen"
+
+#: library/admin/events/al3-events-core.php:109
+msgid "Parent Event Target Group"
+msgstr "Übergeordnete Zielgruppe"
+
+#: library/admin/events/al3-events-core.php:110
+msgid "Parent Event Target Group:"
+msgstr "Übergeordnete Zielgruppe:"
+
+#: library/admin/events/al3-events-core.php:111
+msgid "New Event Target Group"
+msgstr "Neue Zielgruppe"
+
+#: library/admin/events/al3-events-core.php:112
+msgid "Add Event Target Group"
+msgstr "Zielgruppe hinzufügen"
+
+#: library/admin/events/al3-events-core.php:113
+msgid "Edit Event Target Group"
+msgstr "Zielgruppe bearbeiten"
+
+#: library/admin/events/al3-events-core.php:114
+msgid "Update Event Target Group"
+msgstr "Zielgruppe aktualisieren"
+
+#: library/admin/events/al3-events-core.php:115
+msgid "View Event Target Group"
+msgstr "Zielgruppe anschauen"
+
+#: library/admin/events/al3-events-core.php:116
+msgid "Separate Target Groups with commas"
+msgstr "Verschiedene Zielgruppen durch Kommata separieren"
+
+#: library/admin/events/al3-events-core.php:117
+msgid "Add or remove Target Groups"
+msgstr "Zielgruppen entfernen oder hinzufügen"
+
+#: library/admin/events/al3-events-core.php:118
+msgid "Choose from the most used Target Groups"
+msgstr "Wähle aus den häufigsten Zielgruppen"
+
+#: library/admin/events/al3-events-core.php:119
+msgid "Popular Target Groups"
+msgstr "Beliebte Zielgruppen"
+
+#: library/admin/events/al3-events-core.php:120
+msgid "Search Event Target Groups"
+msgstr "Zielgruppen durchsuchen"
+
+#: library/admin/events/al3-events-core.php:121
+#: library/admin/events/al3-events-core.php:164
+msgid "Not Found"
+msgstr "Nichts gefunden"
+
+#: library/admin/events/al3-events-core.php:122
+msgid "No Event Target Groups"
+msgstr "Keine Zielgruppen"
+
+#: library/admin/events/al3-events-core.php:123
+msgid "Event Target Groups list"
+msgstr "Liste von Zielgruppen"
+
+#: library/admin/events/al3-events-core.php:124
+msgid "Event Target Groups list navigation"
+msgstr "Navigationsliste von Zielgruppen"
+
+#: library/admin/events/al3-events-core.php:127
+msgid "event_target_group"
+msgstr "zielgruppen"
+
+#: library/admin/events/al3-events-core.php:148
+#: library/admin/events/al3-events-core.php:149
+#: library/admin/events/al3-events-core.php:150
+msgid "Event Organizer"
+msgstr "Ausrichter"
+
+#: library/admin/events/al3-events-core.php:151
+msgid "All Event Organizer"
+msgstr "Alle Ausrichter"
+
+#: library/admin/events/al3-events-core.php:152
+msgid "Parent Event Organizer"
+msgstr "Übergeordneter Ausrichter"
+
+#: library/admin/events/al3-events-core.php:153
+msgid "Parent Event Organizer:"
+msgstr "Übergeordneter Ausrichter:"
+
+#: library/admin/events/al3-events-core.php:154
+msgid "New Event Organizer"
+msgstr "Neuer Ausrichter"
+
+#: library/admin/events/al3-events-core.php:155
+msgid "Add Event Organizer"
+msgstr "Ausrichter hinzufügen"
+
+#: library/admin/events/al3-events-core.php:156
+msgid "Edit Event Organizer"
+msgstr "Ausrichter bearbeiten"
+
+#: library/admin/events/al3-events-core.php:157
+msgid "Update Event Organizer"
+msgstr "Ausrichter aktualisieren"
+
+#: library/admin/events/al3-events-core.php:158
+msgid "View Event Organizer"
+msgstr "Ausrichter anschauen"
+
+#: library/admin/events/al3-events-core.php:159
+msgid "Separate Event Organizer with commas"
+msgstr "Verschiedene Ausrichter mit Kommata separieren"
+
+#: library/admin/events/al3-events-core.php:160
+msgid "Add or remove Event Organizer"
+msgstr "Ausrichter hinzufügen oder entfernen"
+
+#: library/admin/events/al3-events-core.php:161
+msgid "Choose from the most used Event Organizer"
+msgstr "Wähle aus den häufigsten Ausrichtern"
+
+#: library/admin/events/al3-events-core.php:162
+msgid "Popular Event Organizer"
+msgstr "Häufigste Ausrichter"
+
+#: library/admin/events/al3-events-core.php:163
+msgid "Search Event Organizer"
+msgstr "Ausrichter durchsuchen"
+
+#: library/admin/events/al3-events-core.php:165
+msgid "No Event Organizer"
+msgstr "Keine Ausrichter"
+
+#: library/admin/events/al3-events-core.php:166
+msgid "Event Organizer list"
+msgstr "Liste an Ausrichtern"
+
+#: library/admin/events/al3-events-core.php:167
+msgid "Event Organizer list navigation"
+msgstr "Navigationsliste an Ausrichtern"
+
+#: library/admin/events/al3-events-core.php:170
+msgid "event_organizer"
+msgstr "ausrichter"
+
+#: library/admin/events/al3-events-core.php:209
+msgid "Date"
+msgstr "Datum"
+
+#: library/admin/events/al3-events-core.php:210
+msgid "Target Group"
+msgstr "Zielgruppe"
+
+#: library/admin/events/al3-events-core.php:211
+msgid "Organizer"
+msgstr "Ausrichter"
+
+#: library/admin/events/al3-events-core.php:212
+#: library/admin/events/al3-events-metaboxes.php:49
+msgid "Location"
+msgstr "Ort"
+
+#: library/admin/events/al3-events-core.php:213
+msgid "Costs in Euro"
+msgstr "Kosten in Euro"
+
+#: library/admin/events/al3-events-core.php:231
+#: partials/chronicle-events.php:22 partials/chronicle-gallery.php:40
+#: partials/home-gallery.php:88
+#, php-format
+msgid "On %s"
+msgstr "Am %s"
+
+#: library/admin/events/al3-events-core.php:237
+#: partials/chronicle-events.php:28 partials/chronicle-gallery.php:46
+#: partials/home-gallery.php:94
+#, php-format
+msgid "From %1$s to %2$s"
+msgstr "Vom %1$s bis zum %2$s"
+
+#: library/admin/events/al3-events-core.php:244
+msgid "No date specified."
+msgstr "Kein Datum angegeben."
+
+#: library/admin/events/al3-events-core.php:266
+msgid "No Target Group specified."
+msgstr "Keine Zielgruppe angegeben."
+
+#: library/admin/events/al3-events-core.php:288
+msgid "No Organizer specified."
+msgstr "Kein Ausrichter angegeben."
+
+#: library/admin/events/al3-events-core.php:296
+#: library/admin/events/al3-events-core.php:310
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: library/admin/events/al3-events-core.php:302
+#: library/admin/events/al3-events-core.php:316
+msgid "No location specified."
+msgstr "Kein Veranstaltungsort angegeben."
+
+#: library/admin/events/al3-events-metaboxes.php:18
+msgid "Information on the event"
+msgstr "Informationen zu dem Termin"
+
+#: library/admin/events/al3-events-metaboxes.php:22
+#: library/admin/groups/al3-groups-metaboxes.php:25
+msgid "Basic"
+msgstr "Basis"
+
+#: library/admin/events/al3-events-metaboxes.php:28
+msgid "Start Date"
+msgstr "Beginn"
+
+#: library/admin/events/al3-events-metaboxes.php:31
+msgid "When does the event start?"
+msgstr "Wann fängt der Termin an?"
+
+#: library/admin/events/al3-events-metaboxes.php:34
+#: library/admin/events/al3-events-metaboxes.php:44
+#: library/admin/management/al3-management-metaboxes.php:64
+msgid "d. MM yy"
+msgstr "d. MM yy"
+
+#: library/admin/events/al3-events-metaboxes.php:39
+msgid "End Date"
+msgstr "Ende"
+
+#: library/admin/events/al3-events-metaboxes.php:42
+msgid "How long will the event take?"
+msgstr "Wann endet der Termin?"
+
+#: library/admin/events/al3-events-metaboxes.php:52
+msgid "Where does the event takes place?"
+msgstr "Wo findet die Aktion statt?"
+
+#: library/admin/events/al3-events-metaboxes.php:54
+msgid "Hoffeld"
+msgstr "Hoffeld, Eifel"
+
+#: library/admin/events/al3-events-metaboxes.php:62
+msgid "Details"
+msgstr "Details"
+
+#: library/admin/events/al3-events-metaboxes.php:68
+msgid "Costs"
+msgstr "Kosten"
+
+#: library/admin/events/al3-events-metaboxes.php:74
+msgid "&euro;"
+msgstr "&euro;"
+
+#: library/admin/events/al3-events-metaboxes.php:81
+msgid "Registration"
+msgstr "Anmeldung"
+
+#: library/admin/events/al3-events-metaboxes.php:93
+#: library/admin/groups/al3-groups-metaboxes.php:63
+msgid "Leader"
+msgstr "Leiter"
+
+#: library/admin/events/al3-events-metaboxes.php:105
+msgid "URL"
+msgstr "Website"
+
+#: library/admin/events/al3-events-metaboxes.php:108
+msgid "URL for further Information"
+msgstr "URL für weitere Informationen"
+
+#: library/admin/events/al3-events-metaboxes.php:110
+msgid "http://www.dpbm.de/"
+msgstr "http://www.dpbm.de/"
+
+#: library/admin/events/al3-events-metaboxes.php:118
+#: library/admin/events/al3-events-metaboxes.php:124
+#: partials/chronicle-events.php:37
+msgid "Pictures"
+msgstr "Fotos"
+
+#: library/admin/events/al3-events-metaboxes.php:127
+msgid ""
+"If you have got any images of this event, simply drop them here and they "
+"will appear in the chronicle"
+msgstr ""
+"Wenn du Bilder von der Aktion hast, dann kannst du diese einfach hier "
+"abladen. Sie tauchen dann in der Chronik auf."
+
+#: library/admin/groups/al3-groups-core.php:33
+#: library/admin/groups/al3-groups-core.php:82
+#: library/admin/groups/al3-groups-metaboxes.php:20 page-groups.php:9
+msgid "Groups"
+msgstr "Gruppen"
+
+#: library/admin/groups/al3-groups-core.php:34
+msgid "Group"
+msgstr "Gruppe"
+
+#: library/admin/groups/al3-groups-core.php:35
+msgid "All Groups"
+msgstr "Alle Gruppen"
+
+#: library/admin/groups/al3-groups-core.php:37
+msgid "Add New Group"
+msgstr "Neue Gruppen hinzufügen"
+
+#: library/admin/groups/al3-groups-core.php:38
+#: library/admin/management/al3-management-core.php:38
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: library/admin/groups/al3-groups-core.php:39
+msgid "View Group"
+msgstr "Gruppe anschauen"
+
+#: library/admin/groups/al3-groups-core.php:40
+msgid "Search Groups"
+msgstr "Gruppen suchen"
+
+#: library/admin/groups/al3-groups-core.php:41
+#: library/admin/management/al3-management-core.php:41
+msgid "Nothing found in the Database."
+msgstr "In der Datenbank wurde nichts gefunden."
+
+#: library/admin/groups/al3-groups-core.php:42
+#: library/admin/management/al3-management-core.php:42
+msgid "Nothing found in Trash"
+msgstr "Im Papierkorb wurde nichts gefunden."
+
+#: library/admin/groups/al3-groups-core.php:45
+msgid "Here you can edit or change groups."
+msgstr "Hier kannst du Gruppen bearbeiten oder verändern."
+
+#: library/admin/groups/al3-groups-core.php:53
+#: library/admin/groups/al3-groups-core.php:54
+msgid "groups"
+msgstr "gruppen"
+
+#: library/admin/groups/al3-groups-core.php:83
+msgid "Ages"
+msgstr "Altersstufen"
+
+#: library/admin/groups/al3-groups-core.php:84
+msgid "Group Members"
+msgstr "Gruppenmitglieder"
+
+#: library/admin/groups/al3-groups-core.php:85
+msgid "Day to meet"
+msgstr "Tag der Gruppenstunde"
+
+#: library/admin/groups/al3-groups-core.php:86
+msgid "Group Leader"
+msgstr "Gruppenführer"
+
+#: library/admin/groups/al3-groups-core.php:111
+msgid "No Information about members specified"
+msgstr "Keine Informationen über Mitglieder angegeben"
+
+#: library/admin/groups/al3-groups-core.php:125
+msgid "No Group Leader"
+msgstr "Kein Gruppenführer"
+
+#: library/admin/groups/al3-groups-metaboxes.php:31
+msgid "Age"
+msgstr "Altersstufe"
+
+#: library/admin/groups/al3-groups-metaboxes.php:34
+msgid "Which is the age of the group?"
+msgstr "Was für eine Altersstufe hat die Gruppe?"
+
+#: library/admin/groups/al3-groups-metaboxes.php:36
+msgid "Cubs"
+msgstr "Wölflinge"
+
+#: library/admin/groups/al3-groups-metaboxes.php:37
+msgid "Scouts"
+msgstr "Sipplinge"
+
+#: library/admin/groups/al3-groups-metaboxes.php:38
+msgid "Rover"
+msgstr "Rover"
+
+#: library/admin/groups/al3-groups-metaboxes.php:47
+msgid "Members"
+msgstr "Mitglieder"
+
+#: library/admin/groups/al3-groups-metaboxes.php:50
+msgid "Who can join the group?"
+msgstr "Wer kann der Gruppe beitreten"
+
+#: library/admin/groups/al3-groups-metaboxes.php:53
+msgid "Boys and girls from 8 to 10 years"
+msgstr "Alle von acht bis zehn Jahren"
+
+#: library/admin/groups/al3-groups-metaboxes.php:66
+msgid "Who is the leader of this group?"
+msgstr "Wer ist der Gruppenführer dieser Gruppe?"
+
+#: library/admin/groups/al3-groups-metaboxes.php:69
+#: library/admin/management/al3-management-metaboxes.php:28
+msgid "James"
+msgstr "Jean-Jaques"
+
+#: library/admin/groups/al3-groups-metaboxes.php:78
+#: library/admin/management/al3-management-core.php:86
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: library/admin/groups/al3-groups-metaboxes.php:81
+msgid "What is the e-mail of this group?"
+msgstr "Wie lautet die E-Mail-Adresse der Gruppe?"
+
+#: library/admin/groups/al3-groups-metaboxes.php:83
+msgid "meute@stammalexanderlion.de"
+msgstr "meute@stammalexanderlion.de"
+
+#: library/admin/groups/al3-groups-metaboxes.php:89 page-schedule.php:9
+#: partials/home-schedule.php:8 partials/home-schedule.php:9
+msgid "Schedule"
+msgstr "Wochenplan"
+
+#: library/admin/groups/al3-groups-metaboxes.php:95
+msgid "Day"
+msgstr "Tag der Gruppenstunde"
+
+#: library/admin/groups/al3-groups-metaboxes.php:98
+msgid "On which day of the week does this group meet?"
+msgstr "An welchem Tag trifft sich diese Gruppe?"
+
+#: library/admin/groups/al3-groups-metaboxes.php:100
+msgid "Monday"
+msgstr "Montag"
+
+#: library/admin/groups/al3-groups-metaboxes.php:101
+msgid "Tuesday"
+msgstr "Dienstag"
+
+#: library/admin/groups/al3-groups-metaboxes.php:102
+msgid "Wednesday"
+msgstr "Mittwoch"
+
+#: library/admin/groups/al3-groups-metaboxes.php:103
+msgid "Thursday"
+msgstr "Donnerstag"
+
+#: library/admin/groups/al3-groups-metaboxes.php:104
+msgid "Friday"
+msgstr "Freitag"
+
+#: library/admin/groups/al3-groups-metaboxes.php:105
+msgid "Saturday"
+msgstr "Samstag"
+
+#: library/admin/groups/al3-groups-metaboxes.php:106
+msgid "Sunday"
+msgstr "Sonntag"
+
+#: library/admin/groups/al3-groups-metaboxes.php:115
+msgid "Time"
+msgstr "Uhrzeit"
+
+#: library/admin/groups/al3-groups-metaboxes.php:118
+msgid "When does this group meet?"
+msgstr "Wann trifft sich diese Gruppe?"
+
+#: library/admin/groups/al3-groups-metaboxes.php:120
+msgid "From 2 p.m. to 4 p.m."
+msgstr "17:30 bis 19:30"
+
+#: library/admin/groups/al3-groups-metaboxes.php:121
+msgid "Starting at"
+msgstr "Von"
+
+#: library/admin/groups/al3-groups-metaboxes.php:122
+msgid "clock"
+msgstr "Uhr"
+
+#: library/admin/groups/al3-groups-metaboxes.php:160
+msgid "Not specified"
+msgstr "Nicht festgelegt"
+
+#: library/admin/management/al3-management-core.php:34
+msgid "Manager"
+msgstr "Mitglied"
+
+#: library/admin/management/al3-management-core.php:35
+msgid "All Managers"
+msgstr "Alle Mitglieder"
+
+#: library/admin/management/al3-management-core.php:37
+msgid "Add New Manager"
+msgstr "Mitglied hinzufügen"
+
+#: library/admin/management/al3-management-core.php:39
+msgid "View Manager"
+msgstr "Mitglied anschauen"
+
+#: library/admin/management/al3-management-core.php:40
+msgid "Search Management"
+msgstr "Mitglieder durchsuchen"
+
+#: library/admin/management/al3-management-core.php:45
+msgid "Here you can edit or change the management."
+msgstr "Hier kannst du Änderungen am Stammesrat vornehmen."
+
+#: library/admin/management/al3-management-core.php:53
+#: library/admin/management/al3-management-core.php:54
+msgid "management"
+msgstr "stammesrat"
+
+#: library/admin/management/al3-management-core.php:82
+msgid "Thumbnail"
+msgstr "Vorschaubild"
+
+#: library/admin/management/al3-management-core.php:83
+msgid "Member"
+msgstr "Mitglied"
+
+#: library/admin/management/al3-management-core.php:84
+#: library/admin/management/al3-management-metaboxes.php:23
+msgid "Official Name"
+msgstr "Offizieller Name"
+
+#: library/admin/management/al3-management-core.php:85
+msgid "Member of the head"
+msgstr "Mitglied der Stammesführung"
+
+#: library/admin/management/al3-management-core.php:87
+#: library/admin/management/al3-management-metaboxes.php:59
+msgid "Birthday"
+msgstr "Geburtstag"
+
+#: library/admin/management/al3-management-core.php:108
+msgid "No official name specified"
+msgstr "Kein offizieller Name angegeben"
+
+#: library/admin/management/al3-management-core.php:113
+msgid "Yes"
+msgstr "Ja"
+
+#: library/admin/management/al3-management-core.php:115
+msgid "No"
+msgstr "Keine"
+
+#: library/admin/management/al3-management-core.php:123
+msgid "No e-mail specified"
+msgstr "Keine E-Mail angegeben"
+
+#: library/admin/management/al3-management-core.php:130
+msgid "No age specified"
+msgstr "Keine Altersstufe angegeben"
+
+#: library/admin/management/al3-management-metaboxes.php:26
+msgid "What is the civil Name of this Person?"
+msgstr "Der offizielle Name der Person"
+
+#: library/admin/management/al3-management-metaboxes.php:37
+msgid "Head"
+msgstr "Stammesführung"
+
+#: library/admin/management/al3-management-metaboxes.php:40
+msgid "Is this person part of the head of administration?"
+msgstr "Ist die Person Mitglied der Stammesführung?"
+
+#: library/admin/management/al3-management-metaboxes.php:50
+msgid "What E-Mail has this manager?"
+msgstr "Welche E-Mail hat dieses Mitglied?"
+
+#: library/admin/management/al3-management-metaboxes.php:62
+msgid "When is this member of the management born?"
+msgstr "Wann ist dieses Mitglied des Stammesrats geboren?"
+
+#: library/admin/management/al3-management-metaboxes.php:70
+msgid "Link to User Profile"
+msgstr "Mit Benutzerprofil verlinken"
+
+#: library/admin/management/al3-management-metaboxes.php:73
+msgid ""
+"You can link this member to a user profile of this page, if you would like to"
+msgstr ""
+"Du kannst dieses Mitglied mit einem Benutzerprofil verlinken, wenn du magst. "
+"Dann erscheint ein Link zu den Beiträgen der jeweiligen Person auf der "
+"Website."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr "Benötigte Plugins installieren"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr "Plugins installieren"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installiert %s"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr "Die Plugin-API hat einen Fehler verursacht."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr "Zurück zur Installation benötigter Plugins"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr "Zurück zum Dashbord"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:399
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3034
+msgid "Plugin activated successfully."
+msgstr "Plugin erfolgreich aktiviert."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:400
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2837
+msgid "The following plugin was activated successfully:"
+msgstr "Das folgende Plugin wurde erfolgreich aktiviert:"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Keine Aktion durchgeführt. Plugin %1$s war bereits aktiv."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Plugin nicht aktiviert! Es wird eine neuere Version von %s für dieses Theme "
+"benötigt - bitte aktualisieren!"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Alle Plugins wurden erfolgreich installiert und aktiviert: %1$s"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr "Verbergen (Mach’s nicht!)"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr "Bitte wenden Sie sich an den Administrator dieser Seite."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2172
+msgid "Required"
+msgstr "Benötigt"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2175
+msgid "Recommended"
+msgstr "Empfohlen"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2191
+msgid "WordPress Repository"
+msgstr "WordPress-Verzeichnis"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2194
+msgid "External Source"
+msgstr "Externe Ressource"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2197
+msgid "Pre-Packaged"
+msgstr "Vorgepackt"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2214
+msgid "Not Installed"
+msgstr "Nicht Installiert"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2218
+msgid "Installed But Not Activated"
+msgstr "Installiert, aber nicht aktiviert"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2220
+msgid "Active"
+msgstr "Aktiv"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2226
+msgid "Required Update not Available"
+msgstr "Erforderliche Aktualisierung ist nicht verfügbar"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2229
+msgid "Requires Update"
+msgstr "Erfordert Aktualisierung"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2232
+msgid "Update recommended"
+msgstr "Aktualisierung empfohlen"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2288
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr "Zu installieren <span class=„count“>(%s)</span>"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2291
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr "Verfügbare Aktualisierung <span class=\\“\\“count\\“\\“>(% s)</span>"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2294
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr "Zu aktivieren <span class=„count“>(%s)</span>"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2384
+msgid "Installed version:"
+msgstr "Installierte Version:"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2392
+msgid "Minimum required version:"
+msgstr "Mindestens benötigte Version:"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2404
+msgid "Available version:"
+msgstr "Verfügbare Version:"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2427
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+"Kein Plugin zu installieren oder zu aktivieren. <a href=\"%1$s\">Zurück zur "
+"Übersichtsseite</a>"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2441
+msgid "Plugin"
+msgstr "Plugin"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2442
+msgid "Source"
+msgstr "Quelle"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2443
+msgid "Type"
+msgstr "Typ"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2447
+msgid "Version"
+msgstr ""
+"Die WXR-Datei (Version %s) könnte von dieser Version des Importeurs nicht "
+"unterstützt werden. Eine Aktualisierung könnte helfen."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2448
+msgid "Status"
+msgstr "Status"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2608
+msgid "Install"
+msgstr "Installieren"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2614
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2617
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2648
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "Keine Plugins für Installation ausgewählt. Keine Aktion durchgeführt."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2650
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+"Keine Plugins für Aktualisierung ausgewählt. Keine Aktion durchgeführt."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2686
+msgid "No plugins are available to be installed at this time."
+msgstr "Keine Plugins vorhanden, die installiert werden können."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:2688
+msgid "No plugins are available to be updated at this time."
+msgstr "Keine Plugins für Aktualisierung verfügbar."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3033
+msgid "Plugin activation failed."
+msgstr "Die Pluginaktivierung ist fehlgeschlagen."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3367
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Aktualisiere Plugin %1$s (%2$d/%3$d)"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3369
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+"Bei der Installation von %1$s ist ein Fehler aufgetreten: <strong>%2$s</"
+"strong>."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Die Installation von %1$s schlug fehl."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3374
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Der Installations- und Aktivierungsvorgang wurde gestartet. Dies kann eine "
+"Weile dauern, bitte gedulde dich ein wenig."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3375
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s erfolgreich installiert und aktiviert."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3376
+msgid "All installations and activations have been completed."
+msgstr "Alle Installationen und Aktivierungen wurden abgeschlossen."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3377
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installiere und aktiviere Plugin %1$s (%2$d/%3$d)"
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3380
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Der Installationsvorgang startet jetzt. Dies kann eine Weile dauern, bitte "
+"gedulde dich ein wenig."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3382
+msgid "All installations have been completed."
+msgstr "Alle Installationen wurden abgeschlossen."
+
+#: library/admin/plugin-management/class-tgm-plugin-activation.php:3383
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installiere Plugin %1$s (%2$d/%3$d)"
+
+#: library/al3.php:82
+#, php-format
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: library/al3.php:302
+msgid "Read "
+msgstr "Weiterlesen"
+
+#: library/al3.php:302
+msgid "Read more &raquo;"
+msgstr "Weiter &raquo;"
+
+#: library/api.php:24
+#, php-format
+msgid "The URL %1s could not be retrieved."
+msgstr "Die URL %1s konnte nicht erreicht und verarbeitet werden."
+
+#: library/api.php:49
+#, php-format
+msgid "The data inputted to %1s must be an object or an array"
+msgstr ""
+"Die Daten, die in %1s eingegeben werden, müssen entweder ein Object oder ein "
+"Array sein."
+
+#: page-autogallery.php:9
+msgid "Auto Gallery"
+msgstr "Auto Galerie"
+
+#: page-autogallery.php:49 page-blog.php:46 page-chronicle.php:46
+#: page-events.php:46 page-gallery.php:46 page-groups.php:47 page-home.php:46
+#: page-login.php:82 page-management.php:46 page-schedule.php:48 page.php:38
+#: partials/single-article.php:73 partials/single-events.php:172
+#: partials/single-gallery.php:56 partials/single-groups.php:28
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: page-blog.php:9
+msgid "Blog"
+msgstr "Blog"
+
+#: page-chronicle.php:9
+msgid "Chronicle"
+msgstr "Fahrtenchronik"
+
+#: page-gallery.php:9
+msgid "Gallery"
+msgstr "Galerie"
+
+#: page-haddak.php:9
+msgid "haddak"
+msgstr "haddak"
+
+#: page-haddak.php:56
+#, php-format
+msgid "View all posts from %s"
+msgstr "Alle Artikel von %s anschauen."
+
+#: page-haddak.php:70
+#, php-format
+msgid "%s Articles"
+msgstr "%s Artikel"
+
+#: page-haddak.php:80
+#, php-format
+msgid "Released %s"
+msgstr "Erschienen am %s"
+
+#: page-home.php:9
+msgid "Home"
+msgstr "Startseite"
+
+#: page-login.php:9
+msgid "Login"
+msgstr "Log-In"
+
+#: page.php:54
+msgid "Oops, Page Not Found!"
+msgstr "Ho, Seite nicht gefunden!"
+
+#: page.php:57 partials/404-page.php:8
+msgid "This page appears to be missing. Strange. Sure you wanted to land here?"
+msgstr ""
+"Diese Seite scheint verschwunden zu sein. Verrückt. Sicher, dass du hier "
+"landen wolltest?"
+
+#: page.php:60
+msgid ""
+"If you want to tell us about this broken page or maybe a broken link, simply "
+"send a quick message to redaktion@al3.de. Thank you!"
+msgstr ""
+"Wenn du uns über die kaputte Seite oder einen toten Link berichten willst, "
+"dann schreib uns doch einfach eine kurze E-Mail unter <a href=\"mailto:"
+"redaktion@al3.de\" title=\"Schreib uns!\">redaktion@al3.de</a>. Vielen Dank!"
+
+#: partials/404-chronicle.php:4 partials/404-events.php:4
+msgid "Oops, no event found!"
+msgstr "Hoppla, keine Aktion gefunden!"
+
+#: partials/404-chronicle.php:8
+msgid ""
+"Three Possibilites: 1. The Website is broken (not so unlikely). 2. We never "
+"ever had an event (rather unlikely). 3. We forget to add new events (most "
+"likely)."
+msgstr ""
+"Drei Möglichkeiten: <ol><li>Die Website ist mal wieder kaputt (nicht ganz "
+"unwahrscheinlich).</li><li>Es gab in der gesamten Geschichte des Stammes "
+"noch keine einzige Aktion (eher unwahrscheinlich).</li><li>Wir haben "
+"vergessen, neue Aktionen hinzuzufügen (am wahrscheinlichsten).</li></ol>"
+
+#: partials/404-chronicle.php:12
+#, php-format
+msgid ""
+"You want us to add events to this chronicle? Write us: <a href=\"mailto:%s\" "
+"title=\"Write us!\">%s</a>."
+msgstr ""
+"Wenn du willst, dass wir ein paar Aktionen in diese Chronik schreiben, dann "
+"melde dich doch einfach kurz bei uns: <a href=\"mailto:%s\" title=\"Schreib "
+"uns!\">%s</a>."
+
+#: partials/404-events.php:8
+msgid ""
+"Three Possibilites: 1. The Website is broken (not so unlikely). 2. There is "
+"no event in the near future (rather unlikely). 3. We forget to add new "
+"events (most likely)."
+msgstr ""
+"Jetzt gibt es genau drei Möglichkeiten: <ol><li>Die Website ist mal wieder "
+"kaputt (nicht ganz unwahrscheinlich)</li><li>Es gibt keine Aktionen in "
+"absehbarer Zeit (eher unwahrscheinlich)</li><li>Wir haben vergessen, neue "
+"Aktionen hinzuzufügen (am wahrscheinlichsten)</li></ol>"
+
+#: partials/404-events.php:12
+#, php-format
+msgid ""
+"You want us to add more events? Write us: <a href=\"mailto:%s\" title="
+"\"Write us!\">%s</a>."
+msgstr ""
+"Wenn du willst, dass wir wieder neue Aktionen hinzufügen, dann schreib uns "
+"einfach: <a href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>!"
+
+#: partials/404-gallery.php:4
+msgid "Oops, no gallery found!"
+msgstr "Hoppla, keine Galerie gefunden!"
+
+#: partials/404-gallery.php:8
+msgid ""
+"Strange, it appears as if there are no images in this gallery. You sure you "
+"wanted to end up here?"
+msgstr ""
+"Seltsam, hier scheint es eine Galerie ohne Bilder zu geben. Oder eine "
+"kaputte Seite, wie man's nimmt."
+
+#: partials/404-gallery.php:12
+#, php-format
+msgid ""
+"If you want us to add a few images here or to report this bug, simply write "
+"us: <a href=\"mailto:%s\" title=\"Write us!\">%s</a>."
+msgstr ""
+"Wenn du willst, dass wir diese Galerie füllen oder einfach mal meckern "
+"willst, dass die Seite mal wieder kaputt ist, dann schreib uns einfach: <a "
+"href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>!"
+
+#: partials/404-groups.php:4
+msgid "Oops, no Group found!"
+msgstr "Hoppla, keine Gruppe gefunden!"
+
+#: partials/404-groups.php:8
+msgid ""
+"Man, this is strange: We either have no groups right now or this is website "
+"is broken. Most likely the last option."
+msgstr ""
+"Obskur: Entweder ist gibt im gesamten Stamm keine Gruppen oder die Website "
+"ist mal wieder kaputt. Wahrscheinlicher ist die letzte Option."
+
+#: partials/404-groups.php:12
+#, php-format
+msgid ""
+"Since this seems to be a major error, you mind telling us about it? Simply "
+"write a short message to <a href=\"mailto:%s\" title=\"Write us!\">%s</a>!"
+msgstr ""
+"Da das ja offenbar ein größeres Problem auf der Website zu sein scheint: "
+"Hättest du was dagegen, uns darüber eine kurze Nachricht zu senden? Die "
+"Adresse wäre <a href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>. Danke!"
+
+#: partials/404-management.php:4
+msgid "Oops, no Management found!"
+msgstr "Hoppla, kein Stammesrat vorhanden!"
+
+#: partials/404-management.php:8
+msgid ""
+"Wow, this is strange: We either have no management right now or this is "
+"website is broken. Most likely the last option."
+msgstr ""
+"Moment, das kann eigentlich nicht sein: Entweder wir haben gerade keinen "
+"Stammesrat oder die Website ist mal wieder kaputt. Eher Letzteres."
+
+#: partials/404-management.php:12 partials/404-management_leader.php:12
+#: partials/404-post.php:12
+#, php-format
+msgid ""
+"Still here? OK, seriously: We do not have a clue what you are doing here nor "
+"how did you get here. But if you want to tell us, simply write a short "
+"message to <a href=\"mailto:%s\" title=\"Write us!\">%s</a>!"
+msgstr ""
+"Immer noch hier: Im Ernst, wir haben nicht die leiseste Ahnung, wie diese "
+"Seite hier auftauchen konnte. Wir können aber versuchen, das Problem zu "
+"beheben. Eine kurze Nachricht an <a href=\"mailto:%s\" title=\"Schreib uns!"
+"\">%s</a> reicht. Danke!"
+
+#: partials/404-management_leader.php:4
+msgid "Oops, no Captain found!"
+msgstr "Holla, keine Stammesführung vorhanden!"
+
+#: partials/404-management_leader.php:8
+msgid ""
+"Wow, this is strange: We either have no head of management or this is "
+"website is broken. Most likely the last option."
+msgstr ""
+"Moment, das kann eigentlich nicht sein: Entweder wir haben gerade keine "
+"Stammesführung oder die Website ist mal wieder kaputt. Eher Letzteres."
+
+#: partials/404-page.php:4
+msgid "Oops, page not found!"
+msgstr "Ho, Seite nicht gefunden!"
+
+#: partials/404-post.php:4 partials/home-blog.php:68
+#: partials/home-events.php:99 partials/home-gallery.php:114
+msgid "Oops, Post Not Found!"
+msgstr "Hey, kein Artikel gefunden!"
+
+#: partials/404-post.php:8
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr "Sicher, dass du hierhin wolltest?"
+
+#: partials/archive-article.php:8 partials/archive-gallery.php:9
+#: partials/home-blog.php:46
+msgid "Posted"
+msgstr "Veröffentlicht am"
+
+#: partials/archive-article.php:12 partials/archive-events.php:18
+#: partials/archive-gallery.php:13 partials/home-blog.php:50
+msgid "by"
+msgstr "von"
+
+#: partials/archive-article.php:49 partials/archive-gallery.php:68
+#, php-format
+msgid "Event Target Group: %1$s"
+msgstr "Zielgruppe: %1$s"
+
+#: partials/archive-article.php:53 partials/archive-events.php:39
+#: partials/archive-gallery.php:72 partials/home-events.php:72
+#: partials/single-events.php:18 partials/single-events.php:94
+#: partials/single-gallery.php:24
+msgid "On"
+msgstr "Am"
+
+#: partials/archive-article.php:60 partials/archive-events.php:47
+#: partials/archive-gallery.php:79 partials/home-events.php:79
+#: partials/single-events.php:25 partials/single-events.php:102
+msgid "From"
+msgstr "Vom"
+
+#: partials/archive-article.php:60 partials/archive-events.php:47
+#: partials/archive-gallery.php:79 partials/home-events.php:79
+#: partials/single-events.php:25 partials/single-events.php:102
+msgid "to"
+msgstr "bis zum"
+
+#: partials/archive-article.php:69 partials/archive-gallery.php:88
+#, php-format
+msgid "Location: %1$s"
+msgstr "Ort: %1$s"
+
+#: partials/archive-events.php:14
+msgid "Added"
+msgstr "Hinzugefügt am"
+
+#: partials/archive-events.php:57 partials/single-events.php:112
+#, php-format
+msgid "The event takes place at %1$s."
+msgstr "Die Veranstaltung findet hier statt: %1$s"
+
+#: partials/archive-events.php:57 partials/single-events.php:112
+#, php-format
+msgid "%2$s"
+msgstr "%2$s"
+
+#: partials/archive-events.php:65 partials/single-events.php:87
+#: partials/single-events.php:127 partials/single-events.php:134
+#: partials/single-events.php:141
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#: partials/archive-management.php:20 partials/single-management.php:20
+#, php-format
+msgid "Write an e-mail to %1$s."
+msgstr "%1$s eine E-Mail schreiben."
+
+#: partials/archive-management.php:30 partials/single-management.php:30
+#, php-format
+msgid "%1$s years old"
+msgstr "%1$s Jahre alt"
+
+#: partials/archive-management.php:44
+#, php-format
+msgid "View posts by %s."
+msgstr "Beiträge von %s anschauen"
+
+#: partials/archive-management.php:45
+#, php-format
+msgid "Posts by %s"
+msgstr "Beiträge von %s"
+
+#: partials/chronicle-events.php:37
+msgid "Pictures of this event."
+msgstr "Fotos von dieser Aktion"
+
+#: partials/home-blog.php:8
+msgid "View more News"
+msgstr "Mehr Nachrichten anzeigen"
+
+#: partials/home-blog.php:8 partials/home-blog.php:9
+msgid "News"
+msgstr "Neuigkeiten"
+
+#: partials/home-blog.php:71 partials/home-events.php:102
+#: partials/home-gallery.php:117
+msgid "Nothing, but absolutely nothing, was found. How did you do this?"
+msgstr "Nichts, aber auch gar nichts wurde gefunden. Wie hast du das gemacht?"
+
+#: partials/home-blog.php:74 partials/home-events.php:105
+#: partials/home-gallery.php:120
+msgid ""
+"Well, if you are not sure about what you just did, simply tell us via "
+"redaktion@al3.de. Thank you!"
+msgstr ""
+"Wenn du dir selber nicht sicher bist, was du gemacht hast und wir dir helfen "
+"sollen oder dich einfach nur lautstark beschweren willst, dann schreib uns "
+"doch unter <a href=\"mailto:redaktion@al3.de\" title=\"Schreib uns!"
+"\">redaktion@al3.de</a>. Besten Dank!"
+
+#: partials/home-events.php:8
+msgid "View more Events"
+msgstr "Weitere Aktionen anschauen"
+
+#: partials/home-events.php:8 partials/home-events.php:9
+msgid "Next Events"
+msgstr "Anstehende Aktionen"
+
+#: partials/home-gallery.php:8
+msgid "View more Pictures"
+msgstr "Mehr Bilder anschauen"
+
+#: partials/home-gallery.php:8 partials/home-gallery.php:9
+msgid "Latest Pictures"
+msgstr "Neueste Bilder"
+
+#: partials/home-groups.php:8
+msgid "More about our Groups"
+msgstr "Weitere Informationen zu unseren Gruppen"
+
+#: partials/home-groups.php:8 partials/home-groups.php:9
+msgid "Our Groups"
+msgstr "Unsere Gruppen"
+
+#: partials/home-groups.php:77 partials/home-schedule.php:71
+msgid "Oops, no group found!"
+msgstr "Achtung, keine Gruppe gefunden!"
+
+#: partials/home-groups.php:80 partials/home-schedule.php:74
+msgid ""
+"Three Possibilites: 1. The Website is broken (not so unlikely). 2. There is "
+"no group in the near future (rather unlikely). 3. We forget to add new "
+"groups (most likely)."
+msgstr ""
+"Jetzt gibt es genau drei Möglichkeiten: <ol><li>Die Website ist mal wieder "
+"kaputt (nicht ganz unwahrscheinlich)</li><li>Es gibt keine Aktionen in "
+"absehbarer Zeit (eher unwahrscheinlich)</li><li>Wir haben vergessen, neue "
+"Gruppen hinzuzufügen (am wahrscheinlichsten)</li></ol>"
+
+#: partials/home-groups.php:83 partials/home-schedule.php:77
+msgid ""
+"You want us to add more groups? Write us: <a href=\"mailto:redaktion@al3.de"
+"\" title=\"Write us!\">redaktion@al3.de</a>."
+msgstr ""
+"Hier fehlt was? Dann beschwer dich doch einfach lautstark unter <a href="
+"\"mailto:webmaster@al3.de\" title=„Schreib "
+"uns!“>webmaster@stammalexanderlion.de</a>."
+
+#: partials/home-schedule.php:8
+msgid "More about the Schedule"
+msgstr "Mehr über unseren Wochenplan"
+
+#: partials/home-schedule.php:56 partials/schedule-groups.php:10
+#, php-format
+msgid "Between %s oclock"
+msgstr "Von %s Uhr"
+
+#: partials/schedule-groups.php:22 partials/single-groups.php:54
+#, php-format
+msgid "With %s"
+msgstr "Bei %s"
+
+#: partials/schedule-groups.php:27 partials/single-groups.php:60
+#, php-format
+msgid "Send an E-Mail to %s!"
+msgstr "Eine E-Mail an %s schreiben."
+
+#: partials/single-article.php:47
+#, php-format
+msgid "The article %1$s was published on %2$s by %3$s for %4$s."
+msgstr "Der Artikel %1$s wurde am %2$s von %3$s für den %4$s veröffentlicht."
+
+#: partials/single-events.php:8
+msgid "Pictures:"
+msgstr "Fotos:"
+
+#: partials/single-events.php:68 partials/single-gallery.php:10
+#, php-format
+msgid ""
+"Added <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span "
+"class=\"author fn\">%3$s</span>"
+msgstr ""
+"Hinzugefügt am <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> "
+"von <span class=\"author fn\">%3$s</span>."
+
+#: partials/single-events.php:120
+#, php-format
+msgid "This event costs %1$s Euro."
+msgstr "Diese Veranstaltung kostet %1$s Euro."
+
+#: partials/single-events.php:120
+#, php-format
+msgid "%1$s Euro"
+msgstr "%1$s Euro"
+
+#: partials/single-events.php:127
+#, php-format
+msgid "You can register at %1$s."
+msgstr "Du kannst dich unter %1$s für die Veranstaltung anmelden."
+
+#: partials/single-events.php:134
+#, php-format
+msgid "This event is organized by %1$s."
+msgstr "Diese Veranstaltung wird organisiert von %1$s."
+
+#: partials/single-events.php:141
+#, php-format
+msgid "More information at %1$s."
+msgstr "Mehr unter %1$s."
+
+#: partials/single-groups.php:45
+#, php-format
+msgid "%1$s from %2$s o clock"
+msgstr "%1$ss von %2$s Uhr"
+
+#: partials/single-groups.php:50
+#, php-format
+msgid "For %s"
+msgstr "Für %s"
+
+#: post-navigation.php:5
+msgid "Next"
+msgstr "Nächster Artikel"
+
+#: post-navigation.php:7
+msgid "Previous"
+msgstr "Voriger Artikel"
+
+#: post-navigation.php:9
+msgid "Before & After"
+msgstr "Artikel davor & danach"
+
+#: search.php:9
+msgid "Search Results for:"
+msgstr "Auf der Suche nach:"
+
+#: search.php:35
+msgid "Sorry, Nothing found!"
+msgstr "Sorry, nichts gefunden!"
+
+#: search.php:38
+msgid ""
+"We do not know what you were searching for (well, we actually do, it stands "
+"right up here), but you will not find it on this page."
+msgstr ""
+"Wir wissen nicht, wonach du gesucht hast (nun, eigentlich schon, es steht ja "
+"direkt hier oben), aber du wirst mit dem Suchbegriff auf keinen Fall fündig."
+
+#: search.php:39
+msgid "So maybe try to search again, but with different keywords."
+msgstr ""
+"Also, gib dir einen Ruck, hau in die Tasten und suche doch noch einmal. "
+"Diesmal aber mit anderen Suchbegriffen."
+
+#: taxonomy-event_target_group.php:30
+msgid "Print this schedule"
+msgstr "Diesen Jahresplan ausrucken"
+
+#~ msgid "Search Events"
+#~ msgstr "Termine durchsuchen"
+
+#~ msgid "Or maybe write us a mail via redaktion@al3.de. Thanks!"
+#~ msgstr ""
+#~ "Vielleicht willst du dich auch einfach direkt bei uns beschweren. Gar "
+#~ "kein Problem. Schreib uns einfach unter <a href=\"mailto:redaktion@al3.de"
+#~ "\" title=\"Schreib uns!\">redaktion@al3.de</a>."
+
+#~ msgid "Parent Event Target Groups"
+#~ msgstr "Übergeordnete Zielgruppe"
+
+#~ msgid "Add New Event Target Group"
+#~ msgstr "Zielgruppe hinzufügen"
+
+#~ msgid ""
+#~ "You want us to add more events? Write us: <a href=\"mailto:redaktion@al3."
+#~ "de\" title=\"Write us!\">redaktion@al3.de</a>."
+#~ msgstr ""
+#~ "Du willst, das wir wieder neue Aktionen hinzufügen? Dann schreib uns : <a "
+#~ "href=\"mailto:redaktion@al3.de\" title=\"Schreib uns!\">redaktion@al3.de</"
+#~ "a>."
+
+#~ msgid ""
+#~ "Still here? OK, seriously: We do not have a clue what you are doing here "
+#~ "nor how did you get here. But if you want to tell us, simply write a "
+#~ "short message to %s!"
+#~ msgstr ""
+#~ "Du bist immer noch hier? OK, Im Ernst: Wir haben keine Ahnung wie du hier "
+#~ "hergekommen bist. Wenn du uns das mitteilen willst, dann schreib uns doch "
+#~ "einfach unter %s!"
+
+#~ msgid ""
+#~ "But you can help us by telling us about this strange incident by writing "
+#~ "a short mail to %s!"
+#~ msgstr ""
+#~ "Eine kurze E-Mail an %s hilft uns, um das Problem zu beseitigen. Besten "
+#~ "Dank!"
+
+#~ msgid ""
+#~ "If you want to tell us, that this page is missing or you are simply are "
+#~ "not satisfied with this error, write us at %s!"
+#~ msgstr ""
+#~ "Wenn du uns Bescheid sagen willst, dass hier eine Seite fehlt, dann "
+#~ "schreib doch einfach eine kurze E-Mail an %s. Besten Dank!"
+
+#~ msgid "Oops, event lost!"
+#~ msgstr "Uuups, die Aktion ist wohl weg."
+
+#~ msgid "Hey, what are you doing here? This event does not exist!"
+#~ msgstr "Was genau machst du hier? Die Aktion sollte gar nicht existieren!"
+
+#~ msgid ""
+#~ "If you want to tell us, that there is an event missing or you are simply "
+#~ "are not satisfied with this error, write us at %s!"
+#~ msgstr ""
+#~ "Wenn du der Meinung bist, dass hier ein Termin fehlt oder du dich einfach "
+#~ "nicht mit dieser Fehlermeldung abgeben willst, dann schreib uns doch "
+#~ "einfach unter %s!"
+
+#~ msgid "Galleries"
+#~ msgstr "Galerien"
+
+#~ msgid "All Galleries"
+#~ msgstr "Alle Galerien"
+
+#~ msgid "Add New Gallery"
+#~ msgstr "Galerie hinzufügen"
+
+#~ msgid "View Gallery"
+#~ msgstr "Galerie anzeigen"
+
+#~ msgid "Search Galleries"
+#~ msgstr "Galerien durchsuchen"
+
+#~ msgid "Here you can edit or change the Gallery."
+#~ msgstr "Hier kannst du Galerien bearbeiten oder ändern."
+
+#~ msgid "gallery"
+#~ msgstr "galerie"
+
+#~ msgid "Target Group: %1$s"
+#~ msgstr "Zielgruppe: %1$s"
+
+#~ msgid "Costs: %1$s Euro"
+#~ msgstr "Kosten: %1$s Euro"
+
+#~ msgid "Registration: %1$s"
+#~ msgstr "Anmeldung: %1$s"
+
+#~ msgid "Leader: %1$s"
+#~ msgstr "Leiter: %1$s"
+
+#~ msgid "Further Information: %1$s"
+#~ msgstr "Weitere Informationen: %1$s"
+
+#~ msgid "Search"
+#~ msgstr "Suche"
+
+#~ msgid "Search…"
+#~ msgstr "Suche…"
+
+#~ msgid "Recently on DPBM (Customize on admin.php)"
+#~ msgstr "Neues vom DPBM"
+
+#~ msgid "This theme requires the following plugin: %1$s."
+#~ msgstr "Das Theme erfordert folgendes Plugin: %1$s."
+
+#~ msgid "This theme recommends the following plugin: %1$s."
+#~ msgstr "Das Theme empfiehlt das folgende Plugin: %1$s."
+
+#~ msgid ""
+#~ "Sorry, but you do not have the correct permissions to install the %s "
+#~ "plugin. Contact the administrator of this site for help on getting the "
+#~ "plugin installed."
+#~ msgstr ""
+#~ "Entschuldigung, aber Du hast nicht die korrekten Berechtigungen zum "
+#~ "Installieren des %s Plugin. Kontaktiere den Admin dieser Seite zur Hilfe "
+#~ "beim Installieren des Plugin."
+
+#~ msgid "The following required plugin is currently inactive: %1$s."
+#~ msgstr "Das folgende erforderliche Plugin ist derzeit inaktiv: %1$s."
+
+#~ msgid "The following recommended plugin is currently inactive: %1$s."
+#~ msgstr "Das folgende empfohlene Plugin ist derzeit inaktiv: %1$s."
+
+#~ msgid ""
+#~ "Sorry, but you do not have the correct permissions to activate the %s "
+#~ "plugin. Contact the administrator of this site for help on getting the "
+#~ "plugin activated."
+#~ msgstr ""
+#~ "Entschuldigung, aber Du hast nicht die korrekten Berechtigungen zum "
+#~ "Aktivieren des %s Plugin. Kontaktiere den Admin dieser Seite zur Hilfe "
+#~ "beim Aktivieren des Plugin."
+
+#~ msgid ""
+#~ "The following plugin needs to be updated to its latest version to ensure "
+#~ "maximum compatibility with this theme: %1$s."
+#~ msgstr ""
+#~ "Die folgende Plugin muss auf die neueste Version aktualisiert werden, um "
+#~ "maximale Kompatibilität mit diesem Thema zu sicher zu stellen: %1$s."
+
+#~ msgid ""
+#~ "Sorry, but you do not have the correct permissions to update the %s "
+#~ "plugin. Contact the administrator of this site for help on getting the "
+#~ "plugin updated."
+#~ msgstr ""
+#~ "Entschuldigung, aber Du hast nicht die korrekten Berechtigungen zum "
+#~ "Aktualisieren des %s Plugin. Kontaktiere den Admin dieser Seite zur Hilfe "
+#~ "beim Aktualisieren des Plugin."
+
+#~ msgid "Begin installing plugin"
+#~ msgstr "Beginnt mit der Installation des Plugins"
+
+#~ msgid "Begin activating plugin"
+#~ msgstr "Beginnt mit der Aktivierung des Plugins"
+
+#~ msgid "All plugins installed and activated successfully. %s"
+#~ msgstr "Alle Plugins wurden erfolgreich installiert und aktiviert. %s"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Irgendwas lief schief."
+
+#~ msgid "Return to the Dashboard"
+#~ msgstr "Zurück zum Dashboard"
+
+#~ msgid "Private Repository"
+#~ msgstr "Privates Verzeichnis"
+
+#~ msgid ""
+#~ "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+#~ "Dashboard\">Return to the Dashboard</a>"
+#~ msgstr ""
+#~ "Keine Plugins zum Installieren oder aktivieren vorhanden. Gute Arbeit! <a "
+#~ "href=„%1$s“ title=„Zurück zum Dashboard“>Zurück zum Dashboard</a>"
+
+#~ msgid "Install package not available."
+#~ msgstr "Installationspaket nicht verfügbar."
+
+#~ msgid ""
+#~ "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+#~ msgstr ""
+#~ "Download des Installationspakets von <span class=„code“>%s</span>&#8230;"
+
+#~ msgid "Unpacking the package&#8230;"
+#~ msgstr "Entpacke das Paket&#8230;"
+
+#~ msgid "Installing the plugin&#8230;"
+#~ msgstr "Installiere das Plugin&#8230;"
+
+#~ msgid "Plugin install failed."
+#~ msgstr "Plugin-Installation ist fehlgeschlagen."
+
+#~ msgid "Plugin installed successfully."
+#~ msgstr "Das Plugin wurde erfolgreich installiert."
+
+#~ msgid "Show Details"
+#~ msgstr "Details anzeigen"
+
+#~ msgid "Hide Details"
+#~ msgstr "Details verbergen"
+
+#~ msgid "%1$s installed successfully."
+#~ msgstr "%1$s erfolgreich installiert."
+
+#~ msgid "Events organized by"
+#~ msgstr "Termine, ausgerichtet von:"
+
+#~ msgid "Re-Order"
+#~ msgstr "Sortieren"
+
+#~ msgid ""
+#~ "Here you can easliy reorder the following posts so that they appear just "
+#~ "like want them to. Simply drag and drop the posts."
+#~ msgstr ""
+#~ "Hier kannst du die folgenden Beiträge nach eigenem Pläsier anordnen, sie "
+#~ "erscheinen dann in dieser Reihenfolge statt beispielsweise nach Datum "
+#~ "oder nach Alphabet geordnet zu werden."
+
+#~ msgid ""
+#~ "This plugin can't work without javascript, because it's use drag and drop "
+#~ "and AJAX."
+#~ msgstr ""
+#~ "Dieses Plugin kann ohne JavaScript nicht funktionieren, da Drag & Drop "
+#~ "via AJAX eingesetzt wird."
+
+#~ msgid "Items Order Updated"
+#~ msgstr "Reihenfolge aktualisiert."
+
+#~ msgid "Pages"
+#~ msgstr "Seiten"
+
+#~ msgid "Articles from the rubric"
+#~ msgstr "Artikel aus der Rubrik"
+
+#~ msgid "600px by 600px resized"
+#~ msgstr "Angepasst auf maximal 600px Breite oder Höhe"
+
+#~ msgid "320px by 568px cut"
+#~ msgstr "Beschnitten auf 320px mal 568px"
+
+#~ msgid "768px by 1024px cut"
+#~ msgstr "Beschnitten auf 768px mal 1024px"
+
+#~ msgid "1030px by 800px cut"
+#~ msgstr "Beschnitten auf 1030px mal 800px"
+
+#~ msgid "1920px by 1280px cut"
+#~ msgstr "Beschnitten auf 1920px mal 1280px"
+
+#~ msgid "2880px by 1800px cut"
+#~ msgstr "Beschnitten auf 2880px mal 1800px"
+
+#~ msgid "480px by 200px cut"
+#~ msgstr "Beschnitten auf 480px mal 200px"
+
+#~ msgid "768px by 325px cut"
+#~ msgstr "Beschnitten auf 768px mal 325px"
+
+#~ msgid "1030px by 350px cut"
+#~ msgstr "Beschnitten auf 1030px mal 350px"
+
+#~ msgid "1240px by 400px cut"
+#~ msgstr "Beschnitten auf 1240px mal 400px"
+
+#~ msgid "The Top Menu"
+#~ msgstr "Das Hauptmenü"
+
+#~ msgid "Welcome to %s"
+#~ msgstr "Willkommen zum %s"
+
+#~ msgid "Article Meta"
+#~ msgstr "Artikelinformationen"
+
+#~ msgid "Subtitle"
+#~ msgstr "Untertitel"
+
+#~ msgid "If the article has a subtitle, you can enter it here."
+#~ msgstr ""
+#~ "Wenn der Artikel einen Untertitel hat, dann kannst du ihn hier eingeben."
+
+#~ msgid "Enter a subtitle here..."
+#~ msgstr "Untertitel hier eingeben..."
+
+#~ msgid "Article Start Page"
+#~ msgstr "Startseite"
+
+#~ msgid "On which page did this article start in the print version?"
+#~ msgstr "Auf welcher Seite fing der Artikel in der Printversion an?"
+
+#~ msgid "Page"
+#~ msgstr "Seite"
+
+#~ msgid "Article End Page"
+#~ msgstr "Endseite"
+
+#~ msgid "And on which page did it end?"
+#~ msgstr ""
+#~ "Und auf welcher Seite endete der Artikel? Du kannst dieses Feld auch frei "
+#~ "lassen, dann erscheint der Artikel als Einseiter."
+
+#~ msgid "Online-Bonus"
+#~ msgstr "Online-Bonus"
+
+#~ msgid "Online-Bonus?"
+#~ msgstr "Online-Bonus?"
+
+#~ msgid ""
+#~ "Is the article longer than the print-version or otherwise anyhow special?"
+#~ msgstr ""
+#~ "Ist der Artikel länger als die Print-Version im Heft oder sonst irgendwie "
+#~ "besonders?"
+
+#~ msgid "Issues"
+#~ msgstr "Ausgaben"
+
+#~ msgid "Cover"
+#~ msgstr "Cover"
+
+#~ msgid "What was the cover of this issue? Add it here!"
+#~ msgstr "Was war das Cover der Ausgabe? Lade es hier hoch!"
+
+#~ msgid "Release Date"
+#~ msgstr "Erscheinungsdatum"
+
+#~ msgid "When had this issue been released?"
+#~ msgstr "Wann ist diese Ausgabe erschienen?"
+
+#~ msgid "Icon"
+#~ msgstr "Symbol"
+
+#~ msgid "What is the symbol of this rubric? Add it here!"
+#~ msgstr "Was ist das Symbol der Rubrik? Lade es hier hoch!"
+
+#~ msgid "Recently on Themble (Customize on admin.php)"
+#~ msgstr "Neues vom DPBM"
+
+#~ msgid ""
+#~ "<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
+#~ "target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
+#~ "themble.com/al3\" target=\"_blank\">al3</a>."
+#~ msgstr ""
+#~ "<span id=\"footer-thankyou\">Entwickelt von<a href=\"http://lambery.me\" "
+#~ "target=\"_blank\">Laurens Lamberty</a></span>mit <a href=\"http://themble."
+#~ "com/bones\" target=\"_blank\">Bones</a>."
+
+#~ msgid "Add New Event Organizer"
+#~ msgstr "Neuen Ausrichter hinzufügen"
+
+#~ msgid "event_organizers"
+#~ msgstr "veranstalter"
+
+#~ msgid "Organizer: %1$s"
+#~ msgstr "Ausrichter: %1$s"
+
+#~ msgid ", "
+#~ msgstr ", "
+
+#~ msgid "Rubrics"
+#~ msgstr "Rubriken"
+
+#~ msgid "Rubric"
+#~ msgstr "Rubriken"
+
+#~ msgid "Search Rubrics"
+#~ msgstr "Rubriken durchsuchen"
+
+#~ msgid "All Rubrics"
+#~ msgstr "Alle Rubriken"
+
+#~ msgid "Parent Rubric"
+#~ msgstr "Übergeordnete Rubrik"
+
+#~ msgid "Parent Rubric:"
+#~ msgstr "Übergeordnete Rubrik"
+
+#~ msgid "Edit Rubric"
+#~ msgstr "Rubrik bearbeiten"
+
+#~ msgid "Update Rubric"
+#~ msgstr "Rubrik aktualisieren"
+
+#~ msgid "Add Rubric"
+#~ msgstr "Rubrik hinzufügen"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Issue"
+#~ msgstr "Ausgabe"
+
+#~ msgid "All Issues"
+#~ msgstr "Alle Ausgaben"
+
+#~ msgid "Parent Issue"
+#~ msgstr "Übergeordnete Ausgabe"
+
+#~ msgid "Parent Issue:"
+#~ msgstr "Übergeordnete Ausgabe:"
+
+#~ msgid "New Issue Name"
+#~ msgstr "Name der neuen Ausgabe"
+
+#~ msgid "Add new Issue"
+#~ msgstr "Neue Ausgabe hinzufügen"
+
+#~ msgid "Edit Issue"
+#~ msgstr "Ausgabe bearbeiten"
+
+#~ msgid "Update Issue"
+#~ msgstr "Ausgabe aktualisieren"
+
+#~ msgid "Separate issues with commas"
+#~ msgstr "Ausgaben mit Komma trennen"
+
+#~ msgid "Search Issues"
+#~ msgstr "Ausgaben durchsuchen"
+
+#~ msgid "Add or remove Issues"
+#~ msgstr "Ausgaben hinzufügen oder entfernen"
+
+#~ msgid "Choose from the most used Issues"
+#~ msgstr "Aus den häufigsten Ausgaben wählen"
+
+#~ msgid "issue"
+#~ msgstr "ausgaben"
+
+#~ msgid "Authors"
+#~ msgstr "Autoren"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "All Authors"
+#~ msgstr "Alle Autoren"
+
+#~ msgid "Parent Author"
+#~ msgstr "Übergeordneter Autor"
+
+#~ msgid "Parent Author:"
+#~ msgstr "Übergeordneter Autor:"
+
+#~ msgid "New Author"
+#~ msgstr "Neuer Autor"
+
+#~ msgid "Add new Author"
+#~ msgstr "Autor hinzufügen"
+
+#~ msgid "Edit Author"
+#~ msgstr "Autor bearbeiten"
+
+#~ msgid "Update Author"
+#~ msgstr "Autor aktualisieren"
+
+#~ msgid "Separate items with commas"
+#~ msgstr "Einzelne Autoren mit Komma trennen"
+
+#~ msgid "Search Authors"
+#~ msgstr "Autoren durchsuchen"
+
+#~ msgid "Add or remove authors"
+#~ msgstr "Autoren hinzufügen oder entfernen"
+
+#~ msgid "Choose from the most used authors"
+#~ msgstr "Wähle aus den fleißigsten Schreiberlingen"
+
+#~ msgid "authors"
+#~ msgstr "Autoren"
+
+#~ msgid "On page %1$s"
+#~ msgstr "Auf Seite %1$s"
+
+#~ msgid "From page %1$s to page %2$s"
+#~ msgstr "Von Seite %1$s bis %2$s"
+
+#~ msgid "Related Posts"
+#~ msgstr "Ähnliche Artikel"
+
+#~ msgid "An Article taken from %1$s and from the rubric %2$s."
+#~ msgstr "Ein Artikel aus dem %1$s aus der Rubrik %2$s."
+
+#~ msgid "An Article taken from %s."
+#~ msgstr "Ein Artikel aus dem %s."
+
+#~ msgid "An Article from rubric %s."
+#~ msgstr "Ein Artikel aus der Rubrik %s."
+
+#~ msgid "So far %s authors have written an article for us. You too?"
+#~ msgstr ""
+#~ "<h2>Bisher haben %s Autoren für den <em>al3</em> geschrieben. Auch du?</"
+#~ "h2>"
+
+#~ msgid "%1$s has written %2$s articles so far. View them here!"
+#~ msgstr ""
+#~ "%1$s hat bisher %2$s Artikel geschrieben. Hier kannst du sie anschauen!"
+
+#~ msgid "Oops, No entry found!"
+#~ msgstr "Nüscht ein Eintrag gefunden!"
+
+#~ msgid ""
+#~ "Wow, this is incredible! Although we crawl information of 5 different "
+#~ "websites,not a single entry was found and therefore this page might look "
+#~ "rather empty. Maybe try later again."
+#~ msgstr ""
+#~ "Wahnsinn, nicht schlecht! Obwohl wir für dich die Informationen von fünf "
+#~ "Websites grabbeln, wurde kein einziger Eintrag gefunden und deswegen ist "
+#~ "die Seite hier so leer. Versuche es vielleicht später erneut."
+
+#~ msgid "View %1$s on %2$s."
+#~ msgstr "%1$s auf %2$s anschauen."
+
+#~ msgid "The article %1$s was published at %2$s on %3$s."
+#~ msgstr ""
+#~ "Der Artikel %1$s wurde am %2$s auf %3$s veröffentlicht. Wir haben den "
+#~ "Artikel im im Titel verlinkt. Schau doch mal vorbei!"
+
+#~ msgid "An Article taken from %1$s."
+#~ msgstr "Ein Artikel aus dem %1$s."
+
+#~ msgid "An Article from rubric %1$s."
+#~ msgstr "Ein Artikel aus der Rubrik %1$s."
+
+#~ msgid "Bonus-Content"
+#~ msgstr "Online-Bonus"
+
+#~ msgid ""
+#~ "From time to time we have articles longer than the print-version would "
+#~ "allow or are otherwise special. These articles are marked as online-bonus"
+#~ msgstr ""
+#~ "Ab und zu haben wir hier Artikel, die zu lang für die Print-Version des "
+#~ "<em>al3</em> sind oder sonst irgendwie besonders. Diese Artikel werden "
+#~ "mit diesem Zeichen markiert: Als Online-Bonus."
+
+#~ msgid "minute"
+#~ msgstr "Minute"
+
+#~ msgid "s"
+#~ msgstr "n"
+
+#~ msgid "You will need about %s to read this article. Take your time!"
+#~ msgstr "Du brauchst etwa %s, um den Artikel zu lesen. Nimm dir die Zeit!"
+
+#~ msgid "View all articles by %s"
+#~ msgstr "Alle Artikel von %s anschauen."
+
+#~ msgid "http://www.al3.de/wordpress2/"
+#~ msgstr "http://al3.de/"
+
+#~ msgid "al3"
+#~ msgstr "al3"
+
+#~ msgid "DPBM"
+#~ msgstr "DPBM"
+
+#~ msgid ""
+#~ "The article %1$s was published on %2$s by the online team of the %3$s. "
+#~ "All rights of this article go to the %4$s."
+#~ msgstr ""
+#~ "Der Artikel %1$s wurde am %2$s von der Online-Redaktion des %3$s, der "
+#~ "Bundeszeitschrift des %4$s, veröffentlicht."
+
+#~ msgid ""
+#~ "Looking for the offline version? You can find the print version of this "
+#~ "article in your %1$s on page %2$s."
+#~ msgstr ""
+#~ "Online ist dir nicht Retro genug? Kein Problem, du findest den Artikel "
+#~ "auch im %1$s auf Seite %2$s."
+
+#~ msgid ""
+#~ "Looking for the offline version? You can find the print version of this "
+#~ "article in your %1$s from page %2$s to %3$s."
+#~ msgstr ""
+#~ "Online ist dir nicht Retro genug? Kein Problem, du findest den Artikel "
+#~ "auch im %1$s von Seite %2$s bis Seite %3$s."
+
+#~ msgid "The article has the following tags:"
+#~ msgstr "Wir haben den Artikel mit den folgenden Schlagworten versehen:"
+
+#~ msgid "Article before & after"
+#~ msgstr "Artikel davor & danach"
+
+#~ msgid "No Previous Post"
+#~ msgstr "Kein voriger Artikel"
+
+#~ msgid "This is the end! (Or the beginning, if taken seriously)"
+#~ msgstr "Das ist das Ende! (Oder eher der Anfang, wenn man’s genau nimmt)"
+
+#~ msgid "Just start reading through this issue. Enjoy!"
+#~ msgstr "Deswegen lies dich doch einfach durch diese Ausgabe. Viel Spaß!"
+
+#~ msgid "No Next Post"
+#~ msgstr "Kein nächster Artikel"
+
+#~ msgid "This is the end!"
+#~ msgstr "Alles ausgelesen?"
+
+#~ msgid "At least of this issue. Try another one!"
+#~ msgstr "Dann aber flugs zur nächsten Ausgabe!"
+
+#~ msgid ""
+#~ "If you want to tell us, that this event should exist or simply are not "
+#~ "satisfied woth this error, write us at redaktion@al3.de!"
+#~ msgstr ""
+#~ "Wenn du doch der festen Überzeugung bist, dass die Aktion vorhanden sein "
+#~ "sollte oder anderswie unzufrieden bist, dann lass deinen Frust doch "
+#~ "einfach unter <a href=\"mailto:redaktion@al3.de\" title=\"Schreib uns!"
+#~ "\">redaktion@al3.de</a> raus. Danke!"
+
+#~ msgid ""
+#~ "Still here? OK, seriously: We do not have a clue what you are doing here "
+#~ "nor how did you get here. But if you want to tell us, simply write a "
+#~ "short message to redaktion@al3.de. Thanks!"
+#~ msgstr ""
+#~ "Immer noch hier? OK, im Ernst: Wir haben nicht die leiseste Ahnung, wie "
+#~ "du hier gelandet bist. Aber wenn du uns aufklären willst, dann mach das "
+#~ "doch einfach: <a href=\"mailto:redaktion@al3.de\" title=\"Schreib uns!"
+#~ "\">redaktion@al3.de</a>. Dank dir!"
+
+#~ msgid "Oops, no issue found!"
+#~ msgstr "Hoppla, keine Ausgabe gefunden!"
+
+#~ msgid ""
+#~ "Wait, what? We do not offer you a single issue? Strange! How did ypu get "
+#~ "here?"
+#~ msgstr ""
+#~ "Moment, was? Wir können dir keine einzige Ausgabe anbieten? Wild! Wie "
+#~ "bist du hier hergekommen?"
+
+#~ msgid ""
+#~ "Tell us more about this error by mailing to redaktion@al3.de. Thank you!"
+#~ msgstr ""
+#~ "Bitte beschwere dich umgehend lautstark unter <a href=\"mailto:"
+#~ "redaktion@al3.de\" title=\"Schreib uns!\">redaktion@al3.de</a>. Vielen "
+#~ "Dank!"
+
+#, fuzzy
+#~ msgid "No Field Groups found in Trash"
+#~ msgstr "Im Papierkorb wurde nichts gefunden"
+
+#, fuzzy
+#~ msgid "Custom Fields"
+#~ msgstr "Eigene Arten"
+
+#, fuzzy
+#~ msgid "Field group published."
+#~ msgstr "wird nicht angezeigt"
+
+#, fuzzy
+#~ msgid "Post updated"
+#~ msgstr "Eingetragen"
+
+#, fuzzy
+#~ msgid "Parent fields"
+#~ msgstr "Übergeordnete Rubrik"
+
+#, fuzzy
+#~ msgid "Posts Page"
+#~ msgstr "Einträge mit dem Schlagwort:"
+
+#, fuzzy
+#~ msgid "Title"
+#~ msgstr "Untertitel"
+
+#, fuzzy
+#~ msgid "New Field Types"
+#~ msgstr "Neue Eintrags-Art"
+
+#, fuzzy
+#~ msgid "Email Field"
+#~ msgstr "E-Mail"
+
+#, fuzzy
+#~ msgid "Custom Field Types"
+#~ msgstr "Eigene Arten"
+
+#, fuzzy
+#~ msgid "Potential Issues"
+#~ msgstr "Ausgaben durchsuchen"
+
+#, fuzzy
+#~ msgid "Learn more"
+#~ msgstr "Lesen Sie mehr über"
+
+#~ msgid "Email"
+#~ msgstr "E-Mail"
+
+#, fuzzy
+#~ msgid "Edit File"
+#~ msgstr "Bearbeiten"
+
+#, fuzzy
+#~ msgid "Update File"
+#~ msgstr "Rubrik aktualisieren"
+
+#, fuzzy
+#~ msgid "Search for address..."
+#~ msgstr "durchsuchen ..."
+
+#, fuzzy
+#~ msgid "Edit Image"
+#~ msgstr "Bearbeite eigenes Schlagwort"
+
+#, fuzzy
+#~ msgid "Update Image"
+#~ msgstr "Aktualisiere eigene Schlagwort"
+
+#, fuzzy
+#~ msgid "Add Image"
+#~ msgstr "Ausgaben hinzufügen"
+
+#, fuzzy
+#~ msgid "Page Link"
+#~ msgstr "Seite %s"
+
+#, fuzzy
+#~ msgid "Post Type"
+#~ msgstr "Neue Eintrags-Art"
+
+#, fuzzy
+#~ msgid "Red"
+#~ msgstr "Weiterlesen"
+
+#~ msgid "Search..."
+#~ msgstr "Suchen..."
+
+#, fuzzy
+#~ msgid "Filter by post type"
+#~ msgstr "Zeige Eintrags-Art"
+
+#, fuzzy
+#~ msgid "Post Type Select"
+#~ msgstr "Neue Eintrags-Art"
+
+#, fuzzy
+#~ msgid "Post Title"
+#~ msgstr "Eingetragen"
+
+#, fuzzy
+#~ msgid "Tab"
+#~ msgstr "Schlagwort"
+
+#, fuzzy
+#~ msgid "Required?"
+#~ msgstr "(Pflichtfeld)"
+
+#, fuzzy
+#~ msgid "Logged in User Type"
+#~ msgstr "Angemeldet als"
+
+#, fuzzy
+#~ msgid "Post"
+#~ msgstr "Eingetragen"
+
+#, fuzzy
+#~ msgid "Post Category"
+#~ msgstr "Eigene Kategorie"
+
+#, fuzzy
+#~ msgid "Page Type"
+#~ msgstr "Seite %s"
+
+#, fuzzy
+#~ msgid "Comments"
+#~ msgstr "Kommentar absenden"
+
+#, fuzzy
+#~ msgid "Categories"
+#~ msgstr "Eigene Kategorien"
+
+#~ msgid "Tags"
+#~ msgstr "Schlagworte"
+
+#~ msgid "j.n. Y"
+#~ msgstr "j. F Y"
+
+#~ msgid "Enter a Subtitle"
+#~ msgstr "Gib hier einen Untertitel ein"
+
+#~ msgid "600px by 150px cut"
+#~ msgstr "Beschnitten auf 600px mal 150px"
+
+#~ msgid "300px by 100px cut"
+#~ msgstr "Beschnitten auf 300px mal 100px"
+
+#~ msgid "1800px by 900px cut"
+#~ msgstr "Beschnitten auf 1800px mal 900px"
+
+#~ msgid "The article %1$s was published at %2$s on %3$s"
+#~ msgstr ""
+#~ "Der Artikel »%1$s« wurde am %2$s auf %3$s veröffentlicht. Verlinkt ist "
+#~ "der Artikel im Titel. Schau doch mal auf der Seite vorbei!"
+
+#~ msgid "600px by 150px"
+#~ msgstr "600px mal 150px"
+
+#~ msgid "600px by 600px"
+#~ msgstr "600px mal 600px"
+
+#~ msgid "300px by 100px"
+#~ msgstr "300px mal 100px"
+
+#~ msgid "1800px by 900px"
+#~ msgstr "1800px mal 900px"
+
+#~ msgid "Seach Issues"
+#~ msgstr "Ausgaben durchsuchen"
+
+#~ msgid "Add Issue"
+#~ msgstr "Ausgaben hinzufügen"
+
+#~ msgid "View all posts in %s"
+#~ msgstr "Alle Artikel aus der Rubrik %s anschauen."
+
+#~ msgid "taken from"
+#~ msgstr "aus dem"
+
+#~ msgid "The article"
+#~ msgstr "Der Artikel"
+
+#~ msgid "was published on"
+#~ msgstr "wurde am"
+
+#~ msgid "on"
+#~ msgstr "auf"
+
+#~ msgid "."
+#~ msgstr " veröffentlicht."

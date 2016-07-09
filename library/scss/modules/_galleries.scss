@@ -1,0 +1,269 @@
+/******************************************************************
+Module Name:    Gallery Styles
+Author:         Laurens Lamberty
+
+By default, the WordPress galleries look pretty boring. This is why
+we disabled the styles (look closer in al3.php) and replace them
+with the styles we want. To archive the perfect look in your galleries,
+make sure to chose "Related_mobile" as your thumbnail-size. Looks way better.
+
+******************************************************************/
+
+/* These styles only apply to the AL-gallery, not the usual WP */
+
+.al-gallery {
+    margin: 0 auto;
+
+    //display: none;
+
+    .grid-sizer {
+        width: 50%;
+    }
+
+    .grid-item {
+
+        a, a:visited {
+            display: flex;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 2px;
+        }
+    }
+}
+
+
+/* This are the default styles for WP-Galeries */
+
+
+.gallery {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    .gallery-item {
+        display: inline-block;
+        padding: 1em;
+        padding-bottom: 0;
+
+        img {
+            margin: 0;
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .gallery-caption {
+        color: $meta-gray;
+        font-family: $headline;
+        font-size: 0.85em;
+        font-style: italic;
+        margin: 4px 0 7px;
+        text-align: right;
+    }
+
+    .grid-particle {
+        float: left;
+        position: relative;
+        overflow: hidden;
+        transition: 0.2s width ease-in-out 0.2s;
+
+        .image-wrapper {
+            margin: 2px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            transition: 0.4s filter ease 0.1s, 0.3s transform ease-in-out 0s;
+        }
+
+        a, a:visited {
+            display: flex;
+
+            &:after {
+                color: $white;
+                content: "\f177";
+                font-family: dashicons;
+                font-size: 3em;
+                height: 100%;
+                line-height: 1;
+                position: absolute;
+                text-align: center;
+                left: 0;
+                width: 100%;
+                top: -100%;
+                transition: 0.2s top ease-in-out 0.05s;
+            }
+
+            &:hover {
+
+                &:after {
+                    top: 33.3%;
+                }
+
+                img {
+                    filter: blur(3px);
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+
+}
+
+.grid-particle {
+     width: calc( 100% / 2);
+}
+
+.gallery-columns-1 {
+    .gallery-item {
+        width: calc(100% / 1);
+    }
+}
+
+.gallery-columns-2,
+.gallery-columns-3,
+.gallery-columns-4,
+.gallery-columns-5,
+.gallery-columns-6,
+.gallery-columns-7,
+.gallery-columns-8,
+.gallery-columns-9, {
+    .gallery-item {
+        width: calc(100% / 1);
+    }
+}
+
+@include MQ(S) {
+
+    .grid-particle {
+        width: calc( 100% / 3)
+    }
+
+    .gallery-columns-2 {
+        .gallery-item {
+            width: calc(100% / 2);
+        }
+    }
+
+    .gallery-columns-3,
+    .gallery-columns-4,
+    .gallery-columns-5,
+    .gallery-columns-6,
+    .gallery-columns-7,
+    .gallery-columns-8,
+    .gallery-columns-9, {
+        .gallery-item {
+            width: calc(100% / 2);
+        }
+    }
+
+}
+
+@include MQ(M) {
+
+    .grid-particle {
+        width: calc( 100% / 4)
+    }
+
+    .gallery-columns-3 {
+        .gallery-item {
+            width: calc(100% / 3);
+        }
+    }
+
+    .gallery-columns-4 {
+        .gallery-item {
+            width: calc(100% / 4);
+        }
+    }
+
+    .gallery-columns-5,
+    .gallery-columns-6,
+    .gallery-columns-7,
+    .gallery-columns-8,
+    .gallery-columns-9, {
+        .gallery-item {
+            width: calc(100% / 2);
+        }
+    }
+
+}
+
+
+@include MQ(L) {
+
+    .grid-particle {
+        width: calc( 100% / 5)
+    }
+
+    .gallery-columns-5 {
+        .gallery-item {
+            width: calc(100% / 5);
+        }
+    }
+
+    .gallery-columns-6,
+    .gallery-columns-7,
+    .gallery-columns-8,
+    .gallery-columns-9, {
+        .gallery-item {
+            width: calc(100% / 3);
+        }
+    }
+
+}
+
+@include MQ(XL) {
+
+    .grid-particle {
+        width: calc( 100% / 8)
+    }
+
+    .gallery-columns-6 {
+        .gallery-item {
+            width: calc(100% / 6);
+        }
+    }
+
+    .gallery-columns-7 {
+        .gallery-item {
+            width: calc(100% / 7);
+        }
+    }
+
+    .gallery-columns-8,
+    .gallery-columns-9, {
+        .gallery-item {
+            width: calc(100% / 4);
+        }
+    }
+
+}
+
+@include MQ(XXL) {
+
+    .grid-particle {
+        width: calc( 100% / 10)
+    }
+
+
+    .gallery-columns-8 {
+        .gallery-item {
+            width: calc(100% / 8);
+        }
+    }
+
+    .gallery-columns-9 {
+        .gallery-item {
+            width: calc(100% / 9);
+        }
+    }
+
+}

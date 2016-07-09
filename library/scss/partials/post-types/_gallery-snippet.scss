@@ -1,0 +1,68 @@
+/******************************************************************
+Module Name:    Gallery Snippet
+Author:         Laurens Lamberty
+
+This snippet is a preview of a gallery.
+
+******************************************************************/
+
+
+.gallery-snippet {
+    overflow: hidden;
+    position: relative;
+
+    article {
+        margin: 0;
+    }
+
+    a, a:visited {
+
+        &:hover {
+
+            .excerpt-title {
+                transform: scale(1);
+            }
+
+        }
+    }
+
+    .gallery-excerpt {
+        max-height: 200px;
+        overflow: hidden;
+
+        .excerpt-title {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease-in-out 0s;
+            transform: scale(0);
+
+            .dashicons {
+                width: 100%;
+                height: 100%;
+                font-size: 5em;
+                transform: translateY(30%);
+                color: $white;
+                position: absolute;
+            }
+
+            .overlay {
+                background: $asphalt; /* The Fallback */
+                background: rgba($asphalt, 0.9);
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .excerpt-wrapper {
+            display: flex;
+        }
+
+        .excerpt-image {
+            float: left;
+            line-height: 0;
+        }
+
+    }
+
+}

@@ -1,0 +1,109 @@
+/******************************************************************
+Module Name:    Overlay Search
+Author:         Laurens Lamberty
+
+This is the stylesheet for the overlay search, which get gets called
+in the menu via the 'Search'-Button. This entire module works only with
+JavaScript, but without jQuery. Nevertheless, we should keep in mind to
+create an alternative for .no-js-devices.
+
+******************************************************************/
+
+
+.sb-search {
+	position: absolute;
+	width: 0%;
+	min-width: calc(38px + 1.5em );
+	height: 59px;
+	float: left;
+    left: -1.5em;
+	overflow: hidden;
+	transition: width 0.3s;
+	backface-visibility: hidden;
+
+    .sb-search-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        outline: none;
+        background: $white;
+        width: 100%;
+        height: 19px;
+        margin: 0;
+        z-index: 10;
+        padding: 20px 65px 20px 1.5em;
+        font-size: 20px;
+    }
+
+}
+
+.sb-icon-search,
+.sb-search-submit,
+.dashicons.sb-icon-search {
+	width: 62px;
+	height: 59px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 60px;
+	text-align: center;
+    cursor: pointer;
+    transition: left 0.25s;
+}
+
+.sb-search-submit {
+	background: $white; /* IE needs this */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    opacity: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+}
+
+.sb-icon-search {
+	background: $white;
+	z-index: 90;
+	font-size: 22px;
+}
+
+
+/* Open state */
+.sb-search.sb-search-open,
+.no-js .sb-search {
+	width: calc(100% + 3em);
+
+    .sb-icon-search {
+	   background: $asphalt;
+       color: $white;
+	   z-index: 11;
+    }
+
+    .sb-search-submit {
+	   z-index: 90;
+    }
+
+    .sb-icon-search, .sb-search-submit {
+        left: calc(100% - 3em);
+    }
+}
+
+// Extern Search
+.extern-search {
+    position: relative;
+
+    .sb-search {
+        left: 0;
+        position: relative;
+        width: 100%;
+
+        .sb-icon-search, .sb-search-submit {
+            left: calc(100% - 62px);
+        }
+    }
+}

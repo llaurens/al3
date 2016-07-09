@@ -1,0 +1,90 @@
+/******************************************************************
+Module Name:    Pagination
+Author:         Laurens Lamberty
+
+The pagination is not necessarily called, it usually appears on archive
+pages with more then ten articles (or whatever you chose in the settings).
+But even you if don't have ten articles, you still should keep this snippet.
+You know, in case...
+
+******************************************************************/
+
+// The wrapper of the pagination
+.pagination,
+.wp-prev-next {
+	margin: 1.5em 0;
+}
+
+// The same, but more specific
+.pagination {
+    background: $white;
+    text-align: center;
+
+    ul {
+        display: inline-block;
+        background-color: $white;
+        white-space: nowrap;
+        padding: 0;
+        clear: both;
+        border-radius: 3px;
+    }
+
+    // No need to nest it. It contains max. 1 li.
+    li {
+        padding: 0;
+        margin: 0;
+        float: left;
+        display: inline;
+        overflow: hidden;
+        border-right: 1px solid $gray;
+
+        &:last-child {
+            border-right: 0 none;
+        }
+
+    }
+
+    a, span {
+        margin: 0;
+        text-decoration: none;
+        padding: 0;
+        line-height: 1em;
+        font-size: 1em;
+        font-weight: normal;
+        padding: 0.75em;
+        min-width: 1em;
+        display: block;
+        color: $blue;
+
+      &:hover, &:focus {
+      	 background-color: $link-color;
+          color: $white;
+      }
+    }
+
+    .current{
+    	cursor: default;
+    	color: $text-color;
+
+    	&:hover, &:focus {
+    		background-color: $white;
+    		color: $text-color;
+    	}
+    }
+
+} // end .pagination
+
+// fallback previous & next links for older WP versions
+.wp-prev-next {
+
+	ul {}
+
+	.prev-link {
+		float: left;
+	}
+
+	.next-link {
+		float: right;
+	}
+
+} // end .wp-prev-next

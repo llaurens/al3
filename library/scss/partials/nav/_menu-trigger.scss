@@ -1,0 +1,108 @@
+/******************************************************************
+Module Name:    Menu Trigger
+Author:         Laurens Lamberty
+
+The Menu trigger is nothing but the smybol you click on, when you want
+the lateral navigation to slide out. Since this on is id-specific,
+we have no need to style it further specific. But maybe we should add
+a version for no-js here, which does not display the menu trigger, but
+the lateral nav always instead.
+
+******************************************************************/
+
+#menu-trigger {
+    background: $midnight;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    transition: background-color 0.4s 0s;
+
+    // Media Queries
+    @include MQ(M) {
+        width: 110px;
+        padding-left: 1.25em;
+    }
+
+    &:hover {
+        background-color: darken($midnight,5%);
+    }
+
+
+    .menu-text {
+        height: 100%;
+        display: none;
+
+        // Media Queries
+        @include MQ(M) {
+            color: $white;
+            display: inline-block;
+            line-height: 70px;
+        }
+
+    }
+
+    .menu-icon {
+        /* this span is the central line in the menu menu */
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        right: auto;
+        transform: translateX(-50%) translateY(-50%);
+        width: 18px;
+        height: 2px;
+        background-color: $white;
+
+        // Media Queries
+        @include MQ(M) {
+            left: auto;
+            right: 1.25em;
+            transform: translateX(0);
+        }
+
+
+        // these are the upper and lower lines in the menu menu
+        &::before, &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: inherit;
+            left: 0;
+        }
+
+        &::before {
+            bottom: 5px;
+        }
+
+        &::after {
+            top: 5px;
+        }
+    }
+
+    &.is-clicked .menu-icon {
+        background-color: rgba(255, 255, 255, 0);
+
+        &::before, &::after {
+            background-color: $white;
+        }
+
+        &::before {
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            top: 0;;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+// No-Touch
+.no-touchevents {
+    @include MQ(M) { #menu-trigger { display: none; }}
+}

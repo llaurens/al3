@@ -1,0 +1,46 @@
+/******************************************************************
+Module Name:    Footer Stylesheet
+Author:         Laurens Lamberty
+
+This rather tiny snippet takes control over the footer of the website,
+which is not that hard considering it only contains two blocks of
+text in a wrapper. You can style them here, however.
+
+******************************************************************/
+
+// General style applied to the footer
+.footer {
+	clear: both;
+    margin-top: 2em;
+
+    #inner-footer {
+        overflow: hidden;
+        background: $white;
+        position: relative;
+        z-index: 3;
+        margin-bottom: 2.5em;
+        margin-top: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        color: $meta-gray;
+    }
+
+}
+
+// Breadcrumbs: Create your own or let Yoast SEO Plugin do the work for you
+.block-breadcrumbs {
+    background: $white;
+    color: $meta-gray;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    #breadcrumbs  {
+    }
+}
+
+
+// Any special enhancement here?
+.copyright {
+    @include MQ(M) { display: block; text-align: right; }
+}

@@ -1,0 +1,105 @@
+/******************************************************************
+Module Name:    Overview
+Author:         Laurens Lamberty
+
+The Overview is used for displaying multiple items such as issues
+or rubrics. The basic styling is the same, but you can adjust some
+id-specific styles for certain categories here aswell.
+
+******************************************************************/
+
+
+.overview {
+
+    a, a:visited {
+        opacity: 1;
+        transition: opacity ease 0.4s;
+
+        &:hover {
+            opacity: 0.8;
+            figcaption {
+                bottom: 0.75em;
+            }
+        }
+
+        &:focus {
+            opacity: 0.5;
+        }
+
+        figure {
+            position: relative;
+
+            figcaption {
+                transition: bottom ease-in-out 0.2s 0.05s;
+            }
+        }
+    }
+}
+
+#issues-overview {
+
+    a, a:visited {
+
+        figure {
+            overflow: hidden;
+
+            figcaption {
+                position: absolute;
+                color: $white;
+                left: 0em;
+                bottom: 1.75em;
+                background: $midnight;
+                width: calc(100% - 0.75em);
+                padding: 0.5em 1em;
+                height: 3em;
+                transition: height 0.3s ease 0s;
+            }
+
+            h3 {
+                margin: 0 0 0.5em;
+            }
+
+            .count, .release {
+                transform: translateY(1.5em);
+                transition: transform 0.3s ease-in-out 0.1s;
+            }
+
+            .count {
+                float: left;
+            }
+
+            .release {
+                float: right;
+                transition-delay: 0.2s;
+            }
+        }
+
+        &:hover {
+            figcaption {
+                height: 6em;
+            }
+            .count, .release {
+                transform: translateY(0em);
+            }
+        }
+
+        &:first-of-type {
+
+            figure {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                figcaption {
+                    font-size: 1.5em;
+                    bottom: 1em;
+                    width: calc(100% - 0.5em);
+                }
+            }
+
+        }
+
+    }
+}

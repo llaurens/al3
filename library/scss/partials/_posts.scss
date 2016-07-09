@@ -1,0 +1,83 @@
+/******************************************************************
+Module Name:    Post Layout
+Author:         Laurens Lamberty
+
+This are a few lines about the general layout of a post including
+the styles of the most common post.
+
+******************************************************************/
+
+/*********************
+FEATURED IMAGES
+*********************/
+.has-featured-image {
+
+    main {
+
+        @include MQ(S) {
+            position: relative;
+            margin-top: 25%;
+            margin-top: 45vh;
+        }
+
+        @include MQ(M) {
+            margin-top: 85%;
+            margin-top: 62vh;
+        }
+
+        @include MQ(L) {
+            margin-top: 35%;
+            margin-top: 60vh;
+        }
+
+        @include MQ(XL) {
+            margin-top: 50%;
+            margin-top: 60vh;
+        }
+
+        @include MQ(XXL) {
+            margin-top: 50%;
+            margin-top: 68vh;
+        }
+    }
+
+}
+
+/*********************
+HENTRY
+*********************/
+
+.hentry {
+    margin-bottom: 1.5em;
+    background: $white;
+
+    header {
+        padding: 1.5em 1.5em 0;
+    }
+
+	footer, #post-navigation, .comment-respond {
+        padding: 1.5em;
+        border-top: 2px solid darken($gray,10%);
+
+        p {}
+    }
+
+    footer {
+        p {
+            float: left;
+            margin: 0 1.25em 0 0;
+        }
+
+        .dashicons {
+            float: left;
+            margin-right: 5px;
+            margin-top: 3px;
+        }
+    }
+
+    // Error 404
+    &.not-found {
+        background: $alert-red;
+    }
+
+}

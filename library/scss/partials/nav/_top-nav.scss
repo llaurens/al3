@@ -1,0 +1,133 @@
+.top-nav {
+    display: none;
+    margin-top: 1.25em;
+
+	ul {
+		background: $midnight;
+		margin-top:0;
+	}
+
+	li {
+		float: left;
+		position: relative;
+        border-right: 2px solid $white;
+
+		a {
+            font-family: $headline;
+            font-size: 1.25em;
+			padding: 0.5em;
+            color: $white;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $white;
+                opacity: 0.7;
+			}
+		}
+
+		&:first-child {}
+		&:last-child {
+            border-right: 0 none;
+        }
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border-top: 0;
+			position: absolute;
+			visibility: hidden;
+			z-index: 8999;
+
+			li {
+                border-right: 0 none;
+
+				a {
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 200px;
+					border-bottom: 2px solid $white;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+                // If this item still has children
+                &.menu-item-has-children {
+
+                    // this is the right arrow to show that the item has a submenu
+                    &::after {
+                        content: '';
+                        display: block;
+                        height: 11px;
+                        width: 8px;
+                        position: absolute;
+                        top: 50%;
+                        bottom: auto;
+                        transform: translateY(-50%);
+                        right: 1em;
+                        background: url("../images/arrow.svg") no-repeat center center;
+                        background-size: 8px 11px;
+                        transition-property: transform;
+                        transition-duration: 0.2s;
+                    }
+                }
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {
+					top:0;
+					left:100%;
+				}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current_page_ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover > ul {
+			top: auto;
+			visibility:visible;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+
+// No-Touch
+.no-touchevents {
+    @include MQ(M) { .top-nav { display: block; }}
+}

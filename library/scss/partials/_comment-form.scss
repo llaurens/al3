@@ -1,0 +1,63 @@
+/******************************************************************
+Module Name:    Comment Form Layout
+Author:         Laurens Lamberty
+
+Here you can take control of the comment form. Please notice: This is only
+the stylesheet for the actual form. The styles for the comments are in
+partials/comments.
+
+******************************************************************/
+
+// The respond area
+.comment-respond {
+	@extend .cf;
+}
+
+// The title above the comments field
+#reply-title {
+	margin: 0;
+}
+
+// The link above the comment area, whre you can log out
+.logged-in-as {
+	color: $meta-gray;
+	font-style: italic;
+	margin: 0;
+
+	a {
+		color: $text-color;
+	}
+}
+
+.comment-form-author, .comment-form-email {
+    @include MQ(M) { width: 100%; }
+
+    input { @include MQ(M) { max-width: 100%; } }
+
+}
+
+.comment-form-comment {}
+
+// The actual submit-button
+#submit {
+	@extend .blue-btn;
+	font-size: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+// Not yet included
+#comment-form-title {}
+
+// Not yet included
+#cancel-comment-reply {
+	a {}
+}
+
+// declared above
+.comments-logged-in-as {}
+
+// Notification when comments are disallowed.
+.nocomments {
+	margin: 0 20px 1.1em;
+}

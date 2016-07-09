@@ -1,0 +1,60 @@
+/******************************************************************
+Module Name:    Header Styles
+Author:         Laurens Lamberty
+
+The Top of your page. Make sure that this part looks good on every device.
+This stylesheet does not contain all styles for the header, since the
+inner header is also quite important for the navigation. Therefore you will
+find only some layout styles and the logo styling here.
+
+******************************************************************/
+
+.header {
+
+    #inner-header {
+        z-index: 6;
+        background: $asphalt;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50px;
+        width: 100%;
+        box-shadow: 0 1px 2px rgba(0,0,0,.3);
+
+        @include MQ(M) { height: 70px; }
+    }
+
+    #logo {
+        float: left;
+        margin: 0 0 0 2%;
+        background-image: url("../images/al-logo.min.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:  33px;
+        height: 48px;
+
+        /* Hide the text. */
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+
+        transition: opacity ease 0.2s;
+
+        // Media Queries
+        @include MQ(M) {
+            height:  64px;
+            width: 45px;
+        }
+
+        &:hover {
+            opacity: 0.3;
+        }
+
+    }
+
+}
+
+// NO-SVG Fallback
+.no-svg #logo { background-image: url("../images/al-logo-desktop.png"); }

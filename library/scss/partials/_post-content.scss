@@ -1,0 +1,294 @@
+/******************************************************************
+Module Name:    Post Content
+Author:         Laurens Lamberty
+
+This is a huge file, which controls all the styles for posts. So
+if you want to tweak the look of a table, a list or whatsever inside
+a post, take a look right here.
+
+******************************************************************/
+
+/*********************
+TITLES
+*********************/
+
+.single-title,
+.page-title,
+.entry-title,
+.archive-title {}
+
+.single-title, .page-title {
+    margin-top: 0;
+
+    span {
+        color: $meta-gray;
+    }
+
+}
+
+.single-title {
+    margin-bottom: 0.25em;
+}
+
+.page-title {
+    margin-bottom: 0;
+}
+
+.entry-title {}
+
+.archive-title {
+    padding: 0.5em;
+    background: $white;
+    color: $black;
+
+    span {
+        color: $meta-gray;
+    }
+
+}
+
+/*********************
+META
+*********************/
+
+.byline {
+    color: $meta-gray;
+    font-style: italic;
+    margin: 0;
+
+    time {}
+}
+
+/*********************
+ENTRY CONTENT
+*********************/
+
+.entry-content {
+    padding: 1.5em 1.5em 0;
+
+    a {
+        &.btn,
+        &.blue-btn {
+            margin: 0.15em;
+        }
+    }
+
+
+
+    p {
+        margin: 0 0 1.5em;
+    }
+
+
+    ul, ol, table, dl {}
+
+    ul, ol {
+        padding-left: 1em;
+
+        li {
+            padding-left: 0.5em;
+        }
+
+    }
+
+    ul {
+        list-style-type: disc;
+
+        li {}
+
+    }
+
+    ol {
+        list-style-type: decimal;
+
+        li {}
+
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid $gray;
+        margin-bottom: 1.5em;
+
+        caption {
+            margin: 0 0 7px;
+            font-size: 0.75em;
+            color: $meta-gray;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+
+    tr {
+        border-bottom: 1px solid $gray;
+
+        &:nth-child(even) {
+            background-color: $light-gray;
+        }
+    }
+
+    td {
+        padding: 7px;
+        border-right: 1px solid $gray;
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+
+    th {
+        background-color: $light-gray;
+        border-bottom: 1px solid $gray;
+        border-right: 1px solid $gray;
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+
+    blockquote {
+        font-style: italic;
+        color: $meta-gray;
+        background: $light-gray;
+        border-left: 5px solid $black;
+        margin: 0;
+        width: 100%;
+
+        p {
+            padding: 1.5em
+        }
+
+        &:before {}
+
+    }
+
+    abbr{
+
+        &:after {
+            content: "?";
+            font-size: 0.75em;
+            vertical-align: super;
+            line-height: 0;
+            padding-left: 0.15em;
+            opacity: 0;
+            transition: 0.3s ease-in-out opacity 0s;
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    dl {}
+
+    dt {}
+
+    dd {
+        margin-left: 0;
+        font-size: 0.9em;
+        color: #787878;
+        margin-bottom: 1.5em;
+    }
+
+    img {
+        margin: 0 0 1.5em 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /*
+    A few optional special styles
+    */
+
+    .grayscale, img.grayscale {
+        filter: grayscale(100%);
+    }
+
+    .rounded, img.rounded {
+        border-radius: 100%;
+    }
+
+    /*
+    image alignment on a screen this size may be
+    a bit difficult. It's set to start aligning
+    and floating images at the next breakpoint,
+    but it's up to you. Feel free to change it up.
+    */
+    .alignleft, img.alignleft {
+        @include MQ(S) {
+            margin-right: 1.5em;
+            display: inline;
+            float: left;
+        }
+    }
+    .alignright, img.alignright {
+        @include MQ(S) {
+            margin-left: 1.5em;
+            display: inline;
+            float: right;
+        }
+    }
+    .aligncenter, img.aligncenter {
+        @include MQ(S) {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            clear: both;
+        }
+    }
+
+    .size-auto,
+    .size-full,
+    .size-large,
+    .size-medium,
+    .size-thumbnail {
+        max-width: 100%;
+        height: auto;
+    }
+
+    pre {
+        background: $black;
+        color: $light-gray;
+        font-size: 0.9em;
+        padding: 1.5em;
+        margin: 0 0 1.5em;
+        border-radius: 3px;
+    }
+
+} // end .entry-content
+
+/*********************
+CAPTIONED IMAGES
+*********************/
+
+.wp-caption {
+    max-width: 100%;
+
+    /* images inside wp-caption */
+    img {
+        max-width: 100%;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .wp-caption-text {
+        color: $meta-gray;
+        font-style: italic;
+        font-size: 0.85em;
+        margin: 4px 0 7px;
+        text-align: right;
+    }
+
+} // end .wp-caption
+
+
+/*********************
+FOOTER
+*********************/
+
+.tags {
+    margin: 0;
+}

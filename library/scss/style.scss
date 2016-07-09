@@ -1,0 +1,103 @@
+/******************************************************************
+Site Name:  al3.de
+Author:     Laurens Lamberty
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+
+Helpful articles on Sass file organization:
+http://thesassway.com/advanced/modular-css-naming-conventions
+
+******************************************************************/
+
+/*********************
+IMPORTING PARTIALS
+These files are needed at the beginning so that we establish all
+our mixins, functions, and variables that we'll be using across
+the whole project.
+*********************/
+
+// normalize: http://necolas.github.io/normalize.css/
+@import "layout/normalize";
+
+// Sass functions & variables
+@import "functions/mixins";
+@import "functions/variables";
+
+// typography
+@import "layout/typography";
+    @import "layout/links";
+
+// the grid
+@import "layout/grid";
+
+/*********************
+IMPORTING MODULES
+Modules are reusable blocks or elements we use throughout the project.
+We can break them up as much as we want or just keep them all in one.
+I mean, you can do whatever you want. The world is your oyster. Unless
+you hate oysters, then the world is your peanut butter & jelly sandwich.
+*********************/
+
+// buttons
+@import "modules/buttons";
+
+// forms (inputs & labels)
+@import "modules/forms";
+
+// Galleries
+@import "modules/galleries";
+@import "modules/lightbox";
+@import "modules/issue_overview";
+
+
+/*********************
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*********************/
+
+// styles in base.scss
+@import "layout/general";
+    @import "layout/body-classes";
+
+@import "layout/header";
+    @import "partials/nav/top-nav";
+    @import "partials/nav/menu-trigger";
+
+@import "partials/posts";
+    @import "partials/singular";
+    @import "partials/home-blocks/home-blocks";
+    @import "partials/post-content";
+        @import "partials/post-types/events";
+        @import "partials/post-types/groups";
+        @import "partials/post-types/chronicle";
+        @import "partials/post-types/gallery";
+            @import "partials/post-types/gallery-snippet";
+        @import "modules/autoAlbums";
+    @import "partials/comments";
+    @import "partials/comment-form";
+    @import "partials/pagination";
+
+@import "layout/footer";
+    @import "partials/nav/lateral-nav";
+    @import "partials/nav/footer-nav";
+    @import "partials/expanding-search";
+
+
+/*********************
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*********************/
+@media print {
+	// styles in print.scss
+	@import "breakpoints/print";
+
+}

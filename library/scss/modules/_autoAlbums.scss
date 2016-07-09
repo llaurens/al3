@@ -1,0 +1,72 @@
+.block-gallery, .entry-content.block-gallery {
+
+    img {
+        padding: 0;
+        margin: 0;
+    }
+
+    .autoAlbums-breadcrumb{
+        padding: 0.5em 0;
+        border-bottom: 0 none;
+        background: 0 none;
+
+        li {
+            padding-left: 0;
+            font-family: inherit;
+            font-size: 1.5em;
+            text-shadow: none;
+
+            a {
+                background: $link-color;
+                color: $white;
+                padding: 2px 7px;
+
+                &:hover {
+                    background: $link-hover;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+    .aamrgbox {
+
+        img {
+            transition: transform ease-in-out 0.7s, filter ease-in-out 0.5s;
+        }
+
+        &:hover {
+
+            img {
+                transform: scale(1.05);
+                filter: grayscale(30);
+            }
+        }
+    }
+
+    .gradient-container {
+        background: 0 none;
+
+        .folder-info {
+            border-top: 0 none;
+        }
+
+        .folder-name, .folder-count, .folder-view {
+            font-family: inherit;
+            text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        .folder-name {
+            width: 100%;
+            background: $asphalt;
+            box-shadow: 2px 0 3px $black;
+        }
+
+        .folder-count {
+            display: none;
+        }
+
+    }
+
+}

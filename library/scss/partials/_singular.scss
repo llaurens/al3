@@ -1,0 +1,16 @@
+/******************************************************************
+Module Name:    Single Post/Page
+Author:         Laurens Lamberty
+
+Only a few styles here for single posts. Go nuts and add your own,
+if you need to.
+
+******************************************************************/
+
+.single, .page:not(.page-template-page-blog):not(.page-template-page-home):not(.page-template-page-events):not(.page-template-page-management):not(.page-template-page-chronicle):not(.page-template-page-gallery) {
+
+    .hentry {
+       // background: 0 none;
+    }
+
+}

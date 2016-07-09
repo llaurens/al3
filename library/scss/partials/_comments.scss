@@ -1,0 +1,210 @@
+/******************************************************************
+Module Name:    Comments Layout
+Author:         Laurens Lamberty
+
+This is the stylesheet for the comments. The comments are called
+before the comments form, so you should make sure that you do the
+same right here.
+
+******************************************************************/
+
+// The h3 comments title
+#comments-title {
+    padding: 0.75em;
+	margin: 0;
+	border-top: 2px solid darken($gray,10%);
+
+	/* number of comments span */
+	span {}
+
+}
+
+// The nav for multiple pages
+.comment-nav {
+
+	ul {
+
+		li {}
+
+	}
+}
+
+// The div containing the comments
+.commentlist {
+	margin: 0;
+	list-style-type: none;
+}
+
+// The style of a single comment
+.comment, .pingback {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	padding: 1.5em;
+	border-bottom: 1px solid $meta-gray;
+
+	.comment-author {
+		padding: 0;
+		border: 0;
+	}
+
+	// vcard
+	.vcard {
+
+        img {
+            float: left;
+            margin-right: 7px;
+        }
+
+		cite.fn {
+            font-family: $headline;
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			display: block;
+			font-size: 0.9em;
+			font-style: italic;
+
+			a {
+				color: $meta-gray;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+
+		.photo {}
+
+		.avatar {
+			position: absolute;
+			left: 16px;
+			border-radius: 50%;
+		}
+
+	} // end .commentlist .vcard
+
+	&:last-child {
+		margin-bottom: 0;
+        border-bottom: 0 none;
+	}
+
+	.children {
+		margin: 0;
+
+		li {}
+
+			/* variations */
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           /* change number for different depth */
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+	} /* end children */
+
+
+	&[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	&.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	&:not(.depth-1) {
+        border-left: 3px solid $meta-gray;
+        border-bottom: 0 none;
+		margin-top: 1em;
+		margin-left: 7px;
+		padding: 1em;
+	}
+
+	&.depth-2 {}
+	&.depth-3 {}
+	&.depth-4 {}
+	&.depth-5 {}
+
+	/* general comment classes */
+	&.alt {}
+	&.odd {
+		background-color: $white;
+	}
+	&.even {
+		background: $light-gray;
+	}
+	&.parent {}
+	&.comment {}
+	&.children {}
+	&.pingback {}
+	&.bypostauthor {
+        cite::after {
+            font-size: 0.8em;
+            background: $midnight;
+            color: $white;
+            content: 'OP';
+            margin-left: 5px;
+            padding: 1px 4px;
+        }
+    }
+	&.comment-author {}
+	&.comment-author-admin {}
+	&.thread-alt {}
+	&.thread-odd {}
+	&.thread-even {}
+}
+
+// Comments meta
+.comment-meta {
+
+    a {}
+
+}
+
+.commentmetadata {
+
+	a {}
+
+}
+
+// comment content
+.comment_content {
+
+	p {
+		margin: 0.7335em 0 1.5em;
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+
+} // end .commentlist .comment_content
+
+// The reply link to a comment
+.comment-reply-link {
+	@extend .blue-btn;
+	font-size: 0.9em;
+	float: right;
+
+	&:hover,
+	&:focus {}
+
+} // end .commentlist .comment-reply-link
+
+// Only visible for Editors and above
+.comment-edit-link {
+	font-style: italic;
+	margin: 0 7px;
+	text-decoration: none;
+	font-size: 0.9em;
+}

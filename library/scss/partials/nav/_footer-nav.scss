@@ -1,0 +1,46 @@
+/******************************************************************
+Module Name:    Top Navigation
+Author:         Laurens Lamberty
+
+The Top Navigation is not displayed by default, since it would need
+to much space on small screens. Instead, we hide it until the screen has
+a appropiate size.
+
+******************************************************************/
+
+#footer-nav {
+    position: relative;
+
+    ul {
+        float: left;
+        margin-left: 3em;
+
+            li {
+                display: inline-block;
+                margin-right: 1em;
+                overflow: hidden;
+
+                a {
+                    color: $meta-gray;
+
+                    &:hover {
+                        color: $link-hover;
+                    }
+
+                    &.trigger-overlay {
+                        cursor: pointer;
+                    }
+                }
+            }
+    }
+}
+
+
+// In case of 404 or searches, we display a bigger search above the footer,
+//so in conclusion the nav can move to the left
+
+.error404, .search {
+    #footer-nav ul {
+        margin-left: 0;
+    }
+}

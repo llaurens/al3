@@ -1,0 +1,129 @@
+/******************************************************************
+Module Name:    Typography
+Author:         Laurens Lamberty
+
+Need to import a font or set of icons for your site? Drop them in
+here or just use this to establish your typographical grid. Or not.
+Do whatever you want to...GOSH!
+
+Helpful Articles:
+http://trentwalton.com/2012/06/19/fluid-type/
+http://ia.net/blog/responsive-typography-the-basics/
+http://alistapart.com/column/responsive-typography-is-a-physical-discipline
+
+******************************************************************/
+
+/*
+The fonts are already included via @font-face, but loaded with
+javascript. So basically, the website calls a script (fonts.js),
+which checks wether the fonts we use are already available or have
+to be loaded as a webfont. If so, it loads the fonts as base 64 encoded
+.woff in stylesheet (fonts.css) and caches them forever. Advantages:
+You can hand out tiny gzipped font files instead of large .ttf files or
+whatever.
+
+Read more:
+http://bdadam.com/blog/loading-webfonts-with-high-performance.html
+http://www.smashingmagazine.com/2014/09/08/improving-smashing-magazine-performance-case-study/
+*/
+
+// font stacks (quite long due to only 86% coverage of browsers when using only woff)
+$headline:          "Signika", "Trebuchet MS", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$body:              "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+p {
+    -ms-word-break: break-all;
+    word-break: break-word; //non-standard css for webkit
+    // cleaning up the ragged lines and breaks
+    hyphens: auto;
+    // sets a minimum number of characters before and after the break
+    -webkit-hyphenate-before: 2;
+    -webkit-hyphenate-after: 3;
+    hyphenate-lines: 3;
+}
+
+
+/*********************
+H1, H2, H3, H4, H5, H6
+*********************/
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+    font-family: $headline;
+	text-rendering: optimizelegibility;
+	font-weight: 700;
+	/*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+	}
+}
+
+
+/*********************
+BREAKPOINTS
+*********************/
+
+/*
+Since so many devices have different viewports, I've decided to
+throw all the font sizes and stuff right here.
+*/
+
+body { font-size: 100%; line-height: 1.25em; }
+
+body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { font-size-adjust: 0.5; }
+
+h1, .h1 { font-size: 2em; line-height: 1.25em; }
+
+h2, .h2 { font-size: 1.625em; line-height: 1.15384615em; }
+
+h3, .h3 { font-size: 1.375em; line-height: 1.13636364em; }
+
+h4, .h4 { font-size: 1.125em; line-height: 1.11111111em }
+
+h5, .h5 { font-size: 1em; line-height: 1em; text-transform: uppercase; letter-spacing: 2px; }
+
+h6, .h6 { font-size: 0.750em; line-height: 0.625em; }
+
+blockquote { font-size: 1.125em; line-height: 0.875em; }
+
+@include MQ(M) {
+
+    body { line-height: 1.375em; font-size-adjust: none; }
+
+    h1, .h1 { font-size: 2.5em; line-height: 1.125em }
+
+    h2, .h2 { font-size: 2em; line-height: 1.25em; }
+
+    h3, .h3 { font-size: 1.5em; line-height: 1.25em; }
+
+    h4, .h4 { font-size: 1.125em; line-height: 1.22222222em; }
+
+    h5, .h5 { font-size: 1.063em; line-height: 1.11111111em }
+
+    h6, .h6 { font-size: 0.875em; line-height: 0.750em; }
+
+    blockquote { font-size: 1.125em; line-height: 1em; }
+
+}
+
+@include MQ(L) {
+
+    h1, .h1 { font-size: 3em; line-height: 1.05em }
+
+    h2, .h2 { font-size: 2.25em; }
+
+    h3, .h3 { font-size: 1.75em; }
+
+    blockquote { font-size: 1.5em; line-height: 1.25em; }
+
+}

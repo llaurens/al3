@@ -1,0 +1,103 @@
+/******************************************************************
+Module Name:    Lateral Navigation
+Author:         Laurens Lamberty
+
+The lateral navigation is a sidebar, which slides out from the right
+when clicked in the button in the inner header. This will not work without
+javascript, so maybe we should keep in mind to add an alternative here.
+
+******************************************************************/
+
+#lateral-nav {
+    font-family: $headline;
+    font-weight: 700;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 5;
+    width: 100%;
+    background-color: $midnight;
+    overflow-y: auto;
+    // Force Hardware Acceleration in WebKit
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    transition: transform 0.4s 0s, visibility 0s 0.4s;
+    transform: translateX(100%);
+
+    // Media Queries
+    @include MQ(S) {
+        width: 300px;
+        transform: translateX(300px);
+        box-shadow: -6px 0px 12px $black;
+    }
+
+    @include MQ(XL) {
+        width: 350px;
+        transform: translateX(350px);
+    }
+
+    @include MQ(XXL) {
+        width: 450px;
+        transform: translateX(450px);
+    }
+
+
+    // Open State
+    &.lateral-menu-is-open {
+        transform: translateX(0);
+        visibility: visible;
+        transition: transform 0.4s 0s, visibility 0s 0s;
+        // smooth the scrolling on touch devices - webkit browsers
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navigation {
+        margin: 85px 0 16px;
+    }
+
+    .sub-menu {
+        padding: 0 10px 10px 15px;
+        display: none;
+    }
+
+    a {
+        font-size: 1.25em;
+        display: block;
+        line-height: 2em;
+        padding: 0 16px 0 32px;
+        color: $white;
+    }
+
+    .menu-item-has-children > a {
+        position: relative;
+
+        // this is the right arrow to show that the item has a submenu
+        &::after {
+            content: '';
+            display: block;
+            height: 11px;
+            width: 8px;
+            position: absolute;
+            top: 50%;
+            bottom: auto;
+            transform: translateY(-50%);
+            right: 1em;
+            background: url("../images/arrow.svg") no-repeat center center;
+            background-size: 8px 11px;
+            transition-property: transform;
+            transition-duration: 0.2s;
+        }
+
+        &.submenu-open::after {
+            transform: translateY(-50%) rotate(90deg);
+        }
+
+    }
+}
+
+// No-Touch
+.no-touchevents {
+    @include MQ(M) { #lateral-nav { display: none; }}
+}

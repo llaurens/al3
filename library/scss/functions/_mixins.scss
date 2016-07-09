@@ -1,0 +1,107 @@
+/******************************************************************
+Module Name:    Mixins
+Author:         Laurens Lamberty
+
+Welcome to the magic of SASS! Instead of writing every piece of
+CSS by hand, you can throw some fancy functions right in here and
+let the rest been done by magic.
+
+******************************************************************/
+
+/*********************
+BREAKPOINTS
+Let's define some breakpoints
+we can use later on in every part
+of out code. We start of building our code
+with a mobile size with max. 481px width.
+It's what people see on their phones. If
+you set a great foundation, you won't
+need to add too many styles in
+the other stylesheets. Remember, keep it light:
+Speed is Important.
+*********************/
+
+/*********************
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*********************/
+$S:     481px;
+
+/*********************
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+$M:     768px;
+
+/*********************
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+$L:    1030px;
+
+/*********************
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*********************/
+$XL:   1240px;
+
+/*********************
+FULL HD VIEWING SIZE
+This is for the larger monitors with high resolution and definitly full screen viewers.
+*********************/
+$XXL:   1920px;
+
+
+/*********************
+MEDIA QUERIES
+Now we have defined our breakpoints, we can go ahead
+and use them in our media queries. The work as functions,
+so you can throw them in pretty much everywhere as
+
+@include MQ(M) {}.
+
+Easy as pie.
+
+*********************/
+@mixin MQ($canvas) {
+
+    // Larger Mobile Devices
+    @if $canvas == S {
+        @media only screen and (min-width: $S) { @content; }
+    }
+
+    // Tablets
+    @else if $canvas == M {
+        @media only screen and (min-width: $M) { @content; }
+    }
+
+    // Desktops
+    @else if $canvas == L {
+        @media only screen and (min-width: $L) { @content; }
+    }
+
+    // Large Desktops
+    @else if $canvas == XL {
+        @media only screen and (min-width: $XL) { @content; }
+    }
+
+    // Full HD
+    @else if $canvas == XXL {
+        @media only screen and (min-width: $XXL) { @content; }
+    }
+
+    // Retina
+    @else if $canvas == RX {
+        @media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                only screen and (min--moz-device-pixel-ratio: 1.5),
+                only screen and (min-device-pixel-ratio: 1.5)
+        { @content; }
+    }
+
+}

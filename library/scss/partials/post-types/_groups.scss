@@ -1,0 +1,88 @@
+/******************************************************************
+Module Name:    Groups Template
+Author:         Laurens Lamberty
+
+These are the styles for the template which gives you a quick
+overview of the current groups. Remember: Keep it simple!
+
+******************************************************************/
+
+.page-template-groups, .block-groups {
+
+    article.type-groups {
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+        a {
+            line-height: 0;
+        }
+
+        header {
+            padding: 0;
+
+            img {
+                width: 100%;
+                height: auto;
+                transition: all ease 0.4s;
+            }
+
+        }
+
+        .group-shortinfo {
+            background: $asphalt; /* The Fallback */
+            background: rgba($asphalt, 0.9);
+            bottom: 0;
+            color: $white;
+            height: 100%;
+            padding-top: 100px;
+            position: absolute;
+            text-align: center;
+            transform: scale(0);
+            transition: transform 0.3s ease-in-out 0s;
+            width: 100%;
+            z-index: 1;
+
+            .entry-title {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                line-height: normal;
+            }
+
+        }
+
+        &:hover {
+
+            .group-shortinfo {
+                transform: scale(1);
+            }
+
+            img {
+                filter: blur(2px);
+                transform: scale(1.03);
+            }
+        }
+    }
+}
+
+.touch {
+
+    .page-template-groups, .block-groups {
+
+        article.type-groups {
+
+            .group-shortinfo {
+                margin-left: 0.5em;
+                height: auto;
+                width: auto;
+                padding-top: 3px;
+                background: $asphalt;
+                transform: scale(1);
+            }
+        }
+    }
+}

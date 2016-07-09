@@ -1,0 +1,116 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Login Stylesheet
+
+This stylesheet is loaded (if admin.php is setup in your
+functions file) on the login page. This way you can style
+the login page. It won't affect any other page, admin or front-end.
+
+For more info, check out the codex:
+http://codex.wordpress.org/Creating_Admin_Themes
+
+******************************************************************/
+
+
+body.login {
+    background: #fff;
+}
+
+
+#login {} /* the form box */
+
+/*
+This is the Wordpress logo in the admin area.
+You'll have to load your own images and mess
+with the width and height.
+*/
+.login h1 a {
+	background: url(../images/login-logo.png) no-repeat top center; /* make sure to replace this! */
+	width: 326px;
+	height: 300px;
+	text-indent: -9999px;
+	overflow: hidden;
+	padding-bottom: 15px;
+	display: block;
+}
+
+.login form {
+	font-weight: normal;
+	background: transparent;
+	border: 0 none;
+	box-shadow: none;
+}
+
+body .login form input[type="checkbox"], input[type="color"], input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="radio"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	font-weight: 200;
+	font-size: 24px;
+	width: 97%;
+	padding: 3px;
+	margin-top: 2px;
+	margin-right: 6px;
+	margin-bottom: 16px;
+	border: 0 none;
+	background: #eaedf2;
+	background-color: #eaedf2;
+	outline: none;
+	box-shadow: none;
+
+    &:focus {
+        border: 0 none;
+        box-shadow: none;
+        background-color: #eaedf2;
+    }
+}
+
+/*
+You'll have to override some of the default styles
+but since we're referencing the id, it should be easy.
+*/
+#wp-submit {
+    border-radius: 0px;
+    background: #3f5872;
+    box-shadow: none;
+    float: left;
+    height: auto;
+    width: 100%;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.4em;
+    margin-top: 0.4em;
+    font-weight: normal;
+    line-height: 34px;
+    padding: 6px 24px;
+    position: relative;
+    text-decoration: none;
+    transition: background-color 0.14s ease-in-out 0s;
+
+    &:hover, &:active {
+        background: #2c3e50;
+    }
+
+    &:active {
+        top: 1px;
+    }
+
+} /* login button*/
+
+
+/*
+retina login logo
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+  // you can put your 2x logo in here
+  .login h1 a {
+		background: url(../images/login-logo@2x.png) no-repeat top center; /* make sure to replace this! */
+	}
+
+} // end retina media query
+

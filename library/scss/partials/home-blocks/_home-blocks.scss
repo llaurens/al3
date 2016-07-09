@@ -1,0 +1,61 @@
+/******************************************************************
+Module Name:    Home Blocks
+Author:         Laurens Lamberty
+
+This are the general style for home blocks, which can be specified
+further in seperated files.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLE
+*********************/
+
+.home-block {
+    position: relative;
+
+    .entry-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    article {
+        border-bottom: 2px solid $meta-gray;
+        @include MQ(M) { border-bottom: 0 none; }
+
+        &:last-child {
+            border-bottom: 0 none;
+        }
+    }
+
+}
+
+/*********************
+THE TITLE ABOVE
+*********************/
+
+.block-title {
+    position: relative;
+    overflow: hidden;
+    margin-top: 2em;
+
+
+    // Show a little icon popping up when hovering a link
+    a {
+        &:after {
+            font-family: "dashicons";
+            content: "\f344";
+            position: absolute;
+            top: 75px;
+            transition: 0.2s ease-in-out top 0s;
+        }
+
+        &:hover {
+            &:after {
+                top: 20px;
+            }
+        }
+    }
+
+}
