@@ -2,8 +2,6 @@
 /*
 * Front Page
 *
-* @package al3
-* @subpackage Core
 */
 ?>
 

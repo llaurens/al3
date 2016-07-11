@@ -2,9 +2,6 @@
 /*
 Template Name: Home
 *
-* @package al3
-* @subpackage Page Templates
-*
 * Boring. Simply a copy of the index.php.
 * Cries for a workaround.
 *
