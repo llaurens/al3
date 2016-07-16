@@ -36,26 +36,6 @@ the whole project.
 @import "layout/grid";
 
 /*********************
-IMPORTING MODULES
-Modules are reusable blocks or elements we use throughout the project.
-We can break them up as much as we want or just keep them all in one.
-I mean, you can do whatever you want. The world is your oyster. Unless
-you hate oysters, then the world is your peanut butter & jelly sandwich.
-*********************/
-
-// buttons
-@import "modules/buttons";
-
-// forms (inputs & labels)
-@import "modules/forms";
-
-// Galleries
-@import "modules/galleries";
-@import "modules/lightbox";
-@import "modules/issue_overview";
-
-
-/*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
 you set a great foundation, you won't need to add too many styles in
@@ -88,6 +68,29 @@ the other stylesheets. Remember, keep it light: Speed is Important.
     @import "partials/nav/lateral-nav";
     @import "partials/nav/footer-nav";
     @import "partials/expanding-search";
+
+
+/*********************
+IMPORTING MODULES
+Modules are reusable blocks or elements we use throughout the project.
+We can break them up as much as we want or just keep them all in one.
+I mean, you can do whatever you want. The world is your oyster. Unless
+you hate oysters, then the world is your peanut butter & jelly sandwich.
+*********************/
+
+// buttons
+@import "modules/buttons";
+
+// cards
+@import "modules/cards";
+
+// forms (inputs & labels)
+@import "modules/forms";
+
+// Galleries
+@import "modules/galleries";
+@import "modules/lightbox";
+@import "modules/issue_overview";
 
 
 /*********************
