@@ -1,0 +1,26 @@
+/******************************************************************
+Module Name:    Card Styles
+Author:         Laurens Lamberty
+
+Cards are like boxes, who contain a certain content such as a link or
+an image or whatever.
+
+******************************************************************/
+
+.card {
+        box-shadow: 0 1px 2px rgba(0,0,0,.3);
+        border-radius: 1px;
+
+        &.link {
+            height: 200px;
+            background-color: darken($light-gray, 2%);
+            transition: all 0.3s ease-in-out 0s;
+
+            &:hover, &:focus {
+                background-color: darken($light-gray, 4%);
+                transform: translateY(2px);
+            }
+
+        }
+
+    }
