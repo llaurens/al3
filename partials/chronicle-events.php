@@ -19,7 +19,7 @@ $meta_pictures = get_field( 'gallery_images' );
 
     <header class="article-header">
 
-        <h4 class="m-all t-all d-1of2 cf chronicle-title">
+        <h4 class="chronicle-title">
 
             <?php
 
@@ -53,20 +53,20 @@ $meta_pictures = get_field( 'gallery_images' );
         <?php
 
         if( ! empty( $meta_start_date ) &&  empty( $meta_end_date )) {
-            printf( '<p class="m-all t-all d-1of4 cf byline chronicle-date"><span class="dashicons dashicons-calendar-alt"></span>' . __( 'On %s', 'al3' ) . '</p>',
+            printf( '<p class="cf byline chronicle-byline chronicle-date"><span class="dashicons dashicons-calendar-alt"></span>' . __( 'On %s', 'al3' ) . '</p>',
                    date_i18n( get_option( 'date_format' ), strtotime( get_field( 'event_start_date' )) )
                   );
         }
 
         if( ! empty( $meta_start_date ) && ! empty( $meta_end_date )) {
-            printf( '<p class="m-all t-all d-1of4 cf byline chronicle-date"><span class="dashicons dashicons-calendar-alt"></span>' . __( 'From %1$s to %2$s', 'al3' ) . '</p>',
+            printf( '<p class="cf byline chronicle-byline chronicle-date"><span class="dashicons dashicons-calendar-alt"></span>' . __( 'From %1$s to %2$s', 'al3' ) . '</p>',
                    date_i18n( get_option( 'date_format' ), strtotime( get_field( 'event_start_date' )) ),
                    date_i18n( get_option( 'date_format' ), strtotime( get_field( 'event_end_date' )) )
                   );
         }
 
         if( ! empty( $meta_pictures ) ) { ?>
-            <p class="m-all t-all d-1of4 cf byline chronicle-date">
+            <p class="cf byline chronicle-byline chronicle-pictures">
                 <span class="dashicons dashicons-camera"></span>
                 <a href="<?php the_permalink(); ?>" title="<?php _e( 'Pictures of this event.', 'al3' ); ?>"><?php _e( 'Pictures', 'al3' ); ?></a>
             </p>
@@ -74,7 +74,7 @@ $meta_pictures = get_field( 'gallery_images' );
 
         <?php if ( is_user_logged_in() ) { ?>
 
-            <p class="byline chronicle-edit">
+            <p class="cf byline chronicle-byline chronicle-edit">
 
                 <span class="dashicons dashicons-admin-tools"></span><?php edit_post_link(); ?>
 

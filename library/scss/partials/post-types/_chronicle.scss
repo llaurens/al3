@@ -24,6 +24,7 @@ a.has-children {
     }
 
 }
+
 .chronicle-headline {
     background: $asphalt;
     color: $white;
@@ -130,16 +131,20 @@ a.has-children {
 
     }
 
-    @include MQ(L) {
-        .chronicle-title, .chronicle-date, .chronicle-photos, .chronicle-edit {
+    @include MQ(XL) {
+
+        .chronicle-byline {
             display: inline-block;
             vertical-align: baseline;
+
+            &:not(:first-of-type) .dashicons {
+                padding-left: 1.25em;
+            }
+
         }
+
     }
 
-    .byline {
-        line-height: 2em;
-    }
 
     .dashicons {
         display: inline-block;
@@ -147,10 +152,6 @@ a.has-children {
         margin-top: -10px;
         vertical-align: middle;
         padding-right: 1.25em;
-
-        &.gallery-icon {
-            padding-left: 0;
-        }
     }
 
 }
