@@ -28,8 +28,8 @@
 
                     <img
                          class="wp-image alignleft gallery-thumbnail rounded"
-                         alt="<?php echo $images[0]['alt']; ?>"
-                         src="<?php echo $images[0]['sizes']['thumbnail']; ?>"
+                         alt="<?php echo $images[array_rand($images)]['alt']; ?>"
+                         src="<?php echo $images[array_rand($images)]['sizes']['thumbnail']; ?>"
                     >
 
                 <?php endif; ?>
