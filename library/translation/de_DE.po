@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: al3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-16 16:42+0200\n"
+"POT-Creation-Date: 2016-08-11 20:53+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Laurens Lamberty <laurens@lamberty.me>\n"
 "Language-Team: Laurens Lamberty <laurens@lamberty.me>\n"
@@ -63,9 +63,7 @@ msgstr "Für %s"
 msgid "Head of Management"
 msgstr "Stammesführung"
 
-#: archive-management.php:91
-#: library/admin/management/al3-management-core.php:41
-#: library/admin/management/al3-management-metaboxes.php:43
+#: archive-management.php:91 library/admin/user/al3-user-metaboxes.php:323
 #: page-management.php:12
 msgid "Management"
 msgstr "Stammesrat"
@@ -212,56 +210,56 @@ msgstr "Wie heißt du eigentlich?"
 msgid "How is your mail?"
 msgstr "Wie ist deine E-Mail-Adresse?"
 
-#: footer.php:17 library/al3.php:264
+#: footer.php:17 library/al3.php:263
 msgid "Lateral Menu"
 msgstr "Seitliches Menü"
 
-#: footer.php:62 library/al3.php:265
+#: footer.php:62 library/al3.php:264
 msgid "Footer Links"
 msgstr "Footer-Links"
 
-#: functions.php:114
+#: functions.php:115
 msgid "Large Item (600px)"
 msgstr "Großes Bild (600px)"
 
-#: functions.php:115
+#: functions.php:116
 msgid "Mobile Phone"
 msgstr "Handy"
 
-#: functions.php:116
+#: functions.php:117
 msgid "Small Devices"
 msgstr "Kleingeräte"
 
-#: functions.php:117
+#: functions.php:118
 msgid "Tablets"
 msgstr "Tablets"
 
-#: functions.php:118
+#: functions.php:119
 msgid "Desktops"
 msgstr "Desktops"
 
-#: functions.php:119
+#: functions.php:120
 msgid "Retina Displays"
 msgstr "Retina-Displays"
 
-#: functions.php:212
+#: functions.php:213
 msgid "Photos:"
 msgstr "Fotos:"
 
-#: functions.php:301
+#: functions.php:302
 #, php-format
 msgid "<cite class=\"fn\">%1$s</cite> %2$s"
 msgstr "<cite class=\"fn\">%1$s</cite> %2$s"
 
-#: functions.php:301
+#: functions.php:302
 msgid "(Edit)"
 msgstr "(Bearbeiten)"
 
-#: functions.php:302
+#: functions.php:303
 msgid "F jS, Y"
 msgstr "j. F Y"
 
-#: functions.php:307
+#: functions.php:308
 msgid "Your comment is awaiting moderation."
 msgstr "Ihr Kommentar wird noch moderiert."
 
@@ -353,7 +351,6 @@ msgstr "Termin hinzufügen"
 
 #: library/admin/events/al3-events-core.php:49
 #: library/admin/groups/al3-groups-core.php:44
-#: library/admin/management/al3-management-core.php:44
 msgid "Add New"
 msgstr "Hinzufügen"
 
@@ -600,6 +597,7 @@ msgstr "Ausrichter"
 
 #: library/admin/events/al3-events-core.php:220
 #: library/admin/events/al3-events-metaboxes.php:59
+#: library/admin/user/al3-user-metaboxes.php:149
 msgid "Location"
 msgstr "Ort"
 
@@ -663,7 +661,7 @@ msgstr "Wann fängt der Termin an?"
 
 #: library/admin/events/al3-events-metaboxes.php:44
 #: library/admin/events/al3-events-metaboxes.php:54
-#: library/admin/management/al3-management-metaboxes.php:89
+#: library/admin/user/al3-user-metaboxes.php:71
 msgid "d. MM yy"
 msgstr "d. MM yy"
 
@@ -701,6 +699,7 @@ msgstr "Anmeldung"
 
 #: library/admin/events/al3-events-metaboxes.php:103
 #: library/admin/groups/al3-groups-metaboxes.php:73
+#: library/admin/user/al3-user-metaboxes.php:322
 msgid "Leader"
 msgstr "Leiter"
 
@@ -737,6 +736,7 @@ msgid "Groups"
 msgstr "Gruppen"
 
 #: library/admin/groups/al3-groups-core.php:42
+#: library/admin/user/al3-user-metaboxes.php:280
 msgid "Group"
 msgstr "Gruppe"
 
@@ -749,7 +749,6 @@ msgid "Add New Group"
 msgstr "Neue Gruppen hinzufügen"
 
 #: library/admin/groups/al3-groups-core.php:46
-#: library/admin/management/al3-management-core.php:46
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -762,12 +761,10 @@ msgid "Search Groups"
 msgstr "Gruppen suchen"
 
 #: library/admin/groups/al3-groups-core.php:49
-#: library/admin/management/al3-management-core.php:49
 msgid "Nothing found in the Database."
 msgstr "In der Datenbank wurde nichts gefunden."
 
 #: library/admin/groups/al3-groups-core.php:50
-#: library/admin/management/al3-management-core.php:50
 msgid "Nothing found in Trash"
 msgstr "Im Papierkorb wurde nichts gefunden."
 
@@ -841,12 +838,10 @@ msgid "Who is the leader of this group?"
 msgstr "Wer ist der Gruppenführer dieser Gruppe?"
 
 #: library/admin/groups/al3-groups-metaboxes.php:79
-#: library/admin/management/al3-management-metaboxes.php:53
 msgid "James"
 msgstr "Jean-Jaques"
 
 #: library/admin/groups/al3-groups-metaboxes.php:88
-#: library/admin/management/al3-management-core.php:94
 msgid "E-Mail"
 msgstr "E-Mail"
 
@@ -922,109 +917,6 @@ msgstr "Uhr"
 #: library/admin/groups/al3-groups-metaboxes.php:170
 msgid "Not specified"
 msgstr "Nicht festgelegt"
-
-#: library/admin/management/al3-management-core.php:42
-msgid "Manager"
-msgstr "Mitglied"
-
-#: library/admin/management/al3-management-core.php:43
-msgid "All Managers"
-msgstr "Alle Mitglieder"
-
-#: library/admin/management/al3-management-core.php:45
-msgid "Add New Manager"
-msgstr "Mitglied hinzufügen"
-
-#: library/admin/management/al3-management-core.php:47
-msgid "View Manager"
-msgstr "Mitglied anschauen"
-
-#: library/admin/management/al3-management-core.php:48
-msgid "Search Management"
-msgstr "Mitglieder durchsuchen"
-
-#: library/admin/management/al3-management-core.php:53
-msgid "Here you can edit or change the management."
-msgstr "Hier kannst du Änderungen am Stammesrat vornehmen."
-
-#: library/admin/management/al3-management-core.php:61
-#: library/admin/management/al3-management-core.php:62
-msgid "management"
-msgstr "stammesrat"
-
-#: library/admin/management/al3-management-core.php:90
-msgid "Thumbnail"
-msgstr "Vorschaubild"
-
-#: library/admin/management/al3-management-core.php:91
-msgid "Member"
-msgstr "Mitglied"
-
-#: library/admin/management/al3-management-core.php:92
-#: library/admin/management/al3-management-metaboxes.php:48
-msgid "Official Name"
-msgstr "Offizieller Name"
-
-#: library/admin/management/al3-management-core.php:93
-msgid "Member of the head"
-msgstr "Mitglied der Stammesführung"
-
-#: library/admin/management/al3-management-core.php:95
-#: library/admin/management/al3-management-metaboxes.php:84
-msgid "Birthday"
-msgstr "Geburtstag"
-
-#: library/admin/management/al3-management-core.php:116
-msgid "No official name specified"
-msgstr "Kein offizieller Name angegeben"
-
-#: library/admin/management/al3-management-core.php:121
-msgid "Yes"
-msgstr "Ja"
-
-#: library/admin/management/al3-management-core.php:123
-msgid "No"
-msgstr "Keine"
-
-#: library/admin/management/al3-management-core.php:131
-msgid "No e-mail specified"
-msgstr "Keine E-Mail angegeben"
-
-#: library/admin/management/al3-management-core.php:138
-msgid "No age specified"
-msgstr "Keine Altersstufe angegeben"
-
-#: library/admin/management/al3-management-metaboxes.php:51
-msgid "What is the civil Name of this Person?"
-msgstr "Der offizielle Name der Person"
-
-#: library/admin/management/al3-management-metaboxes.php:62
-msgid "Head"
-msgstr "Stammesführung"
-
-#: library/admin/management/al3-management-metaboxes.php:65
-msgid "Is this person part of the head of administration?"
-msgstr "Ist die Person Mitglied der Stammesführung?"
-
-#: library/admin/management/al3-management-metaboxes.php:75
-msgid "What E-Mail has this manager?"
-msgstr "Welche E-Mail hat dieses Mitglied?"
-
-#: library/admin/management/al3-management-metaboxes.php:87
-msgid "When is this member of the management born?"
-msgstr "Wann ist dieses Mitglied des Stammesrats geboren?"
-
-#: library/admin/management/al3-management-metaboxes.php:95
-msgid "Link to User Profile"
-msgstr "Mit Benutzerprofil verlinken"
-
-#: library/admin/management/al3-management-metaboxes.php:98
-msgid ""
-"You can link this member to a user profile of this page, if you would like to"
-msgstr ""
-"Du kannst dieses Mitglied mit einem Benutzerprofil verlinken, wenn du magst. "
-"Dann erscheint ein Link zu den Beiträgen der jeweiligen Person auf der "
-"Website."
 
 #: library/admin/plugin-management/class-tgm-plugin-activation.php:334
 msgid "Install Required Plugins"
@@ -1303,16 +1195,177 @@ msgstr "Alle Installationen wurden abgeschlossen."
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Installiere Plugin %1$s (%2$d/%3$d)"
 
-#: library/al3.php:91
+#: library/admin/user/al3-user-metaboxes.php:30
+msgid "Detailed Information"
+msgstr "Detaillierte Informationen"
+
+#: library/admin/user/al3-user-metaboxes.php:35
+msgid "Avatar"
+msgstr "Profilbild"
+
+#: library/admin/user/al3-user-metaboxes.php:38
+msgid ""
+"Upload an avatar here! It will be shown in the intern part of the website or "
+"at the gallery of the management."
+msgstr ""
+"Lade hier ein Profilbild hoch, das entweder im internen Bereich oder für die "
+"Stammesrats-Seite verwendet wird."
+
+#: library/admin/user/al3-user-metaboxes.php:60
+msgid "Birthday"
+msgstr "Geburtstag"
+
+#: library/admin/user/al3-user-metaboxes.php:78
+msgid "Sex"
+msgstr "Geschlecht"
+
+#: library/admin/user/al3-user-metaboxes.php:90
+msgid "Female"
+msgstr "Weiblich"
+
+#: library/admin/user/al3-user-metaboxes.php:91
+msgid "Male"
+msgstr "Männlich"
+
+#: library/admin/user/al3-user-metaboxes.php:103
+msgid "Street"
+msgstr "Straße"
+
+#: library/admin/user/al3-user-metaboxes.php:115
+msgid "Brücherweg 26"
+msgstr "Brücherweg 26"
+
+#: library/admin/user/al3-user-metaboxes.php:125
+msgid "Zip Code"
+msgstr "PLZ"
+
+#: library/admin/user/al3-user-metaboxes.php:137
+msgid "53604"
+msgstr "53604"
+
+#: library/admin/user/al3-user-metaboxes.php:161
+msgid "Bad Honnef"
+msgstr "Bad Honnef"
+
+#: library/admin/user/al3-user-metaboxes.php:171
+msgid "State"
+msgstr "Bundesland"
+
+#: library/admin/user/al3-user-metaboxes.php:183
+msgid "Badem-Württemberg"
+msgstr "Badem-Württemberg"
+
+#: library/admin/user/al3-user-metaboxes.php:184
+msgid "Bayern"
+msgstr "Bayern"
+
+#: library/admin/user/al3-user-metaboxes.php:185
+msgid "Berlin"
+msgstr "Berlin"
+
+#: library/admin/user/al3-user-metaboxes.php:186
+msgid "Brandenburg"
+msgstr "Brandenburg"
+
+#: library/admin/user/al3-user-metaboxes.php:187
+msgid "Bremen"
+msgstr "Bremen"
+
+#: library/admin/user/al3-user-metaboxes.php:188
+msgid "Hamburg"
+msgstr "Hamburg"
+
+#: library/admin/user/al3-user-metaboxes.php:189
+msgid "Hessen"
+msgstr "Hessen"
+
+#: library/admin/user/al3-user-metaboxes.php:190
+msgid "Mecklenburg-Vorpommern"
+msgstr "Mecklenburg-Vorpommern"
+
+#: library/admin/user/al3-user-metaboxes.php:191
+msgid "Niedersachsen"
+msgstr "Niedersachsen"
+
+#: library/admin/user/al3-user-metaboxes.php:192
+msgid "Nordrhein-Westfalen"
+msgstr "Nordrhein-Westfalen"
+
+#: library/admin/user/al3-user-metaboxes.php:193
+msgid "Rheinland-Pfalz"
+msgstr "Rheinland-Pfalz"
+
+#: library/admin/user/al3-user-metaboxes.php:194
+msgid "Saarland"
+msgstr "Saarland"
+
+#: library/admin/user/al3-user-metaboxes.php:195
+msgid "Sachsen"
+msgstr "Sachsen"
+
+#: library/admin/user/al3-user-metaboxes.php:196
+msgid "Sachsen-Anhalt"
+msgstr "Sachsen-Anhalt"
+
+#: library/admin/user/al3-user-metaboxes.php:197
+msgid "Schleswig-Holstein"
+msgstr "Schleswig-Holstein"
+
+#: library/admin/user/al3-user-metaboxes.php:198
+msgid "Thüringen"
+msgstr "Thüringen"
+
+#: library/admin/user/al3-user-metaboxes.php:213
+msgid "Phone"
+msgstr "Telefonnummer"
+
+#: library/admin/user/al3-user-metaboxes.php:225
+msgid "+49 (2224) 70332"
+msgstr "+ 49 (2224) 70332"
+
+#: library/admin/user/al3-user-metaboxes.php:235
+msgid "Mobile"
+msgstr "Handnummer"
+
+#: library/admin/user/al3-user-metaboxes.php:247
+msgid "+49 (151) 27537090"
+msgstr "+ 49 (151) 27537090"
+
+#: library/admin/user/al3-user-metaboxes.php:257
+msgid "Target/Age Group"
+msgstr "Ziel-/Altersgruppe"
+
+#: library/admin/user/al3-user-metaboxes.php:283
+msgid "Which group is the user part of?"
+msgstr "In welcher Untergruppe ist dieser Nutzer Mitglied?"
+
+#: library/admin/user/al3-user-metaboxes.php:309
+msgid "Part of Management"
+msgstr "Teil des Stammesrates"
+
+#: library/admin/user/al3-user-metaboxes.php:321
+#: library/admin/user/al3-user-metaboxes.php:362
+msgid "Director"
+msgstr "Stammesführer"
+
+#: library/admin/user/al3-user-metaboxes.php:324
+msgid "No Part in Management"
+msgstr "Kein Teil des Stammesrates"
+
+#: library/admin/user/al3-user-metaboxes.php:335
+msgid "Function"
+msgstr "Amt"
+
+#: library/al3.php:90
 #, php-format
 msgid "Page %s"
 msgstr "Seite %s"
 
-#: library/al3.php:311
+#: library/al3.php:310
 msgid "Read "
 msgstr "Weiterlesen"
 
-#: library/al3.php:311
+#: library/al3.php:310
 msgid "Read more &raquo;"
 msgstr "Weiter &raquo;"
 
@@ -1334,10 +1387,9 @@ msgstr "Auto Galerie"
 
 #: page-autogallery.php:52 page-blog.php:49 page-chronicle.php:48
 #: page-events.php:49 page-gallery.php:52 page-groups.php:50 page-home.php:46
-#: page-login.php:85 page-management.php:49 page-schedule.php:52
-#: page-stammesrat.php:48 page.php:48 partials/single-article.php:67
-#: partials/single-events.php:181 partials/single-gallery.php:65
-#: partials/single-groups.php:37
+#: page-login.php:85 page-management.php:49 page-schedule.php:52 page.php:48
+#: partials/single-article.php:67 partials/single-events.php:181
+#: partials/single-gallery.php:65 partials/single-groups.php:37
 msgid "Pages:"
 msgstr "Seiten:"
 
@@ -1379,10 +1431,6 @@ msgstr "Startseite"
 #: page-login.php:12
 msgid "Login"
 msgstr "Log-In"
-
-#: page-stammesrat.php:11
-msgid "Stammesratv2"
-msgstr "Stammesratv2"
 
 #: page.php:64
 msgid "Oops, Page Not Found!"
@@ -1492,43 +1540,6 @@ msgstr ""
 "Hättest du was dagegen, uns darüber eine kurze Nachricht zu senden? Die "
 "Adresse wäre <a href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>. Danke!"
 
-#: partials/404-management.php:13
-msgid "Oops, no Management found!"
-msgstr "Hoppla, kein Stammesrat vorhanden!"
-
-#: partials/404-management.php:17
-msgid ""
-"Wow, this is strange: We either have no management right now or this is "
-"website is broken. Most likely the last option."
-msgstr ""
-"Moment, das kann eigentlich nicht sein: Entweder wir haben gerade keinen "
-"Stammesrat oder die Website ist mal wieder kaputt. Eher Letzteres."
-
-#: partials/404-management.php:21 partials/404-management_leader.php:21
-#: partials/404-post.php:21
-#, php-format
-msgid ""
-"Still here? OK, seriously: We do not have a clue what you are doing here nor "
-"how did you get here. But if you want to tell us, simply write a short "
-"message to <a href=\"mailto:%s\" title=\"Write us!\">%s</a>!"
-msgstr ""
-"Immer noch hier: Im Ernst, wir haben nicht die leiseste Ahnung, wie diese "
-"Seite hier auftauchen konnte. Wir können aber versuchen, das Problem zu "
-"beheben. Eine kurze Nachricht an <a href=\"mailto:%s\" title=\"Schreib uns!"
-"\">%s</a> reicht. Danke!"
-
-#: partials/404-management_leader.php:13
-msgid "Oops, no Captain found!"
-msgstr "Holla, keine Stammesführung vorhanden!"
-
-#: partials/404-management_leader.php:17
-msgid ""
-"Wow, this is strange: We either have no head of management or this is "
-"website is broken. Most likely the last option."
-msgstr ""
-"Moment, das kann eigentlich nicht sein: Entweder wir haben gerade keine "
-"Stammesführung oder die Website ist mal wieder kaputt. Eher Letzteres."
-
 #: partials/404-page.php:13
 msgid "Oops, page not found!"
 msgstr "Ho, Seite nicht gefunden!"
@@ -1541,6 +1552,18 @@ msgstr "Hey, kein Artikel gefunden!"
 #: partials/404-post.php:17
 msgid "Uh Oh. Something is missing. Try double checking things."
 msgstr "Sicher, dass du hierhin wolltest?"
+
+#: partials/404-post.php:21
+#, php-format
+msgid ""
+"Still here? OK, seriously: We do not have a clue what you are doing here nor "
+"how did you get here. But if you want to tell us, simply write a short "
+"message to <a href=\"mailto:%s\" title=\"Write us!\">%s</a>!"
+msgstr ""
+"Immer noch hier: Im Ernst, wir haben nicht die leiseste Ahnung, wie diese "
+"Seite hier auftauchen konnte. Wir können aber versuchen, das Problem zu "
+"beheben. Eine kurze Nachricht an <a href=\"mailto:%s\" title=\"Schreib uns!"
+"\">%s</a> reicht. Danke!"
 
 #: partials/archive-article.php:18 partials/archive-gallery.php:18
 #: partials/home-blog.php:56
@@ -1602,24 +1625,22 @@ msgstr "%2$s"
 msgid "%1$s"
 msgstr "%1$s"
 
-#: partials/archive-management.php:29 partials/archive-member.php:29
-#: partials/single-management.php:29
+#: partials/archive-management.php:56 partials/archive-user.php:56
 #, php-format
 msgid "Write an e-mail to %1$s."
 msgstr "%1$s eine E-Mail schreiben."
 
-#: partials/archive-management.php:39 partials/archive-member.php:39
-#: partials/single-management.php:39
+#: partials/archive-management.php:68 partials/archive-user.php:68
 #, php-format
 msgid "%1$s years old"
 msgstr "%1$s Jahre alt"
 
-#: partials/archive-management.php:53 partials/archive-member.php:53
+#: partials/archive-management.php:81 partials/archive-user.php:81
 #, php-format
 msgid "View posts by %s."
 msgstr "Beiträge von %s anschauen"
 
-#: partials/archive-management.php:54 partials/archive-member.php:54
+#: partials/archive-management.php:82 partials/archive-user.php:82
 #, php-format
 msgid "Posts by %s"
 msgstr "Beiträge von %s"
@@ -1809,6 +1830,103 @@ msgstr ""
 #: taxonomy-event_target_group.php:39
 msgid "Print this schedule"
 msgstr "Diesen Jahresplan ausrucken"
+
+#~ msgid "Manager"
+#~ msgstr "Mitglied"
+
+#~ msgid "All Managers"
+#~ msgstr "Alle Mitglieder"
+
+#~ msgid "Add New Manager"
+#~ msgstr "Mitglied hinzufügen"
+
+#~ msgid "View Manager"
+#~ msgstr "Mitglied anschauen"
+
+#~ msgid "Search Management"
+#~ msgstr "Mitglieder durchsuchen"
+
+#~ msgid "Here you can edit or change the management."
+#~ msgstr "Hier kannst du Änderungen am Stammesrat vornehmen."
+
+#~ msgid "management"
+#~ msgstr "stammesrat"
+
+#~ msgid "Thumbnail"
+#~ msgstr "Vorschaubild"
+
+#~ msgid "Member"
+#~ msgstr "Mitglied"
+
+#~ msgid "Official Name"
+#~ msgstr "Offizieller Name"
+
+#~ msgid "Member of the head"
+#~ msgstr "Mitglied der Stammesführung"
+
+#~ msgid "No official name specified"
+#~ msgstr "Kein offizieller Name angegeben"
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid "No"
+#~ msgstr "Keine"
+
+#~ msgid "No e-mail specified"
+#~ msgstr "Keine E-Mail angegeben"
+
+#~ msgid "No age specified"
+#~ msgstr "Keine Altersstufe angegeben"
+
+#~ msgid "What is the civil Name of this Person?"
+#~ msgstr "Der offizielle Name der Person"
+
+#~ msgid "Head"
+#~ msgstr "Stammesführung"
+
+#~ msgid "Is this person part of the head of administration?"
+#~ msgstr "Ist die Person Mitglied der Stammesführung?"
+
+#~ msgid "What E-Mail has this manager?"
+#~ msgstr "Welche E-Mail hat dieses Mitglied?"
+
+#~ msgid "When is this member of the management born?"
+#~ msgstr "Wann ist dieses Mitglied des Stammesrats geboren?"
+
+#~ msgid "Link to User Profile"
+#~ msgstr "Mit Benutzerprofil verlinken"
+
+#~ msgid ""
+#~ "You can link this member to a user profile of this page, if you would "
+#~ "like to"
+#~ msgstr ""
+#~ "Du kannst dieses Mitglied mit einem Benutzerprofil verlinken, wenn du "
+#~ "magst. Dann erscheint ein Link zu den Beiträgen der jeweiligen Person auf "
+#~ "der Website."
+
+#~ msgid "Stammesratv2"
+#~ msgstr "Stammesratv2"
+
+#~ msgid "Oops, no Management found!"
+#~ msgstr "Hoppla, kein Stammesrat vorhanden!"
+
+#~ msgid ""
+#~ "Wow, this is strange: We either have no management right now or this is "
+#~ "website is broken. Most likely the last option."
+#~ msgstr ""
+#~ "Moment, das kann eigentlich nicht sein: Entweder wir haben gerade keinen "
+#~ "Stammesrat oder die Website ist mal wieder kaputt. Eher Letzteres."
+
+#~ msgid "Oops, no Captain found!"
+#~ msgstr "Holla, keine Stammesführung vorhanden!"
+
+#~ msgid ""
+#~ "Wow, this is strange: We either have no head of management or this is "
+#~ "website is broken. Most likely the last option."
+#~ msgstr ""
+#~ "Moment, das kann eigentlich nicht sein: Entweder wir haben gerade keine "
+#~ "Stammesführung oder die Website ist mal wieder kaputt. Eher Letzteres."
 
 #~ msgid "Return to the dashboard"
 #~ msgstr "Zurück zum Dashbord"
