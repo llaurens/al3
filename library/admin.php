@@ -58,10 +58,10 @@ require_once( 'admin/events/al3-events.php' );
 require_once( 'admin/groups/al3-groups.php' );
 
 
-/************ MANAGEMENT PLUGIN *********************/
+/************ USER PLUGIN *********************/
 
-// INCLUDE MANAGEMENT PLUGIN
-require_once( 'admin/management/al3-management.php' );
+// INCLUDE USER PLUGIN
+require_once( 'admin/user/al3-user.php' );
 
 /**************** METABOXES *********************/
 
