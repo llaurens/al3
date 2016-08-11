@@ -76,6 +76,7 @@ if ( ! isset( $content_width ) ) {
 /************ THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
+add_image_size( 'al3-retina-thumb', 300, 300, true );
 add_image_size( 'al3-item', 600, 300, true );
 
 // Picturefill Sizes
