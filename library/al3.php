@@ -25,7 +25,6 @@ URL: http://themble.com/al3/
   - page-navi function
   - removing <p> from around images
   - customizing the post excerpt
-  - custom google+ integration
   - adding custom fields to user profiles
 
 */
