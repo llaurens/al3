@@ -56,77 +56,60 @@ __( 'Management', 'al3' );
 
                     </article>
 
-                    <div class="head cf">
-
-                        <?php
-
-                        $head_args = array(
-                            'posts_per_page' => -1, // Display all members of the head
-                            'post_type' => 'management', // Tell WordPress to show only management posts
-                            'orderby' => 'meta_value', // We want to organize the groups by date
-                            'meta_key' => 'management_birthday', // Grab the "start date" field data
-                            'order' => 'ASC', // We sort the head from old and wise to young and wild
-                            'meta_query' => array( // WordPress has all the results, now, return only the members that are in the head
-                                array(
-                                    'key' => 'management_head', // Check the head field
-                                    'value' => 1, // Compare to this value (true)
-                                    'compare' => '==' // Return the ones that are in the head
-                                )
-                            )
-                        );
-
-                        $head = new WP_Query( $head_args );
-
-                        ?>
-
-                        <?php if ( $head->have_posts()) : while ( $head->have_posts()) : $head->the_post(); ?>
-
-                            <?php get_template_part( 'partials/archive', 'management' ); ?>
-
-                        <?php endwhile; ?>
-
-                        <?php else : ?>
-
-                            <?php get_template_part( 'partials/404', 'management_leader' ); ?>
-
-                        <?php endif; ?>
-
-                    </div>
-
                     <div class="management cf">
 
                         <?php
 
-                        $head_args = array(
-                            'posts_per_page' => -1, // Display all members of the management
-                            'post_type' => 'management', // Tell WordPress to show only management posts
-                            'orderby' => 'meta_value', // We want to organize the groups by date
-                            'meta_key' => 'management_birthday', // Grab the "start date" field data
-                            'order' => 'DESC', // And here the other way round
-                            'meta_query' => array( // WordPress has all the results, now, return only the members that are not in the head
-                                array(
-                                    'key' => 'management_head', // Check the head field
-                                    'value' => 1, // Compare to this value (true)
-                                    'compare' => '!=' // The other way round: Return the ones that not are in the head
-                                )
-                            )
-                        );
+                        // A little helper function to create a Query for users based on the meta data
 
-                        $head = new WP_Query( $head_args );
+                         function get_users_by_meta_data( $orderby, $order, $meta_key, $meta_value, $compare ) {
+
+                             $user_query = new WP_User_Query(
+                                 array(
+                                     'orderby'      =>  $orderby,
+                                     'order'        =>  $order,
+                                     'meta_key'	    =>	$meta_key,
+                                     'meta_value'	=>	$meta_value,
+                                     'compare'      =>  $compare
+                                )
+                            );
+
+                           // Get the results from the query, returning the first user
+                           $users = $user_query->get_results();
+
+                           return $users;
+
+                        }
 
                         ?>
 
-                        <?php if ( $head->have_posts()) : while ( $head->have_posts()) : $head->the_post(); ?>
+                        <?php
 
-                            <?php get_template_part( 'partials/archive', 'management' ); ?>
+                        // Querying the users by their level: 01 is a director, 02 is member of the direction, 03 is a member of the management
 
-                        <?php endwhile; ?>
+                        // Directors
+                        foreach( get_users_by_meta_data( 'name', 'ASC', 'user_management', '01', 'LIKE' ) as $user ) {
+                            if ( ! empty ($user) ) {
+                                // use locate_template() instead of get_template_part() to pass the variable $user on. Needed, but Bah! Might be reworked sometimes.
+                                include( locate_template( 'partials/archive-user.php', false, false ) );
+                            }
+                        }
 
-                        <?php else : ?>
+                        // Members of the Direction
+                        foreach( get_users_by_meta_data( 'name', 'ASC', 'user_management', '02', 'LIKE' ) as $user ) {
+                            if ( ! empty ($user) ) {
+                                include( locate_template( 'partials/archive-user.php', false, false ) );
+                            }
+                        }
 
-                            <?php get_template_part( 'partials/404', 'management' ); ?>
+                        // Members of the Management
+                        foreach( get_users_by_meta_data( 'name', 'ASC', 'user_management', '03', 'LIKE' ) as $user ) {
+                            if ( ! empty ($user) ) {
+                                include( locate_template( 'partials/archive-user.php', false, false ) );
+                            }
+                        }
 
-                        <?php endif; ?>
+                        ?>
 
                     </div>
 
