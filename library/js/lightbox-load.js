@@ -10,10 +10,8 @@
  */
 
 // LAZYLOAD IMAGES
-$(function() {
-    $("img.lazy").lazyload({
-        effect : "fadeIn"
-    });
+var myLazyLoad = new LazyLoad({
+    elements_selector: "img.lazy"
 });
 
 
