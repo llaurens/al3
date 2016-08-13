@@ -148,7 +148,7 @@ function al3_scripts_and_styles() {
         wp_register_script( 'al3-ie-HTML5', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://raw.githubusercontent.com/aFarkas/html5shiv/master/src/html5shiv.js", array(), '3.7.2', false );
 
         // Lazyload
-        wp_register_script( 'al3-lazyload', get_stylesheet_directory_uri() . '/library/js/libs/min/jquery.lazyload.min.js', array(), '1.9.7', true );
+        wp_register_script( 'al3-lazyload', get_stylesheet_directory_uri() . '/library/js/libs/min/lazyload.min.js', array(), '1.0.0', true );
 
         // Image Lightbox
         wp_register_script( 'al3-lightbox', get_stylesheet_directory_uri() . '/library/js/libs/min/imagelightbox.min.js', array(), '1.0.9', true );
