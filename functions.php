@@ -218,91 +218,44 @@ function al3_custom_title() {
 
 /************ COMMENT LAYOUT *********************/
 
-// Check for a gravatar (thanks to  justinph / validate_gravatar.php)
-
-/*
- * Utility function to check if a gravatar exists for a given email or id
- * @param int|string|object $id_or_email A user ID,  email address, or comment object
- * @return bool if the gravatar exists or not
- */
-
-function validate_gravatar($id_or_email) {
-  //id or email code borrowed from wp-includes/pluggable.php
-	$email = '';
-	if ( is_numeric($id_or_email) ) {
-		$id = (int) $id_or_email;
-		$user = get_userdata($id);
-		if ( $user )
-			$email = $user->user_email;
-	} elseif ( is_object($id_or_email) ) {
-		// No avatar for pingbacks or trackbacks
-		$allowed_comment_types = apply_filters( 'get_avatar_comment_types', array( 'comment' ) );
-		if ( ! empty( $id_or_email->comment_type ) && ! in_array( $id_or_email->comment_type, (array) $allowed_comment_types ) )
-			return false;
-
-		if ( !empty($id_or_email->user_id) ) {
-			$id = (int) $id_or_email->user_id;
-			$user = get_userdata($id);
-			if ( $user)
-				$email = $user->user_email;
-		} elseif ( !empty($id_or_email->comment_author_email) ) {
-			$email = $id_or_email->comment_author_email;
-		}
-	} else {
-		$email = $id_or_email;
-	}
-
-	$hashkey = md5(strtolower(trim($email)));
-	$uri = 'http://www.gravatar.com/avatar/' . $hashkey . '?d=404';
-
-	$data = wp_cache_get($hashkey);
-	if (false === $data) {
-		$response = wp_remote_head($uri);
-		if( is_wp_error($response) ) {
-			$data = 'not200';
-		} else {
-			$data = $response['response']['code'];
-		}
-	    wp_cache_set($hashkey, $data, $group = '', $expire = 60*5);
-
-	}
-	if ($data == '200'){
-		return true;
-	} else {
-		return false;
-	}
-}
-
-
 // Comment Layout
 function al3_comments( $comment, $args, $depth ) {
    $GLOBALS['comment'] = $comment; ?>
   <div id="comment-<?php comment_ID(); ?>" <?php comment_class('cf'); ?>>
     <article  class="cf">
+
       <header class="comment-author vcard">
-        <?php
-        /*
-          this is the new responsive optimized comment image. It used the new HTML5 data-attribute to display comment gravatars on larger screens only. What this means is that on larger posts, mobile sites don't have a ton of requests for comment images. This makes load time incredibly fast! If you'd like to change it back, just replace it with the regular wordpress gravatar call:
-          echo get_avatar($comment,$size='32',$default='<path_to_url>' );
-        */
-        ?>
-        <?php // custom gravatar call ?>
-        <?php
-          // create variable
-          $bgauthemail = get_comment_author_email();
-        ?>
 
-          <?php if ( validate_gravatar($bgauthemail) ) { ?>
-          <img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim ( $bgauthemail ) ) ); ?>?s=40" class="load-gravatar avatar-48 photo" height="40" width="40" src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
-          <?php } else { ?>
-          <img class="load-gravatar no-avatar avatar-48 photo" height="40" width="40" src="<?php echo get_template_directory_uri(); ?>/library/images/no-avatar.jpg" />
-          <?php } ?>
+        <?php
 
-        <?php // end custom gravatar call ?>
+        $user = get_user_by( 'email', get_comment_author_email() );
+
+        if ( ! empty ($user->user_avatar)) {
+
+            $avatar_attributes = wp_get_attachment_image_src( $user->user_avatar ); ?>
+
+            <img
+                 alt="user-<?php echo $user->ID ?>"
+                 src="<?php echo $avatar_attributes[0]; ?>"
+                 class="avatar-48 photo rounded"
+                 width="48"
+                 height="48"
+            >
+
+        <?php } else { ?>
+
+          <img class="no-avatar avatar-48 photo" height="40" width="40" src="<?php echo get_template_directory_uri(); ?>/library/images/no-avatar.jpg" />
+
+        <?php } ?>
+
         <?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'al3' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'al3' ),'  ','') ) ?>
-        <time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'al3' )); ?> </a></time>
+
+        <time datetime="<?php echo comment_time('Y-m-j'); ?>">
+            <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'al3' )); ?> </a>
+        </time>
 
       </header>
+
       <?php if ($comment->comment_approved == '0') : ?>
         <div class="alert alert-info">
           <p><?php _e( 'Your comment is awaiting moderation.', 'al3' ) ?></p>
