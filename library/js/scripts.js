@@ -111,26 +111,6 @@ function loadMenu () {
 
     // CHRONICLE MENU
 
-    // wrap similar elements to submenu
-    var collection = [];
-
-    $('.chronicle-entry').each(function() {
-        var nextBox = $(this).next().hasClass('chronicle-entry');
-
-        collection.push($(this));
-
-        if(!nextBox)
-        {
-            var container = $('<div class="sub-menu chronicle-wrap"></div>');
-            container.insertBefore(collection[0]);
-            for(i=0;i<collection.length;i++)
-            {
-                collection[i].appendTo(container);
-            }
-            collection = [];
-        }
-    })
-
     //open (or close) submenu items in the lateral menu. Close all the other open submenu items.
 	$('.chronicle a.has-children').on('click', function(event){
 		event.preventDefault();

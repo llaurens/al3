@@ -50,7 +50,9 @@ __( 'Chronicle', 'al3' );
 				                'link_before' => '<span>',
 								'link_after'  => '</span>',
                             ) );
+
                             ?>
+
 				        </div> <?php // end article div ?>
 
                     </article>
@@ -59,80 +61,67 @@ __( 'Chronicle', 'al3' );
 
                         <?php
 
-                        $today = current_time('Ymd');
+                        function posts_by_year() {
 
-                        $events_args = array(
-                            'paged' => $paged, // Pagination Fix
-                            'posts_per_page' => -1, // Display a custom amount of posts
-                            'post_type' => 'events', // Tell WordPress to show only events posts
-                            'orderby' => 'meta_value', // We want to organize the events by date
-                            'meta_key' => 'event_start_date', // Grab the "start date" field data
-                            'order' => 'DSC', // DSC is the other option
-                            'meta_query' => array( // WordPress has all the results, now, return only the events after today's date
-                                array(
-                                    'key' => 'event_start_date', // Check the start date field
-                                    'value' => $today, // Set today's date (note the similar format)
-                                    'compare' => '<', // Return the ones greater than today's date
-                                    'type' => 'NUMERIC,' // Let WordPress know we're working with numbers
+                            // array to use for results
+                            $years = array();
+
+                            // Value to compare
+                            $today = current_time('Ymd');
+
+                            // get posts from WP
+                            $posts = get_posts(array(
+                                'post_type' => 'events',            // Only show events
+                                'posts_per_page' => -1,             // Display all events at once
+                                'orderby' => 'meta_value',          // We want to organize the events by date
+                                'meta_key' => 'event_start_date',   // Grab the "start date" field data
+                                'order' => 'DESC',                  // ASC is the other option
+                                'meta_query' => array(              // WordPress has all the results, now, return only the events after today's date
+                                    array(
+                                        'key' => 'event_start_date',    // Check the start date field
+                                        'value' => $today,              // Set today's date (note the similar format)
+                                        'compare' => '<',               // Return the ones greater than today's date
+                                        'type' => 'NUMERIC,'            // Let WordPress know we're working with numbers
+                                    )
                                 )
-                            )
-                        );
+                            ));
 
-                        $events_args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 
-                        $events = new WP_Query( $events_args );
-
-                        // Pagination fix
-                        $temp_query = $wp_query;
-                        $wp_query   = NULL;
-                        $wp_query   = $events;
-
-                        ?>
-
-                        <?php
-                            $date = 0;
-                            $newDate = true;
-                        ?>
-
-                        <?php if ( $events->have_posts()) : while ( $events->have_posts()) :   $events->the_post(); ?>
-
-                            <?php
-
-                            $meta_end_date = get_field( 'event_start_date' );
-
-                            if ($date == 0)
-                                $date = date_i18n( "Y", strtotime( $meta_end_date ));
-                            else if ($date != date_i18n( "Y", strtotime( $meta_end_date ))) {
-                                $date = date_i18n( "Y", strtotime( $meta_end_date ));
-                                $newDate = true;
+                            // loop through posts, populating $years arrays
+                            foreach($posts as $post) {
+                                $years[date('Y', strtotime($post->event_start_date))][] = $post;
                             }
 
-                            if ($newDate)
-                                echo '<a href="#" class="has-children year-' . $date . '" ><h2 class="chronicle-headline">' . $date . '</h2></a>';
+                            // reverse sort by year
+                            krsort($years);
 
-                            $newDate = false;
+                            // return values
+                            return $years;
 
-                            ?>
+                        }
 
-                            <?php get_template_part( 'partials/chronicle', 'events' ); ?>
+                        foreach( posts_by_year() as $year => $posts) { ?>
 
+                            <?php // Headline as slide-out link ?>
+                            <a href="#" class="has-children year-<?php echo $year; ?>">
+                                <h2 class="chronicle-headline"><?php echo $year; ?></h2>
+                            </a>
 
-                        <?php endwhile; ?>
+                            <div class="sub-menu chronicle-wrap">
+                                <?php foreach($posts as $post) {
 
-                            <?php al3_page_navi(); ?>
+                                    // Fetch the postdata
+                                    setup_postdata($post);
 
-                        <?php else : ?>
+                                    // Output
+                                    get_template_part( 'partials/chronicle', 'events' );
 
-                            <?php get_template_part( 'partials/404', 'events' ); ?>
+                                } ?>
+                            </div>
 
-                        <?php endif; ?>
+                        <?php } ?>
 
-                        <?php
-                        // Reset postdata
-                        wp_reset_postdata();
-                        $wp_query = NULL;
-                        $wp_query = $temp_query;
-                        ?>
+                    </div>
 
                 <?php endwhile; else : ?>
 
@@ -140,10 +129,10 @@ __( 'Chronicle', 'al3' );
 
                 <?php endif; ?>
 
-                </div>
-
             </main>
+
         </div>
+
     </div>
 
 <?php get_footer(); ?>
