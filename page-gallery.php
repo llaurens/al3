@@ -79,11 +79,17 @@ __( 'Gallery', 'al3' );
                                 'meta_key' => 'event_start_date',   // Grab the "start date" field data
                                 'order' => 'DESC',                  // ASC is the other option
                                 'meta_query' => array(              // WordPress has all the results, now, return only the events after today's date
+                                    'relation' => 'AND',                // Query must be whithin date range, but should also include only posts with images
                                     array(
                                         'key' => 'event_start_date',    // Check the start date field
                                         'value' => $today,              // Set today's date (note the similar format)
                                         'compare' => '<',               // Return the ones greater than today's date
                                         'type' => 'NUMERIC,'            // Let WordPress know we're working with numbers
+                                    ),
+                                    array(
+                                    'key'     => 'gallery_images',      // Check the gallery images field
+                                    'value'   => '',                    // Is it empty?
+                                    'compare' => '!='                   // Show only events which have images assigned
                                     )
                                 )
                             ));
