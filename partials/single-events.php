@@ -59,6 +59,7 @@
                                              class="lazy"
                                              alt="<?php echo $image['alt']; ?>"
                                              data-original="<?php echo $image['sizes']['thumbnail']; ?>"
+                                             data-original-set="<?php echo $image['sizes']['thumbnail'] . ' 1x, ' . $image['sizes']['al3-retina-thumb'] . ' 2x'; ?>"
                                         >
                                     </a>
                                 </div>
