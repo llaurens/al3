@@ -150,8 +150,8 @@ function al3_scripts_and_styles() {
         // Lazyload
         wp_register_script( 'al3-lazyload', get_stylesheet_directory_uri() . '/library/js/libs/min/lazyload.min.js', array(), '1.0.0', true );
 
-        // Image Lightbox
-        wp_register_script( 'al3-lightbox', get_stylesheet_directory_uri() . '/library/js/libs/min/imagelightbox.min.js', array(), '1.0.9', true );
+        // Baguette Lightbox
+        wp_register_script( 'al3-lightbox', get_stylesheet_directory_uri() . '/library/js/libs/min/baguetteBox.min.js', array(), '1.8.0', true );
 
 		// register main stylesheet
 		wp_register_style( 'al3-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -178,6 +178,10 @@ function al3_scripts_and_styles() {
 
         // Scripts in head
 		wp_enqueue_script( 'al3-modernizr' );
+
+        // Other Scripts in Footer
+        wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'al3-js' );
 
         // Contact Form 7 Scripts only on contact page template
         function al3_dequue_cf7_scripts() {
@@ -224,10 +228,6 @@ function al3_scripts_and_styles() {
         if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
 		      wp_enqueue_script( 'comment-reply' );
         }
-
-        // Other Scripts in Footer
-        wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'al3-js' );
 
 	}
 }
