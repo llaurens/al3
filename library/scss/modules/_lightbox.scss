@@ -8,48 +8,204 @@ gease in this lightweight.
 
 ******************************************************************/
 
-
-// IMAGE LIGHTBOX SELECTOR
-
-#imagelightbox {
-    cursor: pointer;
+#baguetteBox-overlay {
+    display: none;
+    opacity: 0;
     position: fixed;
-    z-index: 10000;
-    touch-action: none;
-    box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75);
-}
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    background-color: #222;
+    background-color: rgba(0,0,0,.8);
+    transition: opacity .5s ease;
 
-
-// ACTIVITY INDICATION
-
-#imagelightbox-loading,
-#imagelightbox-loading div {
-    border-radius: 50%;
-}
-
-#imagelightbox-loading {
-    width: 2.5em;
-    height: 2.5em;
-    background-color: $asphalt;
-    position: fixed;
-    z-index: 10003;
-    top: 50%;
-    left: 50%;
-    padding: 0.625em;
-    margin: -1.25em 0 0 -1.25em;
-    box-shadow: 0 0 2.5em rgba( 0, 0, 0, .75);
-
-    div {
-        width: 1.25em;
-        height: 1.25em;
-        background-color: $white;
-        animation: imagelightbox-loading .5s ease infinite;
+    &.visible {
+        opacity: 1;
     }
 
+    .full-image {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        figure {
+            display: inline;
+            margin: 0;      // needed for mobile
+            height: 100%;   // Opera 12 image stretching fix
+        }
+
+        img {
+            // IE8 fix
+            display: inline-block;
+            width: auto;
+            height: auto;
+
+            max-height: calc(100% - 2em);
+            @include MQ(L) { max-height: calc(100% - 6em); }
+            max-width: calc(100% - 2em);
+            @include MQ(L) { max-height: calc(100% - 6em); }
+            margin: 1em;
+            @include MQ(L) { margin: 3em; }
+            vertical-align: middle;
+            box-shadow: 0 0 8px rgba(0,0,0,.6);
+        }
+
+        figcaption {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            white-space: normal;
+            color: $white;
+            background-color: $asphalt;
+        }
+
+        &:before {
+            content: "";
+            display: inline-block;
+            height: 50%;
+            width: 1px;
+            margin-right:-1px;
+        }
+    }
 }
 
+#baguetteBox-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    transition: left .4s ease, transform .4s ease;
 
-@keyframes imagelightbox-loading {
+    &.bounce-from-right {
+        animation: bounceFromRight .4s ease-out;
+    }
+
+    &.bounce-from-left {
+        animation: bounceFromLeft .4s ease-out;
+    }
+}
+
+@keyframes bounceFromRight{
+    0% { margin-left: 0; }
+    50% { margin-left: -30px; }
+    100% { margin-left: 0; }
+}
+
+@keyframes bounceFromLeft{
+    0% { margin-left: 0; }
+    50% { margin-left: 30px; }
+    100% { margin-left: 0; }
+}
+
+%arrow-button {
+    top: calc(50% - 70px);
+    @include MQ(L) { top: calc(50% - 30px); }
+    width: 45px;
+    @include MQ(L) { width: 60px; }
+    height: 60px;
+    @include MQ(L) { height: 140px; }
+
+    // HAAACK!
+    svg {
+        @include MQ(L) {
+            left: 10%;
+            top: 30%;
+        }
+    }
+}
+
+.baguetteBox-button {
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: $link-color;
+    color: $white;
+    transition: background-color .4s ease;
+
+    // dirty, but working svg hack
+    svg {
+        polyline, g {
+            stroke: $white;
+        }
+    }
+
+    &:focus,
+    &:hover {
+        background-color: $link-hover;
+    }
+
+    &#next-button {
+        @extend %arrow-button;
+        right: 2%;
+    }
+
+    &#previous-button {
+        @extend %arrow-button;
+        left: 2%;
+    }
+
+    &#close-button {
+        top: 20px;
+        right: 2%;
+        width: 30px;
+        height: 30px;
+    }
+
+    // Firefox fix
+    svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+/*
+    Preloader
+    Borrowed from http://tobiasahlin.com/spinkit/
+*/
+
+.baguetteBox-spinner {
+    width: 3.5em;
+    height: 3.5em;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1.75em;
+    margin-left: -1.75em;
+}
+
+.baguetteBox-double-bounce1,
+.baguetteBox-double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 2.5em rgba( 0, 0, 0, .75);
+    background-color: $asphalt;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.baguetteBox-double-bounce2 {
+    background-color: $midnight;
+    animation-delay: -1s;
+}
+
+@keyframes bounce {
     from {
         opacity: 0.5;
         transform: scale( .75);
@@ -61,143 +217,5 @@ gease in this lightweight.
     to {
         opacity: 0.5;
         transform: scale( .75);
-    }
-}
-
-
-// THE OVERLAY
-
-#imagelightbox-overlay {
-    background-color: $white;
-    background-color: rgba( 255, 255, 255, .9);
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-
-// CAPTION (backup)
-
-#imagelightbox-caption {
-    text-align: center;
-    color: #fff;
-    background-color: #666;
-    position: fixed;
-    z-index: 10001;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.625em;
-    /* 10 */
-}
-
-
-// ARROWS
-
-.imagelightbox-arrow {
-    border: 0 none;
-    width: 3.75em;
-    height: 7.5em;
-    background-color: $link-color;
-    vertical-align: middle;
-    display: none;
-    position: fixed;
-    z-index: 10001;
-    top: 50%;
-    margin-top: -3.75em;
-
-    &:hover, &:focus {
-        background-color: $link-hover;
-    }
-
-    &:before {
-        width: 0;
-        height: 0;
-        border: 1em solid transparent;
-        content: '';
-        display: inline-block;
-        margin-bottom: -0.125em;
-    }
-
-}
-
-
-.imagelightbox-arrow-left {
-    left: 2.5em;
-
-    &:before {
-        border-left: none;
-        border-right-color: $white;
-        margin-left: -0.313em;
-    }
-
-}
-.imagelightbox-arrow-right {
-    right: 2.5em;
-
-    &:before {
-        border-right: none;
-        border-left-color: $white;
-        margin-right: -0.313em;
-    }
-
-}
-
-#imagelightbox-loading,
-#imagelightbox-overlay,
-#imagelightbox-caption,
-.imagelightbox-arrow {
-    animation: fade-in .25s linear;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@media only screen and (max-width: 41.250em) {
-    #container {
-        width: 100%;
-    }
-    #imagelightbox-close {
-        top: 1.25em;
-        /* 20 */
-        right: 1.25em;
-        /* 20 */
-    }
-    #imagelightbox-nav {
-        bottom: 1.25em;
-        /* 20 */
-    }
-    .imagelightbox-arrow {
-        width: 2.5em;
-        /* 40 */
-        height: 3.75em;
-        /* 60 */
-        margin-top: -2.75em;
-        /* 30 */
-    }
-    .imagelightbox-arrow-left {
-        left: 1.25em;
-        /* 20 */
-    }
-    .imagelightbox-arrow-right {
-        right: 1.25em;
-        /* 20 */
-    }
-}
-@media only screen and (max-width: 20em) {
-    .imagelightbox-arrow-left {
-        left: 0;
-    }
-    .imagelightbox-arrow-right {
-        right: 0;
     }
 }
