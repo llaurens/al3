@@ -141,9 +141,6 @@ jQuery(document).ready(function($){
     // Load Menu
 	loadMenu();
 
-    // Load Gravatar
-    loadGravatars();
-
     // Load Menu
 	loadSearch();
     SearchButton();
