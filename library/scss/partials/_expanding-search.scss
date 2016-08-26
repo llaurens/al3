@@ -10,7 +10,7 @@ create an alternative for .no-js-devices.
 ******************************************************************/
 
 
-.sb-search {
+.expanding-search {
 	position: absolute;
 	width: 0%;
 	min-width: calc(38px + 1.5em );
@@ -21,7 +21,7 @@ create an alternative for .no-js-devices.
 	transition: width 0.3s;
 	backface-visibility: hidden;
 
-    .sb-search-input {
+    .expanding-search-input {
         position: absolute;
         top: 0;
         left: 0;
@@ -38,9 +38,9 @@ create an alternative for .no-js-devices.
 
 }
 
-.sb-icon-search,
-.sb-search-submit,
-.dashicons.sb-icon-search {
+.expanding-icon-search,
+.expanding-search-submit,
+.dashicons.expanding-icon-search {
 	width: 62px;
 	height: 59px;
 	display: block;
@@ -55,7 +55,7 @@ create an alternative for .no-js-devices.
     transition: left 0.25s;
 }
 
-.sb-search-submit {
+.expanding-search-submit {
 	background: $white; /* IE needs this */
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
     filter: alpha(opacity=0); /* IE 5-7 */
@@ -66,7 +66,7 @@ create an alternative for .no-js-devices.
 	z-index: -1;
 }
 
-.sb-icon-search {
+.expanding-icon-search {
 	background: $white;
 	z-index: 90;
 	font-size: 22px;
@@ -74,21 +74,21 @@ create an alternative for .no-js-devices.
 
 
 /* Open state */
-.sb-search.sb-search-open,
-.no-js .sb-search {
+.expanding-search.expanding-search-open,
+.no-js .expanding-search {
 	width: calc(100% + 3em);
 
-    .sb-icon-search {
+    .expanding-icon-search {
 	   background: $asphalt;
        color: $white;
 	   z-index: 11;
     }
 
-    .sb-search-submit {
+    .expanding-search-submit {
 	   z-index: 90;
     }
 
-    .sb-icon-search, .sb-search-submit {
+    .expanding-icon-search, .expanding-search-submit {
         left: calc(100% - 3em);
     }
 }
@@ -97,12 +97,12 @@ create an alternative for .no-js-devices.
 .extern-search {
     position: relative;
 
-    .sb-search {
+    .expanding-search {
         left: 0;
         position: relative;
         width: 100%;
 
-        .sb-icon-search, .sb-search-submit {
+        .expanding-icon-search, .expanding-search-submit {
             left: calc(100% - 62px);
         }
     }

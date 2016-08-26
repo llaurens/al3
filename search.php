@@ -19,11 +19,11 @@
 
                 <div class="extern-search hentry card cf">
 
-                    <div id="sb-search" class="sb-search">
+                    <div id="expanding-search" class="expanding-search">
                         <form method="get" action="<?php echo home_url( '/' ); ?>">
-                            <input class="sb-search-input" placeholder="<?php _e( 'Search …', 'al3' ) ?>" type="search" value="<?php echo get_search_query() ?>" name="s" id="search" title="<?php _e( 'Search for:', 'al3' ) ?>" onkeyup="buttonUp();">
-                            <input class="sb-search-submit" type="submit" value="">
-                            <span class="sb-icon-search dashicons dashicons-search"></span>
+                            <input class="expanding-search-input" placeholder="<?php _e( 'Search …', 'al3' ) ?>" type="search" value="<?php echo get_search_query() ?>" name="s" id="search" title="<?php _e( 'Search for:', 'al3' ) ?>" onkeyup="buttonUp();">
+                            <input class="expanding-search-submit" type="submit" value="">
+                            <span class="expanding-icon-search dashicons dashicons-search"></span>
                         </form>
                     </div>
 
