@@ -118,3 +118,26 @@ select {
   background-repeat: no-repeat;
   background-position: 97.5% center;
 }
+
+// Contact Form 7
+.wpcf7-form {
+
+    // general output alert
+    .wpcf7-response-output {
+        border: 0 none;
+        margin: 0 0 1.5em 0;
+        padding: 1.5em;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    // Mail successfully sended
+    .wpcf7-mail-sent-ok {
+        background: $midnight;
+    }
+
+    // Error
+    div[class^="wpcf7-message"], div[class*="wpcf7-message"] {
+        background: $alert-red;
+    }
+}
