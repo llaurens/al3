@@ -26,13 +26,10 @@ baguetteBox.run('.gallery', {
 } // End Lightbox
 
 
-// All Regular jQuery
-jQuery(document).ready(function($){
+// When document has loaded (observed by cash)
+$(document).ready(function($) {
 
-    // Load Lightbox on pages with lightbox (declared above)
-    if( $('a.lightbox').length ){
-        loadLightbox();
-    }
+    loadLightbox();
 
 
-}); //END JQUERY DOCUMENT READY
+});

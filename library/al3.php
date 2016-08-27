@@ -137,15 +137,28 @@ function al3_scripts_and_styles() {
     //Frontend Scripts/Styles
     if (!is_admin()) {
 
+        // REGISTER STYLES
+
+        // register main stylesheet
+		wp_register_style( 'al3-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+
+		// ie-only style sheet
+		wp_register_style( 'al3-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+
+
+        // REGISTER SCRIPTS
+
 		// modernizr (without media query polyfill)
 		wp_register_script( 'al3-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/min/modernizr.custom.min.js', array(), '2.5.3', false );
 
-        // jQuery (from Google CDN)
-        wp_deregister_script( 'jquery' );
-        wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js", array(), '2.2.0', true );
-
         // IE only HTML5
         wp_register_script( 'al3-ie-HTML5', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://raw.githubusercontent.com/aFarkas/html5shiv/master/src/html5shiv.js", array(), '3.7.2', false );
+
+        // cash (smart jQuery alternative)
+		wp_register_script( 'al3-cash', get_stylesheet_directory_uri() . '/library/js/libs/min/cash.min.js', array(), '1.3.4', true );
+
+        // Velocity.js for animations without jQuery
+        wp_register_script( 'al3-velocity', get_stylesheet_directory_uri() . '/library/js/libs/min/velocity.min.js', array(), '1.3.0', true );
 
         // Lazyload
         wp_register_script( 'al3-lazyload', get_stylesheet_directory_uri() . '/library/js/libs/min/lazyload.min.js', array(), '1.0.0', true );
@@ -153,35 +166,33 @@ function al3_scripts_and_styles() {
         // Baguette Lightbox
         wp_register_script( 'al3-lightbox', get_stylesheet_directory_uri() . '/library/js/libs/min/baguetteBox.min.js', array(), '1.8.0', true );
 
-		// register main stylesheet
-		wp_register_style( 'al3-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+		//adding scripts file in the footer: first is the default scripts, second only for galleries
+		wp_register_script( 'al3-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array(), '', true );
+		wp_register_script( 'al3-lightbox-loader', get_stylesheet_directory_uri() . '/library/js/lightbox-load.min.js', array(), '', true );
 
-		// ie-only style sheet
-		wp_register_style( 'al3-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 
-		//adding scripts file in the footer
-		wp_register_script( 'al3-js', get_stylesheet_directory_uri() . '/library/js/scripts.min.js', array( 'jquery' ), '', true );
-		wp_register_script( 'al3-lightbox-loader', get_stylesheet_directory_uri() . '/library/js/lightbox-load.min.js', '', '', true );
-
-		// enqueue styles and scripts
+		// ENQUEUE STYLES
 		wp_enqueue_style( 'al3-stylesheet' );
 		wp_enqueue_style( 'dashicons' );
 		wp_enqueue_style( 'al3-ie-only' );
 
 		$wp_styles->add_data( 'al3-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
-		/*
-		I recommend using a plugin to call jQuery
-		using the google cdn. That way it stays cached
-		and your site will load faster.
-		*/
+
+        // ENQUEUE SCRIPTS
 
         // Scripts in head
 		wp_enqueue_script( 'al3-modernizr' );
 
         // Other Scripts in Footer
-        wp_enqueue_script( 'jquery' );
+        wp_enqueue_script( 'al3-cash' );
+        wp_enqueue_script( 'al3-velocity' );
 		wp_enqueue_script( 'al3-js' );
+
+        // Gallery Scripts only on past events, but also in footer
+		if( is_singular( 'events' ) && is_past_event() ) { wp_enqueue_script( 'al3-lazyload' ); }
+		if( is_singular( 'events' ) && is_past_event() ) { wp_enqueue_script( 'al3-lightbox' ); }
+		if( is_singular( 'events' ) && is_past_event() ) { wp_enqueue_script( 'al3-lightbox-loader' ); }
 
         // Contact Form 7 Scripts only on contact page template
         function al3_dequue_cf7_scripts() {
@@ -201,6 +212,7 @@ function al3_scripts_and_styles() {
                 wp_dequeue_style( 'contact-form-7' );
             }
         }
+
         add_action( 'wp_enqueue_scripts', 'al3_dequue_cf7_scripts', 99 );
 
         // Thickbox Scripts only in backend
@@ -217,12 +229,8 @@ function al3_scripts_and_styles() {
                 wp_dequeue_style( 'thickbox' );
             }
         }
-        add_action( 'wp_enqueue_scripts', 'al3_dequue_thickbox_scripts', 99 );
 
-        // Gallery Scripts only on past events, but also in footer
-		if( is_singular( 'events' ) && is_past_event() ) { wp_enqueue_script( 'al3-lazyload' ); }
-		if( is_singular( 'events' ) && is_past_event() ) { wp_enqueue_script( 'al3-lightbox' ); }
-		if( is_singular( 'events' ) && is_past_event() ) { wp_enqueue_script( 'al3-lightbox-loader' ); }
+        add_action( 'wp_enqueue_scripts', 'al3_dequue_thickbox_scripts', 99 );
 
         // comment reply script for threaded comments
         if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
