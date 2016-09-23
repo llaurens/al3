@@ -43,19 +43,22 @@ __( 'haddak', 'al3' );
                                 $args = array(
                                     'per_page' => 100,
                                     'orderby' => 'slug',
-                                    'order' => 'DESC'
+                                    'order' => 'desc'
                                 );
 
                                 $url = add_query_arg( $args, haddak_wp_json('issues') );
                                 $issues = slug_get_json( $url );
 
                                 if ( ! empty( $issues ) ) {
+
                                     foreach( $issues as $issue ) {
 
                                         $issue_infos = add_query_arg( $args, haddak_acf_json('term/issues/' . $issue->id) );
                                         $issue_meta = slug_get_json( $issue_infos );
                                         $cover_infos = add_query_arg( $args, haddak_wp_json('media/' . $issue_meta->acf->cover) );
                                         $cover_meta = slug_get_json( $cover_infos );
+
+
 
                                         ?>
 

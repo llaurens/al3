@@ -74,10 +74,6 @@ function remove_acf_menu() {
 	}
 add_action( 'admin_menu', 'remove_acf_menu', 999);
 
-/************ API POWER *********************/
-
-// INCLUDE API FUNCTIONS
-require_once( 'api.php' );
 
 /**************** METABOXES *********************/
 

@@ -216,6 +216,11 @@ function al3_custom_title() {
     }
 }
 
+/************ API POWER *********************/
+
+// INCLUDE API FUNCTIONS
+require_once( 'library/api.php' );
+
 /************ COMMENT LAYOUT *********************/
 
 // Comment Layout
