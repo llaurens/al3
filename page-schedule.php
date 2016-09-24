@@ -95,19 +95,23 @@ __( 'Schedule', 'al3' );
 
                                     <?php
 
-                                    if ( ! function_exists( 'al3_groups_columns' ) ) {
-                                        function al3_groups_columns($count) {
+                                    $count = $groups->post_count;
 
-                                            if ( $count == 1) { echo ('groups type-groups status-publish hentry m-all t-all d-all cf'); }
-                                            elseif ( $count == 2 || $count % 2 == 0 && $count > 3 ) { echo ('groups type-groups status-publish hentry m-all t-1of2 d-1of2 cf'); }
-                                            elseif ( $count == 3 || $count % 2 != 0 && $count > 3 ) { echo ('groups type-groups status-publish hentry m-all t-1of3 d-1of3 cf'); }
-
-                                        }
-                                    }
+                                    if ( $count == 1 ) { ?>
+                                        <div <?php post_class( 'm-all t-all d-all cf' ); ?> >
+                                    <?php } elseif ( $count == 2 || $count % 2 == 0 && $count > 3 ) { ?>
+                                        <div <?php post_class( 'm-all t-1of2 d-1of2 cf' ); ?> >
+                                    <?php } elseif ( $count == 3 || $count % 2 != 0 && $count > 3 ) { ?>
+                                        <div <?php post_class( 'm-all t-1of3 d-1of3 cf' ); ?> >
+                                    <?php } else { ?>
+                                        <div <?php post_class( 'm-all t-all d-all cf' ); ?> >
+                                    <?php }
 
                                     ?>
 
-                                    <?php get_template_part( 'partials/schedule', 'groups' ); ?>
+                                        <?php get_template_part( 'partials/schedule', 'groups' ); ?>
+
+                                    </div>
 
                                 <?php endwhile; ?>
 
@@ -123,8 +127,6 @@ __( 'Schedule', 'al3' );
                                 $wp_query = NULL;
                                 $wp_query = $temp_query;
                                 ?>
-
-                            </div>
 
                         <?php endwhile; else : ?>
 
