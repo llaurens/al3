@@ -209,7 +209,7 @@ function al3_custom_title() {
     $event_end_date = get_field( 'event_start_date', $post->ID );
     $event_gallery = get_field( 'gallery_images', $post->ID );
 
-    if ( ! empty( $event_end_date ) && ! empty( $event_gallery ) && $event_end_date < $today ) {
+    if ( ! empty( $event_end_date ) && ! empty( $event_gallery ) && $event_end_date < $today  && is_single() ) {
         printf(__( 'Photos:', 'al3' ) . ' ' . wp_get_document_title());
     } else {
         echo wp_get_document_title();
