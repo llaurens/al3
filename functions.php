@@ -191,7 +191,7 @@ function al3_user_has_posts($user_id) {
 // Check whether an event has already occured
 function is_past_event () {
 
-    $today = current_time('Y-m-d');
+    $today = current_time('Ymd');
     $event_end_date = get_field( 'event_start_date' );
 
 	if ( $event_end_date < $today )
@@ -205,7 +205,7 @@ function al3_custom_title() {
 
     global $post;
 
-    $today = current_time('Y-m-d');
+    $today = current_time('Ymd');
     $event_end_date = get_field( 'event_start_date', $post->ID );
     $event_gallery = get_field( 'gallery_images', $post->ID );
 
