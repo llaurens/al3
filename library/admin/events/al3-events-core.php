@@ -74,7 +74,7 @@ function al3_events() {
 		'label'                 => __( 'Event', 'al3' ),
 		'description'           => __( 'This is were you can add or edit events.', 'al3' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'comments', 'trackbacks', 'revisions', ),
+		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'comments', 'trackbacks', 'revisions', 'thumbnail' ),
 		'taxonomies'            => array( 'event_target_group', 'event_organizer' ),
 		'hierarchical'          => false,
 		'public'                => true,

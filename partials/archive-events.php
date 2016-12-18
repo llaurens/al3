@@ -32,6 +32,27 @@
     </header>
 
     <div class="entry-content cf" itemprop="description">
+
+        <?php  if ( '' != get_the_post_thumbnail() ) { ?>
+
+        <?php
+
+        $avatar_attributes = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail', false, '' );
+        $retina_avatar = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'al3-retina-thumb', false, '' );
+
+        ?>
+
+            <img
+                 alt="user-<?php echo $user->ID ?>"
+                 src="<?php echo $avatar_attributes[0]; ?>"
+                 srcset="<?php echo $avatar_attributes[0] . ',' . $retina_avatar[0] . ' 2x'; ?>"
+                 class="avatar avatar-150 photo alignleft rounded"
+                 width="<?php echo $avatar_attributes[1]; ?>"
+                 height="<?php echo $avatar_attributes[2]; ?>"
+            >
+
+        <?php } ?>
+
         <?php the_content(); ?>
     </div>
 
