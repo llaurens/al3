@@ -76,7 +76,7 @@ __( 'Events', 'al3' );
 
                         <?php
 
-                        $today = current_time('Ymd');
+                        $today = current_time('Y-m-d');
 
                         $events_args = array(
                             'paged' => $paged, // Pagination Fix
