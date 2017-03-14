@@ -14,7 +14,6 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
 
-
 // let's get language support going, if you need it
 load_theme_textdomain( 'al3', get_template_directory() . '/library/translation' );
 
@@ -46,6 +45,9 @@ function al3_ahoy() {
     add_action( 'wp_head', 'al3_remove_recent_comments_style', 1 );
     // clean up gallery output in wp
     add_filter( 'gallery_style', 'al3_gallery_style' );
+    // dequeue CF7 Scripts
+    add_filter( 'wpcf7_load_js', '__return_false' );
+    add_filter( 'wpcf7_load_css', '__return_false' );
 
     // enqueue base scripts and styles
     add_action( 'wp_enqueue_scripts', 'al3_scripts_and_styles', 999 );

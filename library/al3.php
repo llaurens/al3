@@ -194,26 +194,18 @@ function al3_scripts_and_styles() {
 		if( is_singular( 'events' ) && is_past_event() ) { wp_enqueue_script( 'al3-lightbox' ); }
 		if( is_singular( 'events' ) && is_past_event() ) { wp_enqueue_script( 'al3-lightbox-loader' ); }
 
-        // Contact Form 7 Scripts only on contact page template
-        function al3_dequue_cf7_scripts() {
-
-            $load_scripts = false;
-
-            if( is_singular() ) {
-                $post = get_post();
-
-                if( has_shortcode($post->post_content, 'contact-form-7') ) {
-                    $load_scripts = true;
+        // CF7 Scripts only on Contact Page
+        function al3_enqueue_cf7_scripts() {
+            if ( is_page_template( 'page-contact.php' ) ) {
+                if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
+                    wpcf7_enqueue_styles();
+                }
+                if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+                    wpcf7_enqueue_scripts();
                 }
             }
-
-            if( ! $load_scripts ) {
-                wp_dequeue_script( 'contact-form-7' );
-                wp_dequeue_style( 'contact-form-7' );
-            }
         }
-
-        add_action( 'wp_enqueue_scripts', 'al3_dequue_cf7_scripts', 99 );
+        add_action( 'wp_enqueue_scripts', 'al3_enqueue_cf7_scripts' );
 
         // Thickbox Scripts only in backend
         function al3_dequue_thickbox_scripts() {
