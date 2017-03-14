@@ -14,10 +14,15 @@
     <header class="article-header">
 
         <h1 class="single-title entry-title event-title" itemprop="name">
-            <?php if ( is_past_event() ) { ?><span><?php _e( 'Pictures:', 'al3' ); ?> </span> <?php } ?><?php the_title(); ?>
+            <?php
+
+                $gallery_container = get_post_meta( $post->ID, 'gallery_images', true ); // Checks whether the gallery container is empty
+
+                if ( is_past_event()  && ! empty( $gallery_container )) { ?><span><?php _e( 'Pictures:', 'al3' ); ?> </span> <?php } ?><?php the_title();
+            ?>
         </h1>
 
-        <?php if ( is_past_event() ) { ?>
+        <?php if ( is_past_event()  && ! empty( $gallery_container ) ) { ?>
 
                 <?php
                 $meta_start_date = get_field( 'event_start_date' );
