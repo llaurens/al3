@@ -67,7 +67,7 @@ __( 'Chronicle', 'al3' );
                             $years = array();
 
                             // Value to compare
-                            $today = current_time('Ymd');
+                            $today = current_time('Y-m-d');
 
                             // get posts from WP
                             $posts = get_posts(array(
