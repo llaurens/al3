@@ -73,7 +73,9 @@ __( 'Contact', 'al3' );
                             <p><?php _e( 'This page appears to be missing. Strange. Sure you wanted to land here?', 'al3' ); ?></p>
                         </div>
                         <footer class="article-footer">
-                                <p><?php _e( 'If you want to tell us about this broken page or maybe a broken link, simply send a quick message to redaktion@al3.de. Thank you!', 'al3' ); ?></p>
+                                <p>
+                                    <?php printf ( __('If you want us to fix this error, simply write a short message to <a href="mailto:%s" title="Write us!">%s</a>!', 'al3'), get_option( 'admin_email' ), get_option( 'admin_email' ) ); ?>
+                                </p>
                         </footer>
                     </article>
 

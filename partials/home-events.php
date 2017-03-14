@@ -23,7 +23,7 @@
 
     <?php
 
-    $today = current_time('Ymd');
+    $today = current_time('Y-m-d');
 
     // Define custom query parameters
     $events_query_args = array(
@@ -111,7 +111,9 @@
                 <p><?php _e( 'Nothing, but absolutely nothing, was found. How did you do this?', 'al3' ); ?></p>
             </div>
             <footer class="article-footer">
-                <p><?php _e( 'Well, if you are not sure about what you just did, simply tell us via redaktion@al3.de. Thank you!', 'al3' ); ?></p>
+                <p>
+                    <?php printf ( __('If you want us to fix this error, simply write a short message to <a href="mailto:%s" title="Write us!">%s</a>!', 'al3'), get_option( 'admin_email' ), get_option( 'admin_email' ) ); ?>
+                </p>
             </footer>
         </article>
 
