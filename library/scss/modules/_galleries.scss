@@ -118,7 +118,7 @@ make sure to chose "Related_mobile" as your thumbnail-size. Looks way better.
 }
 
 .grid-particle {
-     width: calc( 100% / 2);
+     width: calc( 100% / 3);
 }
 
 .gallery-columns-1 {
@@ -143,7 +143,7 @@ make sure to chose "Related_mobile" as your thumbnail-size. Looks way better.
 @include MQ(S) {
 
     .grid-particle {
-        width: calc( 100% / 3)
+        width: calc( 100% / 4)
     }
 
     .gallery-columns-2 {
@@ -169,7 +169,7 @@ make sure to chose "Related_mobile" as your thumbnail-size. Looks way better.
 @include MQ(M) {
 
     .grid-particle {
-        width: calc( 100% / 4)
+        width: calc( 100% / 6)
     }
 
     .gallery-columns-3 {
@@ -200,7 +200,7 @@ make sure to chose "Related_mobile" as your thumbnail-size. Looks way better.
 @include MQ(L) {
 
     .grid-particle {
-        width: calc( 100% / 5)
+        width: calc( 100% / 8)
     }
 
     .gallery-columns-5 {
@@ -223,7 +223,7 @@ make sure to chose "Related_mobile" as your thumbnail-size. Looks way better.
 @include MQ(XL) {
 
     .grid-particle {
-        width: calc( 100% / 8)
+        width: calc( 100% / 9)
     }
 
     .gallery-columns-6 {
