@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: al3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-11 20:53+0200\n"
+"POT-Creation-Date: 2017-03-20 21:11+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Laurens Lamberty <laurens@lamberty.me>\n"
+"Last-Translator: Laurens Lamberty <laurens@lamberty.mw>\n"
 "Language-Team: Laurens Lamberty <laurens@lamberty.me>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n;esc_attr_x\n"
 "X-Poedit-Basepath: ../..\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:22
@@ -35,7 +35,8 @@ msgstr "Suchen …"
 msgid "Search for:"
 msgstr "Suchen nach:"
 
-#: 404.php:46 partials/404-page.php:21
+#: 404.php:46 page-contact.php:77 partials/404-page.php:21
+#: partials/home-events.php:115
 #, php-format
 msgid ""
 "If you want us to fix this error, simply write a short message to <a href="
@@ -44,17 +45,17 @@ msgstr ""
 "Wenn du willst, dass wir diesen Fehler beheben, dann reicht eine kurze "
 "Nachricht an <a href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>. Danke!"
 
-#: archive-events.php:28 page-events.php:65 taxonomy-event_target_group.php:37
+#: archive-events.php:28 page-events.php:65 taxonomy-event_target_group.php:38
 msgid "Show only events for:"
 msgstr "Zeige nur Aktionen für:"
 
-#: archive-events.php:31 page-events.php:68 taxonomy-event_target_group.php:32
+#: archive-events.php:31 page-events.php:68 taxonomy-event_target_group.php:33
 #, php-format
 msgid "Show all events for %s"
 msgstr "Zeige nur Aktionen für %s."
 
 #: archive-groups.php:70 page-groups.php:106 partials/home-groups.php:70
-#: partials/home-schedule.php:68 partials/schedule-groups.php:23
+#: partials/home-schedule.php:68 partials/schedule-groups.php:21
 #, php-format
 msgid "For %s."
 msgstr "Für %s"
@@ -106,7 +107,9 @@ msgstr "Holla, kein Artikel gefunden!"
 
 #: archive.php:85
 msgid "Wow. We did not find a single post matching your criteria. Jackpot!"
-msgstr "Wow. Nicht ein einziger Artikel passt zu deinen Kriterien. Jackpot!"
+msgstr ""
+"Wow. Nicht ein einziger Artikel passt zu deinen Kriterien. Jackpot! Wir sind "
+"schwer beeindruckt."
 
 #: archive.php:88
 msgid ""
@@ -119,17 +122,17 @@ msgstr ""
 "Dank im Voraus!"
 
 #: comments.php:22 partials/archive-article.php:38
-#: partials/archive-gallery.php:56 partials/single-article.php:81
+#: partials/single-article.php:81
 msgid "<span>No</span> Comments"
 msgstr "<span>Keine</span> Kommentare"
 
 #: comments.php:22 partials/archive-article.php:38
-#: partials/archive-gallery.php:56 partials/single-article.php:81
+#: partials/single-article.php:81
 msgid "<span>One</span> Comment"
 msgstr "<span>Ein</span> Kommentar"
 
 #: comments.php:22 partials/archive-article.php:38
-#: partials/archive-gallery.php:56 partials/single-article.php:81
+#: partials/single-article.php:81
 msgid "<span>%</span> Comments"
 msgstr "<span>%</span> Kommentare"
 
@@ -218,48 +221,48 @@ msgstr "Seitliches Menü"
 msgid "Footer Links"
 msgstr "Footer-Links"
 
-#: functions.php:115
+#: functions.php:117
 msgid "Large Item (600px)"
 msgstr "Großes Bild (600px)"
 
-#: functions.php:116
+#: functions.php:118
 msgid "Mobile Phone"
 msgstr "Handy"
 
-#: functions.php:117
+#: functions.php:119
 msgid "Small Devices"
 msgstr "Kleingeräte"
 
-#: functions.php:118
+#: functions.php:120
 msgid "Tablets"
 msgstr "Tablets"
 
-#: functions.php:119
+#: functions.php:121
 msgid "Desktops"
 msgstr "Desktops"
 
-#: functions.php:120
+#: functions.php:122
 msgid "Retina Displays"
 msgstr "Retina-Displays"
 
-#: functions.php:213
+#: functions.php:215
 msgid "Photos:"
 msgstr "Fotos:"
 
-#: functions.php:302
+#: functions.php:258
 #, php-format
 msgid "<cite class=\"fn\">%1$s</cite> %2$s"
 msgstr "<cite class=\"fn\">%1$s</cite> %2$s"
 
-#: functions.php:302
+#: functions.php:258
 msgid "(Edit)"
 msgstr "(Bearbeiten)"
 
-#: functions.php:303
+#: functions.php:261
 msgid "F jS, Y"
 msgstr "j. F Y"
 
-#: functions.php:308
+#: functions.php:268
 msgid "Your comment is awaiting moderation."
 msgstr "Ihr Kommentar wird noch moderiert."
 
@@ -271,23 +274,23 @@ msgstr "Das Hauptmenü"
 msgid "Menu"
 msgstr "Menü"
 
-#: library/admin.php:128
+#: library/admin.php:124
 msgid "http://www.dpbm.de/feed/"
 msgstr "http://www.dpbm.de/feed/"
 
-#: library/admin.php:137
+#: library/admin.php:133
 msgid "The RSS Feed is either empty or unavailable."
 msgstr "Der Feed ist entweder leer oder unerreichbar."
 
-#: library/admin.php:141
+#: library/admin.php:137
 msgid "j F Y @ g:i a"
 msgstr "j. F Y @ G:i"
 
-#: library/admin.php:150
+#: library/admin.php:146
 msgid "Recently on DPBM"
 msgstr "Zuletzt auf DPBM.de"
 
-#: library/admin.php:197
+#: library/admin.php:193
 msgid ""
 "<span id=\"footer-thankyou\">Developed by <a href=\"http://lamberty.me\" "
 "target=\"_blank\">Laurens Lamberty</a></span>. Built using <a href=\"http://"
@@ -297,27 +300,27 @@ msgstr ""
 "target=\"_blank\">Laurens Lamberty</a></span> mit <a href=\"http://themble."
 "com/bones\" target=\"_blank\">Bones</a>."
 
-#: library/admin.php:216
+#: library/admin.php:212
 msgid "Links Settings"
 msgstr "Link-Einstellungen"
 
-#: library/admin.php:224
+#: library/admin.php:220
 msgid "Link to Blog Page"
 msgstr "Link zur Blog-Seite"
 
-#: library/admin.php:234
+#: library/admin.php:230
 msgid "Link to Event Page"
 msgstr "Link zu den nächsten Aktionen"
 
-#: library/admin.php:244
+#: library/admin.php:240
 msgid "Link to Groups Page"
 msgstr "Link zur Gruppen-Seite"
 
-#: library/admin.php:254
+#: library/admin.php:250
 msgid "Link to Schedule Page"
 msgstr "Link zum Wochenplan"
 
-#: library/admin.php:264
+#: library/admin.php:260
 msgid "Link to Gallery Page"
 msgstr "Link zur Galerie-Seite"
 
@@ -701,7 +704,7 @@ msgstr "Anmeldung"
 #: library/admin/groups/al3-groups-metaboxes.php:73
 #: library/admin/user/al3-user-metaboxes.php:322
 msgid "Leader"
-msgstr "Leiter"
+msgstr "Mitglied der Stammesführung"
 
 #: library/admin/events/al3-events-metaboxes.php:115
 msgid "URL"
@@ -1386,10 +1389,10 @@ msgid "Auto Gallery"
 msgstr "Auto Galerie"
 
 #: page-autogallery.php:52 page-blog.php:49 page-chronicle.php:48
-#: page-events.php:49 page-gallery.php:52 page-groups.php:50 page-home.php:46
-#: page-login.php:85 page-management.php:49 page-schedule.php:52 page.php:48
-#: partials/single-article.php:67 partials/single-events.php:181
-#: partials/single-gallery.php:65 partials/single-groups.php:37
+#: page-contact.php:54 page-events.php:49 page-gallery.php:52
+#: page-groups.php:50 page-home.php:46 page-login.php:85 page-management.php:49
+#: page-schedule.php:52 page.php:48 partials/single-article.php:67
+#: partials/single-events.php:187 partials/single-groups.php:37
 msgid "Pages:"
 msgstr "Seiten:"
 
@@ -1401,6 +1404,20 @@ msgstr "Blog"
 msgid "Chronicle"
 msgstr "Fahrtenchronik"
 
+#: page-contact.php:14
+msgid "Contact"
+msgstr "Kontakt"
+
+#: page-contact.php:70 page.php:64
+msgid "Oops, Page Not Found!"
+msgstr "Ho, Seite nicht gefunden!"
+
+#: page-contact.php:73 page.php:67 partials/404-page.php:17
+msgid "This page appears to be missing. Strange. Sure you wanted to land here?"
+msgstr ""
+"Diese Seite scheint verschwunden zu sein. Verrückt. Sicher, dass du hier "
+"landen wolltest?"
+
 #: page-gallery.php:15
 msgid "Gallery"
 msgstr "Galerie"
@@ -1409,17 +1426,17 @@ msgstr "Galerie"
 msgid "haddak"
 msgstr "haddak"
 
-#: page-haddak.php:62
+#: page-haddak.php:65
 #, php-format
 msgid "View all posts from %s"
 msgstr "Alle Artikel von %s anschauen."
 
-#: page-haddak.php:76
+#: page-haddak.php:79
 #, php-format
 msgid "%s Articles"
 msgstr "%s Artikel"
 
-#: page-haddak.php:86
+#: page-haddak.php:89
 #, php-format
 msgid "Released %s"
 msgstr "Erschienen am %s"
@@ -1431,16 +1448,6 @@ msgstr "Startseite"
 #: page-login.php:12
 msgid "Login"
 msgstr "Log-In"
-
-#: page.php:64
-msgid "Oops, Page Not Found!"
-msgstr "Ho, Seite nicht gefunden!"
-
-#: page.php:67 partials/404-page.php:17
-msgid "This page appears to be missing. Strange. Sure you wanted to land here?"
-msgstr ""
-"Diese Seite scheint verschwunden zu sein. Verrückt. Sicher, dass du hier "
-"landen wolltest?"
 
 #: page.php:70
 msgid ""
@@ -1496,28 +1503,6 @@ msgstr ""
 "Wenn du willst, dass wir wieder neue Aktionen hinzufügen, dann schreib uns "
 "einfach: <a href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>!"
 
-#: partials/404-gallery.php:13
-msgid "Oops, no gallery found!"
-msgstr "Hoppla, keine Galerie gefunden!"
-
-#: partials/404-gallery.php:17
-msgid ""
-"Strange, it appears as if there are no images in this gallery. You sure you "
-"wanted to end up here?"
-msgstr ""
-"Seltsam, hier scheint es eine Galerie ohne Bilder zu geben. Oder eine "
-"kaputte Seite, wie man's nimmt."
-
-#: partials/404-gallery.php:21
-#, php-format
-msgid ""
-"If you want us to add a few images here or to report this bug, simply write "
-"us: <a href=\"mailto:%s\" title=\"Write us!\">%s</a>."
-msgstr ""
-"Wenn du willst, dass wir diese Galerie füllen oder einfach mal meckern "
-"willst, dass die Seite mal wieder kaputt ist, dann schreib uns einfach: <a "
-"href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>!"
-
 #: partials/404-groups.php:13
 msgid "Oops, no Group found!"
 msgstr "Hoppla, keine Gruppe gefunden!"
@@ -1565,41 +1550,39 @@ msgstr ""
 "beheben. Eine kurze Nachricht an <a href=\"mailto:%s\" title=\"Schreib uns!"
 "\">%s</a> reicht. Danke!"
 
-#: partials/archive-article.php:18 partials/archive-gallery.php:18
-#: partials/home-blog.php:56
+#: partials/archive-article.php:18 partials/home-blog.php:56
 msgid "Posted"
 msgstr "Veröffentlicht am"
 
 #: partials/archive-article.php:22 partials/archive-events.php:28
-#: partials/archive-gallery.php:22 partials/home-blog.php:60
+#: partials/home-blog.php:60
 msgid "by"
 msgstr "von"
 
-#: partials/archive-article.php:59 partials/archive-gallery.php:77
+#: partials/archive-article.php:59
 #, php-format
 msgid "Event Target Group: %1$s"
 msgstr "Zielgruppe: %1$s"
 
-#: partials/archive-article.php:63 partials/archive-events.php:49
-#: partials/archive-gallery.php:81 partials/home-events.php:81
-#: partials/single-events.php:27 partials/single-events.php:103
-#: partials/single-gallery.php:33
+#: partials/archive-article.php:63 partials/archive-events.php:70
+#: partials/home-events.php:81 partials/single-events.php:32
+#: partials/single-events.php:109
 msgid "On"
 msgstr "Am"
 
-#: partials/archive-article.php:70 partials/archive-events.php:57
-#: partials/archive-gallery.php:88 partials/home-events.php:88
-#: partials/single-events.php:34 partials/single-events.php:111
+#: partials/archive-article.php:70 partials/archive-events.php:78
+#: partials/home-events.php:88 partials/single-events.php:39
+#: partials/single-events.php:117
 msgid "From"
 msgstr "Vom"
 
-#: partials/archive-article.php:70 partials/archive-events.php:57
-#: partials/archive-gallery.php:88 partials/home-events.php:88
-#: partials/single-events.php:34 partials/single-events.php:111
+#: partials/archive-article.php:70 partials/archive-events.php:78
+#: partials/home-events.php:88 partials/single-events.php:39
+#: partials/single-events.php:117
 msgid "to"
 msgstr "bis zum"
 
-#: partials/archive-article.php:79 partials/archive-gallery.php:97
+#: partials/archive-article.php:79
 #, php-format
 msgid "Location: %1$s"
 msgstr "Ort: %1$s"
@@ -1608,19 +1591,19 @@ msgstr "Ort: %1$s"
 msgid "Added"
 msgstr "Hinzugefügt am"
 
-#: partials/archive-events.php:67 partials/single-events.php:121
+#: partials/archive-events.php:88 partials/single-events.php:127
 #, php-format
 msgid "The event takes place at %1$s."
 msgstr "Die Veranstaltung findet hier statt: %1$s"
 
-#: partials/archive-events.php:67 partials/single-events.php:121
+#: partials/archive-events.php:88 partials/single-events.php:127
 #, php-format
 msgid "%2$s"
 msgstr "%2$s"
 
-#: partials/archive-events.php:75 partials/single-events.php:96
-#: partials/single-events.php:136 partials/single-events.php:143
-#: partials/single-events.php:150
+#: partials/archive-events.php:96 partials/single-events.php:102
+#: partials/single-events.php:142 partials/single-events.php:149
+#: partials/single-events.php:156
 #, php-format
 msgid "%1$s"
 msgstr "%1$s"
@@ -1662,8 +1645,7 @@ msgstr "Neuigkeiten"
 msgid "Nothing, but absolutely nothing, was found. How did you do this?"
 msgstr "Nichts, aber auch gar nichts wurde gefunden. Wie hast du das gemacht?"
 
-#: partials/home-blog.php:84 partials/home-events.php:114
-#: partials/home-gallery.php:129
+#: partials/home-blog.php:84 partials/home-gallery.php:129
 msgid ""
 "Well, if you are not sure about what you just did, simply tell us via "
 "redaktion@al3.de. Thank you!"
@@ -1725,17 +1707,17 @@ msgstr ""
 msgid "More about the Schedule"
 msgstr "Mehr über unseren Wochenplan"
 
-#: partials/home-schedule.php:65 partials/schedule-groups.php:19
+#: partials/home-schedule.php:65 partials/schedule-groups.php:17
 #, php-format
 msgid "Between %s oclock"
 msgstr "Von %s Uhr"
 
-#: partials/schedule-groups.php:31 partials/single-groups.php:63
+#: partials/schedule-groups.php:29 partials/single-groups.php:63
 #, php-format
 msgid "With %s"
 msgstr "Bei %s"
 
-#: partials/schedule-groups.php:36 partials/single-groups.php:69
+#: partials/schedule-groups.php:34 partials/single-groups.php:69
 #, php-format
 msgid "Send an E-Mail to %s!"
 msgstr "Eine E-Mail an %s schreiben."
@@ -1745,11 +1727,11 @@ msgstr "Eine E-Mail an %s schreiben."
 msgid "The article %1$s was published on %2$s by %3$s for %4$s."
 msgstr "Der Artikel %1$s wurde am %2$s von %3$s für den %4$s veröffentlicht."
 
-#: partials/single-events.php:17
+#: partials/single-events.php:21
 msgid "Pictures:"
 msgstr "Fotos:"
 
-#: partials/single-events.php:77 partials/single-gallery.php:19
+#: partials/single-events.php:83
 #, php-format
 msgid ""
 "Added <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span "
@@ -1758,27 +1740,27 @@ msgstr ""
 "Hinzugefügt am <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> "
 "von <span class=\"author fn\">%3$s</span>."
 
-#: partials/single-events.php:129
+#: partials/single-events.php:135
 #, php-format
 msgid "This event costs %1$s Euro."
 msgstr "Diese Veranstaltung kostet %1$s Euro."
 
-#: partials/single-events.php:129
+#: partials/single-events.php:135
 #, php-format
 msgid "%1$s Euro"
 msgstr "%1$s Euro"
 
-#: partials/single-events.php:136
+#: partials/single-events.php:142
 #, php-format
 msgid "You can register at %1$s."
 msgstr "Du kannst dich unter %1$s für die Veranstaltung anmelden."
 
-#: partials/single-events.php:143
+#: partials/single-events.php:149
 #, php-format
 msgid "This event is organized by %1$s."
 msgstr "Diese Veranstaltung wird organisiert von %1$s."
 
-#: partials/single-events.php:150
+#: partials/single-events.php:156
 #, php-format
 msgid "More information at %1$s."
 msgstr "Mehr unter %1$s."
@@ -1827,9 +1809,27 @@ msgstr ""
 "Also, gib dir einen Ruck, hau in die Tasten und suche doch noch einmal. "
 "Diesmal aber mit anderen Suchbegriffen."
 
-#: taxonomy-event_target_group.php:39
+#: taxonomy-event_target_group.php:40
 msgid "Print this schedule"
 msgstr "Diesen Jahresplan ausrucken"
+
+#~ msgid "Oops, no gallery found!"
+#~ msgstr "Hoppla, keine Galerie gefunden!"
+
+#~ msgid ""
+#~ "Strange, it appears as if there are no images in this gallery. You sure "
+#~ "you wanted to end up here?"
+#~ msgstr ""
+#~ "Seltsam, hier scheint es eine Galerie ohne Bilder zu geben. Oder eine "
+#~ "kaputte Seite, wie man's nimmt."
+
+#~ msgid ""
+#~ "If you want us to add a few images here or to report this bug, simply "
+#~ "write us: <a href=\"mailto:%s\" title=\"Write us!\">%s</a>."
+#~ msgstr ""
+#~ "Wenn du willst, dass wir diese Galerie füllen oder einfach mal meckern "
+#~ "willst, dass die Seite mal wieder kaputt ist, dann schreib uns einfach: "
+#~ "<a href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>!"
 
 #~ msgid "Manager"
 #~ msgstr "Mitglied"
