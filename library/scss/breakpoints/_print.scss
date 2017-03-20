@@ -81,6 +81,9 @@ html {
     .page-navigation,
     .wp-prev-next,
     .respond-form,
-    nav {
+    nav,
+    article.events .byline,
+    article.events .avatar
+    {
       display: none;
     }
