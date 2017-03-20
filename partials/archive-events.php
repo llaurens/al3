@@ -43,7 +43,7 @@
         ?>
 
             <img
-                 alt="user-<?php echo $user->ID ?>"
+                 alt="<?php echo get_the_title(); ?>"
                  src="<?php echo $avatar_attributes[0]; ?>"
                  srcset="<?php echo $avatar_attributes[0] . ',' . $retina_avatar[0] . ' 2x'; ?>"
                  class="avatar avatar-150 photo alignleft rounded"
