@@ -27,6 +27,7 @@
                 echo '<div class="target-group-buttons cf">';
                 $count = count($terms);
                 $i=0;
+                $term_list = "";
                 foreach ($terms as $term) {
                     $i++;
                     $term_list .= '<a class="btn blue-btn" href="' . get_term_link( $term ) . '" title="' . sprintf(__('Show all events for %s', 'al3'), $term  ->name) . '">' . $term->name . '</a>';
