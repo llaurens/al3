@@ -73,7 +73,7 @@ __( 'Schedule', 'al3' );
                                     'meta_query' => array( // WordPress has all the results, now, return only the events after today's date
                                         array(
                                             'key' => 'groups_meet_day', // Check the date field
-                                            'value' => 'null', // Compare to this value (empty)
+                                            'value' => '', // Compare to this value (empty)
                                             'compare' => '!=' // Return the ones that have a date
                                         )
                                     )
