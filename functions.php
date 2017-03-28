@@ -168,7 +168,7 @@ function add_featured_image_body_class( $classes ) {
         global $post;
 
         if ( isset ( $post->ID ) && get_the_post_thumbnail($post->ID) && is_singular( array( 'post', 'page', 'groups' ))) {
-            $classes[] = 'has-featured-image';
+            $classes[] = 'has-featured-image body-background-image';
         }
             return $classes;
 }

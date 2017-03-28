@@ -56,6 +56,14 @@ body {
 
     }
 
+    &.body-background-image {
+        transition: 0s filter ease-in-out 0.3s;
+
+        &.blur:before {
+            filter: blur(3px);
+        }
+    }
+
 }
 
 

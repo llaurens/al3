@@ -327,7 +327,27 @@ function loadSearch () {
 }
 
 /*
- * 04: LOADING THINGS AFTER PAGE HAS LOADED
+ * 04: WINDOW SCROLL ANIMATION
+ * Blurs the Background image when scrolled
+ * to a certain point.
+ */
+
+
+/*window.onscroll = function changeNav(){
+
+    var scrollPosY = window.pageYOffset | document.body.scrollTop;
+
+    if(scrollPosY > 100) {
+          $(".body-background-image").addClass("blur");
+    } else if(scrollPosY <= 100) {
+         $(".body-background-image").removeClass("blur");
+    }
+
+}*/
+
+
+/*
+ * 05: LOADING THINGS AFTER PAGE HAS LOADED
  * Via cash we find out when the page has entirely loaded and
  * then we throw in the functions, which are not needed right in
  * the beginning of the page load to avoid blocking.
