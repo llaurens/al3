@@ -60,7 +60,9 @@
             <?php endif; ?>
 
             <?php if( get_field('groups_leader') ): ?>
-                <p><span class="dashicons dashicons-businessman"></span><?php printf(__('With %s', 'al3'), get_field('groups_leader')); ?></p>
+            <?php   $groups_leader = get_field('groups_leader');
+                    $groups_leader = implode("&nbsp;&amp;&nbsp;", array_map(function ($groups_leader) { return $groups_leader['nickname']; }, $groups_leader));?>
+                <p><span class="dashicons dashicons-businessman"></span><?php printf(__('With %s', 'al3'), $groups_leader); ?></p>
             <?php endif; ?>
 
             <?php if( get_field('groups_mail') ): ?>

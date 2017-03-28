@@ -70,17 +70,38 @@ if ( ! function_exists( 'al3_groups_metaboxes' ) ) {
 
                         array (
                             'key' => 'field_55d5d68088ebb',
-                            'label' => __('Leader', 'al3'),
+                            'label' => __('Group Leader', 'al3'),
                             'name' => 'groups_leader',
-                            'type' => 'text',
+                            'type' => 'user',
                             'instructions' => __('Who is the leader of this group?', 'al3'),
                             'required' => 0,
-                            'default_value' => '',
-                            'placeholder' => __('James', 'al3'),
-                            'prepend' => '',
-                            'append' => '',
-                            'formatting' => 'html',
-                            'maxlength' => '',
+                            'conditional_logic' => 0,
+                            'wrapper' => array (
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'role' => '',
+                            'allow_null' => 1,
+                            'multiple' => 1,
+                        ),
+
+                        array (
+                            'key' => 'field_58da893b5a256',
+                            'label' => __('Group Member', 'al3'),
+                            'name' => 'groups_member',
+                            'type' => 'user',
+                            'instructions' =>  __('Who member of this group?', 'al3'),
+                            'required' => 0,
+                            'conditional_logic' => 0,
+                            'wrapper' => array (
+                                'width' => '',
+                                'class' => '',
+                                'id' => '',
+                            ),
+                            'role' => '',
+                            'allow_null' => 1,
+                            'multiple' => 1,
                         ),
 
                         array (

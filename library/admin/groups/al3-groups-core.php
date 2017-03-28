@@ -128,7 +128,8 @@ function groups_custom_columns($column) {
                            break;
 
     case 'groups_leader': if( ! empty( $custom['groups_leader'][0] )) {
-        echo $custom['groups_leader'][0];
+        $groups_leader = get_field('groups_leader');
+        echo implode("&nbsp;&amp;&nbsp;", array_map(function ($groups_leader) { return $groups_leader['nickname']; }, $groups_leader));
     } else {
             _e('No Group Leader', 'al3');
     }
