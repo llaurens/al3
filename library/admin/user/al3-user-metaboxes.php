@@ -68,7 +68,7 @@ if ( ! function_exists( 'al3_user_metaboxes' ) ) {
                         'class' => '',
                         'id' => '',
                     ),
-                    'display_format' => __('d. MM yy', 'al3'),
+                    'display_format' => get_option( 'date_format' ),
                     'return_format' => 'yy-mm-dd',
                     'first_day' => 1,
                 ),
@@ -253,29 +253,6 @@ if ( ! function_exists( 'al3_user_metaboxes' ) ) {
                 ),
 
                 array (
-                    'key' => 'field_57ab6e3343009',
-                    'label' => __('Target/Age Group', 'al3'),
-                    'name' => 'user_age_level',
-                    'type' => 'taxonomy',
-                    'instructions' => '',
-                    'required' => 0,
-                    'conditional_logic' => 0,
-                    'wrapper' => array (
-                        'width' => '',
-                        'class' => '',
-                        'id' => '',
-                    ),
-                    'taxonomy' => 'event_target_group',
-                    'field_type' => 'checkbox',
-                    'allow_null' => 0,
-                    'add_term' => 0,
-                    'save_terms' => 0,
-                    'load_terms' => 0,
-                    'return_format' => 'id',
-                    'multiple' => 1,
-                ),
-
-                array (
                     'key' => 'field_576fa11f59516',
                     'label' => __('Group', 'al3'),
                     'name' => 'user_group',
@@ -300,7 +277,7 @@ if ( ! function_exists( 'al3_user_metaboxes' ) ) {
                         0 => 'featured_image',
                     ),
                     'min' => '',
-                    'max' => 1,
+                    'max' => '',
                     'return_format' => 'id',
                 ),
 
