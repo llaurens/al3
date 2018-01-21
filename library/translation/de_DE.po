@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: al3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-20 21:11+0100\n"
+"POT-Creation-Date: 2017-08-06 20:49+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Laurens Lamberty <laurens@lamberty.mw>\n"
 "Language-Team: Laurens Lamberty <laurens@lamberty.me>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n;esc_attr_x\n"
 "X-Poedit-Basepath: ../..\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.0\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:22
@@ -45,11 +45,11 @@ msgstr ""
 "Wenn du willst, dass wir diesen Fehler beheben, dann reicht eine kurze "
 "Nachricht an <a href=\"mailto:%s\" title=\"Schreib uns!\">%s</a>. Danke!"
 
-#: archive-events.php:28 page-events.php:65 taxonomy-event_target_group.php:38
+#: archive-events.php:28 page-events.php:66 taxonomy-event_target_group.php:38
 msgid "Show only events for:"
 msgstr "Zeige nur Aktionen für:"
 
-#: archive-events.php:31 page-events.php:68 taxonomy-event_target_group.php:33
+#: archive-events.php:31 taxonomy-event_target_group.php:33
 #, php-format
 msgid "Show all events for %s"
 msgstr "Zeige nur Aktionen für %s."
@@ -64,7 +64,7 @@ msgstr "Für %s"
 msgid "Head of Management"
 msgstr "Stammesführung"
 
-#: archive-management.php:91 library/admin/user/al3-user-metaboxes.php:323
+#: archive-management.php:91 library/admin/user/al3-user-metaboxes.php:300
 #: page-management.php:12
 msgid "Management"
 msgstr "Stammesrat"
@@ -664,7 +664,6 @@ msgstr "Wann fängt der Termin an?"
 
 #: library/admin/events/al3-events-metaboxes.php:44
 #: library/admin/events/al3-events-metaboxes.php:54
-#: library/admin/user/al3-user-metaboxes.php:71
 msgid "d. MM yy"
 msgstr "d. MM yy"
 
@@ -701,8 +700,7 @@ msgid "Registration"
 msgstr "Anmeldung"
 
 #: library/admin/events/al3-events-metaboxes.php:103
-#: library/admin/groups/al3-groups-metaboxes.php:73
-#: library/admin/user/al3-user-metaboxes.php:322
+#: library/admin/user/al3-user-metaboxes.php:299
 msgid "Leader"
 msgstr "Mitglied der Stammesführung"
 
@@ -739,7 +737,7 @@ msgid "Groups"
 msgstr "Gruppen"
 
 #: library/admin/groups/al3-groups-core.php:42
-#: library/admin/user/al3-user-metaboxes.php:280
+#: library/admin/user/al3-user-metaboxes.php:257
 msgid "Group"
 msgstr "Gruppe"
 
@@ -793,6 +791,7 @@ msgid "Day to meet"
 msgstr "Tag der Gruppenstunde"
 
 #: library/admin/groups/al3-groups-core.php:94
+#: library/admin/groups/al3-groups-metaboxes.php:73
 msgid "Group Leader"
 msgstr "Gruppenführer"
 
@@ -800,7 +799,7 @@ msgstr "Gruppenführer"
 msgid "No Information about members specified"
 msgstr "Keine Informationen über Mitglieder angegeben"
 
-#: library/admin/groups/al3-groups-core.php:133
+#: library/admin/groups/al3-groups-core.php:134
 msgid "No Group Leader"
 msgstr "Kein Gruppenführer"
 
@@ -840,84 +839,88 @@ msgstr "Alle von acht bis zehn Jahren"
 msgid "Who is the leader of this group?"
 msgstr "Wer ist der Gruppenführer dieser Gruppe?"
 
-#: library/admin/groups/al3-groups-metaboxes.php:79
-msgid "James"
-msgstr "Jean-Jaques"
+#: library/admin/groups/al3-groups-metaboxes.php:91
+msgid "Group Member"
+msgstr "Gruppenmitglieder"
 
-#: library/admin/groups/al3-groups-metaboxes.php:88
+#: library/admin/groups/al3-groups-metaboxes.php:94
+msgid "Who member of this group?"
+msgstr "Wer sind die Mitglieder dieser Gruppe?"
+
+#: library/admin/groups/al3-groups-metaboxes.php:109
 msgid "E-Mail"
 msgstr "E-Mail"
 
-#: library/admin/groups/al3-groups-metaboxes.php:91
+#: library/admin/groups/al3-groups-metaboxes.php:112
 msgid "What is the e-mail of this group?"
 msgstr "Wie lautet die E-Mail-Adresse der Gruppe?"
 
-#: library/admin/groups/al3-groups-metaboxes.php:93
+#: library/admin/groups/al3-groups-metaboxes.php:114
 msgid "meute@stammalexanderlion.de"
 msgstr "meute@stammalexanderlion.de"
 
-#: library/admin/groups/al3-groups-metaboxes.php:99 page-schedule.php:13
+#: library/admin/groups/al3-groups-metaboxes.php:120 page-schedule.php:13
 #: partials/home-schedule.php:17 partials/home-schedule.php:18
 msgid "Schedule"
 msgstr "Wochenplan"
 
-#: library/admin/groups/al3-groups-metaboxes.php:105
+#: library/admin/groups/al3-groups-metaboxes.php:126
 msgid "Day"
 msgstr "Tag der Gruppenstunde"
 
-#: library/admin/groups/al3-groups-metaboxes.php:108
+#: library/admin/groups/al3-groups-metaboxes.php:129
 msgid "On which day of the week does this group meet?"
 msgstr "An welchem Tag trifft sich diese Gruppe?"
 
-#: library/admin/groups/al3-groups-metaboxes.php:110
+#: library/admin/groups/al3-groups-metaboxes.php:131
 msgid "Monday"
 msgstr "Montag"
 
-#: library/admin/groups/al3-groups-metaboxes.php:111
+#: library/admin/groups/al3-groups-metaboxes.php:132
 msgid "Tuesday"
 msgstr "Dienstag"
 
-#: library/admin/groups/al3-groups-metaboxes.php:112
+#: library/admin/groups/al3-groups-metaboxes.php:133
 msgid "Wednesday"
 msgstr "Mittwoch"
 
-#: library/admin/groups/al3-groups-metaboxes.php:113
+#: library/admin/groups/al3-groups-metaboxes.php:134
 msgid "Thursday"
 msgstr "Donnerstag"
 
-#: library/admin/groups/al3-groups-metaboxes.php:114
+#: library/admin/groups/al3-groups-metaboxes.php:135
 msgid "Friday"
 msgstr "Freitag"
 
-#: library/admin/groups/al3-groups-metaboxes.php:115
+#: library/admin/groups/al3-groups-metaboxes.php:136
 msgid "Saturday"
 msgstr "Samstag"
 
-#: library/admin/groups/al3-groups-metaboxes.php:116
+#: library/admin/groups/al3-groups-metaboxes.php:137
 msgid "Sunday"
 msgstr "Sonntag"
 
-#: library/admin/groups/al3-groups-metaboxes.php:125
+#: library/admin/groups/al3-groups-metaboxes.php:146
 msgid "Time"
 msgstr "Uhrzeit"
 
-#: library/admin/groups/al3-groups-metaboxes.php:128
+#: library/admin/groups/al3-groups-metaboxes.php:149
 msgid "When does this group meet?"
 msgstr "Wann trifft sich diese Gruppe?"
 
-#: library/admin/groups/al3-groups-metaboxes.php:130
+#: library/admin/groups/al3-groups-metaboxes.php:151
 msgid "From 2 p.m. to 4 p.m."
 msgstr "17:30 bis 19:30"
 
-#: library/admin/groups/al3-groups-metaboxes.php:131
+#: library/admin/groups/al3-groups-metaboxes.php:152
 msgid "Starting at"
 msgstr "Von"
 
-#: library/admin/groups/al3-groups-metaboxes.php:132
+#: library/admin/groups/al3-groups-metaboxes.php:153
 msgid "clock"
 msgstr "Uhr"
 
-#: library/admin/groups/al3-groups-metaboxes.php:170
+#: library/admin/groups/al3-groups-metaboxes.php:193
 msgid "Not specified"
 msgstr "Nicht festgelegt"
 
@@ -1334,28 +1337,24 @@ msgstr "Handnummer"
 msgid "+49 (151) 27537090"
 msgstr "+ 49 (151) 27537090"
 
-#: library/admin/user/al3-user-metaboxes.php:257
-msgid "Target/Age Group"
-msgstr "Ziel-/Altersgruppe"
-
-#: library/admin/user/al3-user-metaboxes.php:283
+#: library/admin/user/al3-user-metaboxes.php:260
 msgid "Which group is the user part of?"
 msgstr "In welcher Untergruppe ist dieser Nutzer Mitglied?"
 
-#: library/admin/user/al3-user-metaboxes.php:309
+#: library/admin/user/al3-user-metaboxes.php:286
 msgid "Part of Management"
 msgstr "Teil des Stammesrates"
 
-#: library/admin/user/al3-user-metaboxes.php:321
-#: library/admin/user/al3-user-metaboxes.php:362
+#: library/admin/user/al3-user-metaboxes.php:298
+#: library/admin/user/al3-user-metaboxes.php:339
 msgid "Director"
 msgstr "Stammesführer"
 
-#: library/admin/user/al3-user-metaboxes.php:324
+#: library/admin/user/al3-user-metaboxes.php:301
 msgid "No Part in Management"
 msgstr "Kein Teil des Stammesrates"
 
-#: library/admin/user/al3-user-metaboxes.php:335
+#: library/admin/user/al3-user-metaboxes.php:312
 msgid "Function"
 msgstr "Amt"
 
@@ -1391,8 +1390,9 @@ msgstr "Auto Galerie"
 #: page-autogallery.php:52 page-blog.php:49 page-chronicle.php:48
 #: page-contact.php:54 page-events.php:49 page-gallery.php:52
 #: page-groups.php:50 page-home.php:46 page-login.php:85 page-management.php:49
-#: page-schedule.php:52 page.php:48 partials/single-article.php:67
-#: partials/single-events.php:187 partials/single-groups.php:37
+#: page-member.php:49 page-schedule.php:52 page.php:48
+#: partials/single-article.php:67 partials/single-events.php:187
+#: partials/single-groups.php:37
 msgid "Pages:"
 msgstr "Seiten:"
 
@@ -1417,6 +1417,10 @@ msgid "This page appears to be missing. Strange. Sure you wanted to land here?"
 msgstr ""
 "Diese Seite scheint verschwunden zu sein. Verrückt. Sicher, dass du hier "
 "landen wolltest?"
+
+#: page-events.php:66
+msgid "All"
+msgstr "Alle"
 
 #: page-gallery.php:15
 msgid "Gallery"
@@ -1448,6 +1452,10 @@ msgstr "Startseite"
 #: page-login.php:12
 msgid "Login"
 msgstr "Log-In"
+
+#: page-member.php:12
+msgid "Member"
+msgstr "Mitglied"
 
 #: page.php:70
 msgid ""
@@ -1608,7 +1616,8 @@ msgstr "%2$s"
 msgid "%1$s"
 msgstr "%1$s"
 
-#: partials/archive-management.php:56 partials/archive-user.php:56
+#: partials/archive-management.php:56 partials/archive-member.php:76
+#: partials/archive-user.php:56
 #, php-format
 msgid "Write an e-mail to %1$s."
 msgstr "%1$s eine E-Mail schreiben."
@@ -1618,15 +1627,22 @@ msgstr "%1$s eine E-Mail schreiben."
 msgid "%1$s years old"
 msgstr "%1$s Jahre alt"
 
-#: partials/archive-management.php:81 partials/archive-user.php:81
+#: partials/archive-management.php:81 partials/archive-member.php:117
+#: partials/archive-user.php:81
 #, php-format
 msgid "View posts by %s."
 msgstr "Beiträge von %s anschauen"
 
-#: partials/archive-management.php:82 partials/archive-user.php:82
+#: partials/archive-management.php:82 partials/archive-member.php:118
+#: partials/archive-user.php:82
 #, php-format
 msgid "Posts by %s"
 msgstr "Beiträge von %s"
+
+#: partials/archive-member.php:104
+#, php-format
+msgid "(%1$s years old)"
+msgstr "(%1$s Jahre alt)"
 
 #: partials/chronicle-events.php:71
 msgid "Pictures of this event."
@@ -1712,12 +1728,12 @@ msgstr "Mehr über unseren Wochenplan"
 msgid "Between %s oclock"
 msgstr "Von %s Uhr"
 
-#: partials/schedule-groups.php:29 partials/single-groups.php:63
+#: partials/schedule-groups.php:31 partials/single-groups.php:65
 #, php-format
 msgid "With %s"
 msgstr "Bei %s"
 
-#: partials/schedule-groups.php:34 partials/single-groups.php:69
+#: partials/schedule-groups.php:36 partials/single-groups.php:71
 #, php-format
 msgid "Send an E-Mail to %s!"
 msgstr "Eine E-Mail an %s schreiben."
@@ -1775,6 +1791,36 @@ msgstr "%1$ss von %2$s Uhr"
 msgid "For %s"
 msgstr "Für %s"
 
+#: partials/single-groups.php:133
+#, php-format
+msgid "Boys within the age of %s"
+msgstr "Jungs im Alter von %s Jahren"
+
+#: partials/single-groups.php:135
+#, php-format
+msgid "Girls within the age of %s"
+msgstr "Mädchen im Alter von %s Jahren"
+
+#: partials/single-groups.php:137
+#, php-format
+msgid "Boys and girls within the age of %s"
+msgstr "Jungs und Mädels im Alter von %s Jahren"
+
+#: partials/single-groups.php:139
+#, php-format
+msgid "Boys within the age from %1$s to %2$s"
+msgstr "Jungs im Alter von  %1$s bis %2$s Jahren"
+
+#: partials/single-groups.php:141
+#, php-format
+msgid "Girls within the age from %1$s to %2$s"
+msgstr "Mädchen im Alter von  %1$s bis %2$s Jahren"
+
+#: partials/single-groups.php:143
+#, php-format
+msgid "Boys and girls within the age of from %1$s to %2$s"
+msgstr "Jungs und Mädchen im Alter von  %1$s bis %2$s Jahren"
+
 #: post-navigation.php:14
 msgid "Next"
 msgstr "Nächster Artikel"
@@ -1812,6 +1858,12 @@ msgstr ""
 #: taxonomy-event_target_group.php:40
 msgid "Print this schedule"
 msgstr "Diesen Jahresplan ausrucken"
+
+#~ msgid "James"
+#~ msgstr "Jean-Jaques"
+
+#~ msgid "Target/Age Group"
+#~ msgstr "Ziel-/Altersgruppe"
 
 #~ msgid "Oops, no gallery found!"
 #~ msgstr "Hoppla, keine Galerie gefunden!"
@@ -1854,9 +1906,6 @@ msgstr "Diesen Jahresplan ausrucken"
 
 #~ msgid "Thumbnail"
 #~ msgstr "Vorschaubild"
-
-#~ msgid "Member"
-#~ msgstr "Mitglied"
 
 #~ msgid "Official Name"
 #~ msgstr "Offizieller Name"
