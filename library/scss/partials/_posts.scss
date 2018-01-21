@@ -51,6 +51,16 @@ HENTRY
     margin-bottom: 1.5em;
     background: $white;
 
+    &.has-post-thumbnail {
+        opacity: 1;
+        animation: fade-in 0.4s linear;
+    }
+
+    @keyframes fade-in {
+        0% { opacity: 0; transform: translateY(15px); }
+        100% { opacity: 1; transform: translateY(0px); }
+    }
+
     header {
         padding: 1.5em 1.5em 0;
     }
