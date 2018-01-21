@@ -181,18 +181,22 @@ if ( ! function_exists( 'al3_groups_metaboxes' ) ) {
     }
 }
 
-function al3_acf_select_labels($select_name) {
+if ( !function_exists('al3_acf_select_labels') ) {
 
-    $field = get_field_object($select_name);
-    $value = get_field($select_name);
-    $label = $field['choices'][ $value ];
+        function al3_acf_select_labels($select_name) {
 
-    if ( $label == 'null' ) {
-        _e('Not specified', 'al3');
+        $field = get_field_object($select_name);
+        $value = get_field($select_name);
+        $label = $field['choices'][ $value ];
 
-    } else {
-        echo $label;
+        if ( $label == 'null' ) {
+            _e('Not specified', 'al3');
+
+        } else {
+            echo $label;
+        }
     }
+
 }
 
 ?>
