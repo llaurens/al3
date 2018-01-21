@@ -158,6 +158,69 @@ function loadMenu () {
 }
 
 
+$(".target_group-toggle").on('click', function(event){
+
+        event.preventDefault();
+
+        $('.type-events').removeClass('active');
+
+        var id = $(this).attr('id');
+
+        if ($('.type-events').hasClass(id)) {
+            $('.type-events.'+id).addClass('active');
+        }
+
+
+        Velocity(
+            $('.type-events.active'),
+            'slideDown', {
+                duration: 600,     // duration set in function call params
+                easing: 'linear',         // easing set in function call params
+                delay:  10,
+            }
+        );
+
+
+            Velocity(
+           $('.type-events:not(.active)'),
+            'slideUp', {
+                duration: 600,     // duration set in function call params
+                easing: 'linear',         // easing set in function call params
+                delay: 10,
+            }
+        );
+
+
+
+
+
+
+
+
+
+    });
+
+$("#event_target_group-all").on('click', function(event){
+
+    event.preventDefault();
+
+
+    Velocity(
+            $('.type-events'),
+            'slideDown', {
+                duration: 600,     // duration set in function call params
+                easing: 'linear',         // easing set in function call params
+                delay: 10,
+            }
+        );
+
+});
+
+
+
+
+
+
 /*
  * 03: LOADING THE SEARCH FORM
  * The Search form has multiple parts aswell:
